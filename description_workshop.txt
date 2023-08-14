@@ -1,0 +1,41 @@
+[h1]Artificer's Accessories[/h1]
+
+Artificer's Accessories is a content mod that adds in many new accessories (105!) as well as a new class to the game. 
+
+[h2]Introducing: The Artificer[/h2]
+[list]
+    [*]This class is designed as a 'neutral' class; its boosts are generic and even-split between the other classes
+    [*]To make the class unique, Artificers have low raw power, but their set bonuses grant extra accessory slots!
+    [*]Utilize these extra slots to maximize your build-play and flexibility
+    [*]Furthermore, Artificers also specialize in a new type of accessory added by this mod...
+[/list]
+
+[h2]Meet the Ability Accessories[/h2]
+[list]
+    [*]50 of the 105 new accessories in this mod are special 'Ability Accessories'
+    [*]Most lack the passive effects you'd expect of an accessory
+    [*]Instead, they can trigger powerful special effects with the press of a hotkey
+    [*]Rapidly restore life! Shoot giant lasers! Rocket jump! These are just a few possibilities
+    [*]To balance their power, Ability Accessories share a cooldown that dictates the frequency of their use
+    [*]Artificers get the most out of these accessories, as Artificer set bonuses disable a universal cooldown penalty, and some even decrease the time further!
+[/list]
+
+[h2]Other additions[/h2]
+[list]
+    [*]The new class and ability accessories is nice and all, but don't forget that Artificer's Accessories still has something for everyone; The 55 other accessories added by this mod don't have ability mechanics and are thus open for all classes and players to enjoy and experiment with.
+    [*]Also, this mod introduces alternative ways to obtain some commonly-used accessories, such as Hermes Boots, the Shiny Red Balloon, and more!
+    [*]A few config options for mostly client-side effects
+[/list]
+
+[h3]Open Source[/h3]
+[list]
+    [*]This mod is open-source on GitHub under the GNU GPLv3 license. Another way to view the source-code is via. tML's in-game extract function
+    [*]Also, special shoutout to the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2866247106]Chem's Vanity[/url] mod, which is open-source under the same license and is where I got most of this mod's armor glowmask code from!
+    [*]You can find the GitHub repository for the mod [url=https://github.com/BlockCrusader/ArtificerMod]right here![/url]
+[/list]
+
+[b]Please first read the pinned discussion 'FAQ Thread: Compatibility, Known Issues/Bug Reports, Roadmap & More' if you have any questions![/b]
+
+
+
+Last Updated: 8/14/2023
