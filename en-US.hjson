@@ -1,5 +1,17 @@
 Mods: {
 	ArtificerMod: {
+		CommonItemtooltip: {
+		    HotkeySet: "WARNING: No hotkey set for abilities! Assign one in the 'Controls' section of the settings menu!"
+		    Cooldown: {
+			    CooldowntimeColored: "Cooldown time: [c/78be78:{1} seconds] (Base: {0} sec)"
+			    Cooldowntime: "Cooldown time: {1} seconds (Base: {0} sec)"
+				SlightlyExtended: Cooldown is slightly extended without an Artificer armor set equipped
+				GreatlyExtended: Cooldown is greatly extended without an ability accessory equipped
+				DrasticallyExtended: Cooldown is drastically extended without an Artificer armor set or an ability accessory equipped
+			}
+		
+		}
+
 		Buffs: {
 			BewitchedBulwarkBuff: {
 				DisplayName: Warding Bulwark

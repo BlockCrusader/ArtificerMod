@@ -8,6 +8,8 @@ using ArtificerMod.Content.Items.AbilityAccPH;
 using System;
 using Terraria.Audio;
 using System.Linq;
+using Terraria.Localization;
+using Humanizer;
 
 namespace ArtificerMod.Common
 {
@@ -73,7 +75,7 @@ namespace ArtificerMod.Common
                && KeybindSystem.AbilityExtraHotkey.GetAssignedKeys().Count == 0)
             {
                 tooltips.Insert(index, new TooltipLine(Mod, "hotkeyTip",
-                    "WARNING: No hotkey set for abilities! Assign one in the 'Controls' section of the settings menu!")
+                Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.HotkeySet"))
                 { OverrideColor = Color.Red });
             }
 
@@ -82,19 +84,19 @@ namespace ArtificerMod.Common
                 if (noArmorOrAbility)
                 {
                     tooltips.Insert(index, new TooltipLine(Mod, "penaltyTip",
-                    "Cooldown is drastically extended without an Artificer armor set or an ability accessory equipped")
+                    Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.Cooldown.DrasticallyExtended"))
                     { OverrideColor = new Color(190, 120, 120) });
                 }
                 else if (noAbility)
                 {
                     tooltips.Insert(index, new TooltipLine(Mod, "penaltyTip",
-                     "Cooldown is greatly extended without an ability accessory equipped")
+                    Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.Cooldown.GreatlyExtended"))
                     { OverrideColor = new Color(190, 120, 120) });
                 }
                 else
                 {
                     tooltips.Insert(index, new TooltipLine(Mod, "penaltyTip",
-                    "Cooldown is slightly extended without an Artificer armor set equipped")
+                    Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.Cooldown.SlightlyExtended"))
                     { OverrideColor = new Color(190, 120, 120) });
                 }
             }
@@ -104,18 +106,18 @@ namespace ArtificerMod.Common
             {
                 coolTimeColorHex = "[c/78be78:";
                 tooltips.Insert(index, new TooltipLine(Mod, "cooldownTime",
-                "Cooldown time: " + $"{coolTimeColorHex}{finalCooldown} seconds] (" + $"Base: {baseCooldown} sec)"));
+                Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.Cooldown.CooldowntimeColored").FormatWith(baseCooldown, finalCooldown)));
             }
             else if (negativeMods)
             {
                 coolTimeColorHex = "[c/be7878:";
                 tooltips.Insert(index, new TooltipLine(Mod, "cooldownTime",
-                "Cooldown time: " + $"{coolTimeColorHex}{finalCooldown} seconds] (" + $"Base: {baseCooldown} sec)"));
+                Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.Cooldown.CooldowntimeColored").FormatWith(baseCooldown, finalCooldown)));
             }
             else
             {
                 tooltips.Insert(index, new TooltipLine(Mod, "cooldownTime",
-                "Cooldown time: " + $"{finalCooldown} seconds (" + $"Base: {baseCooldown} sec)"));
+                Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.Cooldown.Cooldowntime").FormatWith(baseCooldown, finalCooldown)));
             }
 
             if (!HasFlavorText(item)) // Removes placeholder lines
