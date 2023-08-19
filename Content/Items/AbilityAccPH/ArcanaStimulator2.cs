@@ -3,12 +3,15 @@ using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using ArtificerMod.Common;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.AbilityAccPH
 {
 	public class ArcanaStimulator2 : ModItem
 	{
-		public override void SetStaticDefaults()
+        public static int ManaRestore2 = 2 * 30;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(ManaRestore2);
+        public override void SetStaticDefaults()
 		{
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
@@ -24,7 +27,6 @@ namespace ArtificerMod.Content.Items.AbilityAccPH
 
 		public override void UpdateAccessory(Player player, bool hideVisual)
 		{
-			
 			player.GetModPlayer<ArtificerPlayer>().manaStimType = 2;
 		}
 

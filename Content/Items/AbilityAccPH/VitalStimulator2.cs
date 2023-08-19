@@ -3,12 +3,15 @@ using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using ArtificerMod.Common;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.AbilityAccPH
 {
 	public class VitalStimulator2 : ModItem
 	{
-		public override void SetStaticDefaults()
+        public static int HealthRestore2 = 3 * 20;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(HealthRestore2);
+        public override void SetStaticDefaults()
 		{
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
