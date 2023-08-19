@@ -1,41 +1,15 @@
 Mods: {
 	ArtificerMod: {
 		CommonItemtooltip: {
-			HotkeySet: WARNING: No hotkey set for abilities! Assign one in the 'Controls' section of the settings menu!
-
-			Cooldown: {
-				CooldowntimeColored: Cooldown time: [c/78be78:{1} seconds] (Base: {0} sec)
-				Cooldowntime: Cooldown time: {1} seconds (Base: {0} sec)
+		    HotkeySet: "WARNING: No hotkey set for abilities! Assign one in the 'Controls' section of the settings menu!"
+		    Cooldown: {
+			    CooldowntimeColored: "Cooldown time: [c/78be78:{1} seconds] (Base: {0} sec)"
+			    Cooldowntime: "Cooldown time: {1} seconds (Base: {0} sec)"
 				SlightlyExtended: Cooldown is slightly extended without an Artificer armor set equipped
 				GreatlyExtended: Cooldown is greatly extended without an ability accessory equipped
 				DrasticallyExtended: Cooldown is drastically extended without an Artificer armor set or an ability accessory equipped
 			}
-
-			ForBuffs: {
-				RegeneratingHealth: Rapidly regenerating health
-				RegeneratingMana: Rapidly regenerating mana
-				Lucky: Lucky!
-				Unlucky: Unlucky...
-				IncreasedCriticalChance: Increased critical strike chance
-				DecreasedCriticalChance: Decreased critical strike chance
-				IncreasedDefense: Increased defense
-				DncreasedDefense: Dncreased defense
-				IncreasedDamage: Increased damage
-				DecreasedDamage: Decreased damage
-				DecreasedDamageTaken: Decreased damage taken
-				IncreasedDamageTaken: Increased damage taken
-			}
-
-			ForItems: {
-				ActivatedAbility: "Activated Ability: "
-				BrieflyLifeRegen: If a debuff is cured, you briefly gain rapid life regen
-				ManaSicknessInflicted: Mana sickness is inflicted for the duration of regeneration
-				PotionSicknessInflicted: Potion sickness is inflicted for the duration of regeneration
-				SlowlyRegeneratesLife: Slowly regenerates life
-				NoKnockback: Grants immunity to knockback
-				ArcanaStimulator: Restores {0} mana over 5 seconds
-				VitalStimulator: Restores {0} life over 5 seconds
-			}
+		
 		}
 
 		Buffs: {
@@ -51,22 +25,22 @@ Mods: {
 
 			HPStim3: {
 				DisplayName: Greater Vital Stimulation
-				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingHealth}"
+				Description: Rapidly regenerating health
 			}
 
 			HPStim4: {
 				DisplayName: Super Vital Stimulation
-				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingHealth}"
+				Description: Rapidly regenerating health
 			}
 
 			ManaStim3: {
 				DisplayName: Greater Arcana Stimulation
-				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingMana}"
+				Description: Rapidly regenerating mana
 			}
 
 			ManaStim4: {
 				DisplayName: Super Arcana Stimulation
-				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingMana}"
+				Description: Rapidly regenerating mana
 			}
 
 			PowerArmorBuff: {
@@ -81,12 +55,12 @@ Mods: {
 
 			HPStim1: {
 				DisplayName: Lesser Vital Stimulation
-				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingHealth}"
+				Description: Rapidly regenerating health
 			}
 
 			HPStim2: {
 				DisplayName: Vital Stimulation
-				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingHealth}"
+				Description: Rapidly regenerating health
 			}
 
 			LifeChargerBuff: {
@@ -101,12 +75,12 @@ Mods: {
 
 			ManaStim1: {
 				DisplayName: Lesser Arcana Stimulation
-				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingMana}"
+				Description: Rapidly regenerating mana
 			}
 
 			ManaStim2: {
 				DisplayName: Arcana Stimulation
-				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingMana}"
+				Description: Rapidly regenerating mana
 			}
 
 			RadarPing: {
@@ -315,103 +289,103 @@ Mods: {
 			}
 
 			CritBuff3: {
-				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
-				Description: "{$CommonItemtooltip.ForBuffs.IncreasedCriticalChance}"
+				DisplayName: Lucky!
+				Description: Increased critical strike chance
 			}
 
 			CritBuff2: {
-				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
-				Description: "{$CommonItemtooltip.ForBuffs.IncreasedCriticalChance}"
+				DisplayName: Lucky!
+				Description: Increased critical strike chance
 			}
 
 			CritBuff1: {
-				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
-				Description: "{$CommonItemtooltip.ForBuffs.IncreasedCriticalChance}"
+				DisplayName: Lucky!
+				Description: Increased critical strike chance
 			}
 
 			CritNerf1: {
-				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
-				Description: "{$CommonItemtooltip.ForBuffs.DecreasedCriticalChance}"
+				DisplayName: Unlucky...
+				Description: Decreased critical strike chance
 			}
 
 			CritNerf2: {
-				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
-				Description: "{$CommonItemtooltip.ForBuffs.IncreasedCriticalChance}"
+				DisplayName: Unlucky...
+				Description: Decreased critical strike chance
 			}
 
 			DefBuff1: {
-				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
-				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDefense}"
+				DisplayName: Lucky!
+				Description: Increased defense
 			}
 
 			DefBuff2: {
-				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
-				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDefense}"
+				DisplayName: Lucky!
+				Description: Increased defense
 			}
 
 			DefBuff3: {
-				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
-				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDefense}"
+				DisplayName: Lucky!
+				Description: Increased defense
 			}
 
 			DefNerf1: {
-				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
-				Description: "{$CommonItemtooltip.ForBuffs.DecreasedDefense}"
+				DisplayName: Unlucky...
+				Description: Decreased defense
 			}
 
 			DefNerf2: {
-				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
-				Description: "{$CommonItemtooltip.ForBuffs.DecreasedDefense}"
+				DisplayName: Unlucky...
+				Description: Decreased defense
 			}
 
 			DmgBuff1: {
-				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
-				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDamage}"
+				DisplayName: Lucky!
+				Description: Increased damage
 			}
 
 			DmgBuff2: {
-				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
-				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDamage}"
+				DisplayName: Lucky!
+				Description: Increased damage
 			}
 
 			DmgBuff3: {
-				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
-				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDamage}"
+				DisplayName: Lucky!
+				Description: Increased damage
 			}
 
 			DmgNerf1: {
-				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
-				Description: "{$CommonItemtooltip.ForBuffs.DecreasedDamage}"
+				DisplayName: Unlucky...
+				Description: Decreased damage
 			}
 
 			DmgNerf2: {
-				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
-				Description: "{$CommonItemtooltip.ForBuffs.DecreasedDamage}"
+				DisplayName: Unlucky...
+				Description: Decreased damage
 			}
 
 			DRBuff1: {
-				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
-				Description: "{$CommonItemtooltip.ForBuffs.DecreasedDamageTaken}"
+				DisplayName: Lucky!
+				Description: Decreased damage taken
 			}
 
 			DRBuff2: {
-				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
-				Description: "{$CommonItemtooltip.ForBuffs.DecreasedDamageTaken}"
+				DisplayName: Lucky!
+				Description: Decreased damage taken
 			}
 
 			DRBuff3: {
-				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
-				Description: "{$CommonItemtooltip.ForBuffs.DecreasedDamageTaken}"
+				DisplayName: Lucky!
+				Description: Decreased damage taken
 			}
 
 			DRNerf1: {
-				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
-				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDamageTaken}"
+				DisplayName: Unlucky...
+				Description: Increased damage taken
 			}
 
 			DRNerf2: {
-				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
-				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDamageTaken}"
+				DisplayName: Unlucky...
+				Description: Increased damage taken
 			}
 
 			BorealisBurn: {
@@ -436,8 +410,8 @@ Mods: {
 				Tooltip:
 					'''
 					Grants immunity to most debuffs
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Cures you of almost all debuffs not already covered
-					{$CommonItemtooltip.ForItems.BrieflyLifeRegen}
+					Activated Ability: Cures you of almost all debuffs not already covered
+					If a debuff is cured, you briefly gain rapid life regen
 					[placeholder]
 					'''
 			}
@@ -446,8 +420,8 @@ Mods: {
 				DisplayName: Arcana Stimulator Mk3
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.ArcanaStimulator}
-					{$CommonItemtooltip.ForItems.ManaSicknessInflicted}
+					Activated Ability: Restores 90 mana over 5 seconds
+					Mana sickness is inflicted for the duration of regeneration
 					[placeholder]
 					'''
 			}
@@ -456,8 +430,8 @@ Mods: {
 				DisplayName: Arcana Stimulator Mk4
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.ArcanaStimulator}
-					{$CommonItemtooltip.ForItems.ManaSicknessInflicted}
+					Activated Ability: Restores 120 mana over 5 seconds
+					Mana sickness is inflicted for the duration of regeneration
 					[placeholder]
 					'''
 			}
@@ -466,8 +440,8 @@ Mods: {
 				DisplayName: Bewitched Bulwark
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.NoKnockback}
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Summons a sentient shield at the cursor position
+					Grants immunity to knockback
+					Activated Ability: Summons a sentient shield at the cursor position
 					The shield creates an aura which increases player defense and damages and draws in enemies
 					The shield lasts for 10 seconds
 					[placeholder]
@@ -478,7 +452,7 @@ Mods: {
 				DisplayName: Discordant Jewel
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Teleports you to the position of the mouse
+					Activated Ability: Teleports you to the position of the mouse
 					'You mean... the chaos emeralds?'
 					'''
 			}
@@ -487,8 +461,8 @@ Mods: {
 				DisplayName: Cyborg's Core
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.SlowlyRegeneratesLife}
-					{$CommonItemtooltip.ForItems.ActivatedAbility}For 5 seconds, your movement speed is decreased, but you gain a massive boost to defense and life regeneration
+					Slowly regenerates life
+					Activated Ability: For 5 seconds, your movement speed is decreased, but you gain a massive boost to defense and life regeneration
 					'Nanomachines, son'
 					'''
 			}
@@ -497,7 +471,7 @@ Mods: {
 				DisplayName: First Prism
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Summons a crystal prism above you that fires a series of beams at nearby foes
+					Activated Ability: Summons a crystal prism above you that fires a series of beams at nearby foes
 					Fires up to twelve beams, each of which will randomly inherit melee, ranged, magic, or summon damage types
 					'The lost predecesor to a mythical prism of immense power...'
 					'''
@@ -507,7 +481,7 @@ Mods: {
 				DisplayName: Power Armor
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Outfits you in a set of enchanted power armor on top of your normal armor
+					Activated Ability: Outfits you in a set of enchanted power armor on top of your normal armor
 					The power armor lasts for 10 seconds and immensely reduces damage taken
 					'Futuristic armor meticulously forged to fold in on itself, and instantly unfold to protect the wearer upon activation'
 					'''
@@ -517,7 +491,7 @@ Mods: {
 				DisplayName: Prismatic Arcanum
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Unleashes a swarm of chromatic energy
+					Activated Ability: Unleashes a swarm of chromatic energy
 					[placeholder]
 					'''
 			}
@@ -526,7 +500,7 @@ Mods: {
 				DisplayName: Solar Blaster
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Fires a spread of super powerful energy beams
+					Activated Ability: Fires a spread of super powerful energy beams
 					[placeholder]
 					'''
 			}
@@ -535,7 +509,7 @@ Mods: {
 				DisplayName: Starwriter
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Creates a star which preserves your position, health, and mana at the time of creation
+					Activated Ability: Creates a star which preserves your position, health, and mana at the time of creation
 					Using this ability again will restore you to the position and status saved by the star
 					This process inflicts potion and mana sickness, and removes the current star
 					'The galaxy shall remember your name'
@@ -546,8 +520,8 @@ Mods: {
 				DisplayName: Vital Stimulator Mk3
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.VitalStimulator}
-					{$CommonItemtooltip.ForItems.PotionSicknessInflicted}
+					Activated Ability: Restores 80 life over 10 seconds
+					Potion sickness is inflicted for the duration of regeneration
 					[placeholder]
 					'''
 			}
@@ -556,8 +530,8 @@ Mods: {
 				DisplayName: Vital Stimulator Mk4
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.VitalStimulator}
-					{$CommonItemtooltip.ForItems.PotionSicknessInflicted}
+					Activated Ability: Restores 100 life over 10 seconds
+					Potion sickness is inflicted for the duration of regeneration
 					[placeholder]
 					'''
 			}
@@ -566,8 +540,8 @@ Mods: {
 				DisplayName: Arcana Stimulator
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.ArcanaStimulator}
-					{$CommonItemtooltip.ForItems.ManaSicknessInflicted}
+					Activated Ability: Restores 30 mana over 5 seconds
+					Mana sickness is inflicted for the duration of regeneration
 					[placeholder]
 					'''
 			}
@@ -576,8 +550,8 @@ Mods: {
 				DisplayName: Arcana Stimulator Mk2
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.ArcanaStimulator}
-					{$CommonItemtooltip.ForItems.ManaSicknessInflicted}
+					Activated Ability: Restores 60 mana over 5 seconds
+					Mana sickness is inflicted for the duration of regeneration
 					[placeholder]
 					'''
 			}
@@ -586,7 +560,7 @@ Mods: {
 				DisplayName: Artificer's Armor
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Outfits you in a set of enchanted armor on top of your normal armor
+					Activated Ability: Outfits you in a set of enchanted armor on top of your normal armor
 					The enchanted armor lasts for 10 seconds and greatly reduces damage taken
 					'Legendary armor meticulously forged to fold in on itself, and instantly unfold to protect the wearer upon activation'
 					'''
@@ -596,8 +570,8 @@ Mods: {
 				DisplayName: Cleanser
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Cures you of the Poisoned, Acid Venom, On Fire!, Frostburn, Shadowflame, and Cursed Inferno debuffs
-					{$CommonItemtooltip.ForItems.BrieflyLifeRegen}
+					Activated Ability: Cures you of the Poisoned, Acid Venom, On Fire!, Frostburn, Shadowflame, and Cursed Inferno debuffs
+					If a debuff is cured, you very briefly gain rapid life regen
 					[placeholder]
 					'''
 			}
@@ -606,8 +580,8 @@ Mods: {
 				DisplayName: Curer
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Cures you of the Poisoned and Acid Venom debuffs
-					{$CommonItemtooltip.ForItems.BrieflyLifeRegen}
+					Activated Ability: Cures you of the Poisoned and Acid Venom debuffs
+					If a debuff is cured, you very briefly gain rapid life regen
 					[placeholder]
 					'''
 			}
@@ -616,8 +590,8 @@ Mods: {
 				DisplayName: Douser
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Cures you of the On Fire!, Frostburn, Shadowflame, and Cursed Inferno debuffs
-					{$CommonItemtooltip.ForItems.BrieflyLifeRegen}
+					Activated Ability: Cures you of the On Fire!, Frostburn, Shadowflame, and Cursed Inferno debuffs
+					If a debuff is cured, you very briefly gain rapid life regen
 					'Kinda like strapping a fire extinguisher to your back!'
 					'''
 			}
@@ -626,7 +600,7 @@ Mods: {
 				DisplayName: Life Charger
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Restores 100 life after charging for 10 seconds
+					Activated Ability: Restores 100 life after charging for 10 seconds
 					Taking damage will disrupt the charging process, ending it without restoring life
 					[placeholder]
 					'''
@@ -636,7 +610,7 @@ Mods: {
 				DisplayName: Mana Charger
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Restores 150 mana after charging for 10 seconds
+					Activated Ability: Restores 150 mana after charging for 10 seconds
 					Taking damage will disrupt the charging process, ending it without restoring mana
 					[placeholder]
 					'''
@@ -646,7 +620,7 @@ Mods: {
 				DisplayName: Overcharged Arcanum
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Unleashes a swarm of magic missiles
+					Activated Ability: Unleashes a swarm of magic missiles
 					[placeholder]
 					'''
 			}
@@ -655,7 +629,7 @@ Mods: {
 				DisplayName: Retribution Stoker
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Increases your damage and critical strike chance for 15 seconds
+					Activated Ability: Increases your damage and critical strike chance for 15 seconds
 					Taking damage before using the ability will gradually empower the stat boosts granted the next time it is used
 					'Smite your enemies with a burning revengance!'
 					'''
@@ -665,7 +639,7 @@ Mods: {
 				DisplayName: Starplate Blaster
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Fires a powerful energy beam
+					Activated Ability: Fires a powerful energy beam
 					[placeholder]
 					'''
 			}
@@ -674,8 +648,8 @@ Mods: {
 				DisplayName: Vital Stimulator
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.VitalStimulator}
-					{$CommonItemtooltip.ForItems.PotionSicknessInflicted}
+					Activated Ability: Restores 40 life over 10 seconds
+					Potion sickness is inflicted for the duration of regeneration
 					[placeholder]
 					'''
 			}
@@ -684,8 +658,8 @@ Mods: {
 				DisplayName: Vital Stimulator Mk2
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.VitalStimulator}
-					{$CommonItemtooltip.ForItems.PotionSicknessInflicted}
+					Activated Ability: Restores 60 life over 10 seconds
+					Potion sickness is inflicted for the duration of regeneration
 					[placeholder]
 					'''
 			}
@@ -695,7 +669,7 @@ Mods: {
 				Tooltip:
 					'''
 					Detects enemies around you
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Creates a pulse of light that reveals both hostiles and friendlies in the proximity
+					Activated Ability: Creates a pulse of light that reveals both hostiles and friendlies in the proximity
 					Revealed entities will emit light for 30 seconds
 					'Nobody can hide from you'
 					'''
@@ -705,8 +679,8 @@ Mods: {
 				DisplayName: Lost Hero's Shield
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.NoKnockback}
-					{$CommonItemtooltip.ForItems.ActivatedAbility}For one second, you will block an incoming attack. Parried attacks damage the attacker and amplify your next melee strike
+					Grants immunity to knockback
+					Activated Ability: For one second, you will block an incoming attack. Parried attacks damage the attacker and amplify your next melee strike
 					'Though long tarnished and decayed, it still holds much of its former power'
 					'''
 			}
@@ -716,7 +690,7 @@ Mods: {
 				Tooltip:
 					'''
 					Shoots metallic crossbones at enemies while you are attacking
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Energizes the crossbones for five seconds, grealty increasing their fire rate, velocity, and damage
+					Activated Ability: Energizes the crossbones for five seconds, grealty increasing their fire rate, velocity, and damage
 					[placeholder]
 					'''
 			}
@@ -727,7 +701,7 @@ Mods: {
 					'''
 					Increases jump speed and allows auto-jump
 					Increases fall resistance
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Perform an extremely powerful jump, quickly launching yourself into the air
+					Activated Ability: Perform an extremely powerful jump, quickly launching yourself into the air
 					Fall resistance is boosted even more during the jump and shortly afterwards
 					[placeholder]
 					'''
@@ -739,7 +713,7 @@ Mods: {
 					'''
 					The wearer can run super fast
 					Increases jump speed and fall resistance, and allows auto-jump
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Greatly increases run and jump speed, and acceleration for 5 seconds
+					Activated Ability: Greatly increases run and jump speed, and acceleration for 5 seconds
 					'Maximum overdrive!'
 					'''
 			}
@@ -749,7 +723,7 @@ Mods: {
 				Tooltip:
 					'''
 					The wearer can run super fast
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Greatly increases running speed and acceleration for 5 seconds
+					Activated Ability: Greatly increases running speed and acceleration for 5 seconds
 					'Running around at the speed of sound!'
 					'''
 			}
@@ -762,7 +736,7 @@ Mods: {
 					Increases jump speed and fall resistance, and allows auto-jump
 					Adds an electric charge to your attacks, causing them to occasionally shock enemies
 					Enables auto swing for melee weapons and whips, and increases their speed by 15%
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Greatly increases run, jump, melee, and whip speed, and acceleration for 10 seconds
+					Activated Ability: Greatly increases run, jump, melee, and whip speed, and acceleration for 10 seconds
 					'Faster, stronger, better'
 					'''
 			}
@@ -773,7 +747,7 @@ Mods: {
 					'''
 					Adds an electric charge to your attacks, causing them to occasionally shock enemies
 					Enables auto swing for melee weapons and whips, and increases their speed by 15%
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Greatly increases melee and whip speed for 10 seconds
+					Activated Ability: Greatly increases melee and whip speed for 10 seconds
 					'Turbo Charge activated!'
 					'''
 			}
@@ -782,7 +756,7 @@ Mods: {
 				DisplayName: Hidden Blade
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Shoots a fast, medium-ranged needle
+					Activated Ability: Shoots a fast, medium-ranged needle
 					[placeholder]
 					'''
 			}
@@ -791,7 +765,7 @@ Mods: {
 				DisplayName: Assassin's Needles
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Fires a barrage of fast, short-ranged needles
+					Activated Ability: Fires a barrage of fast, short-ranged needles
 					[placeholder]
 					'''
 			}
@@ -800,7 +774,7 @@ Mods: {
 				DisplayName: Needle Barrage
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Unleashes a rapid barrage of many fast, short-ranged needles
+					Activated Ability: Unleashes a rapid barrage of many fast, short-ranged needles
 					'Death by a thousand needles...'
 					'''
 			}
@@ -809,7 +783,7 @@ Mods: {
 				DisplayName: Repulse Charge
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Drops an explosive projectile with powerful knockback that releases shockwaves to both sides upon impact
+					Activated Ability: Drops an explosive projectile with powerful knockback that releases shockwaves to both sides upon impact
 					'Get some personal space'
 					'''
 			}
@@ -818,7 +792,7 @@ Mods: {
 				DisplayName: Repulsion Rocket
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Fires an explosive projectile with powerful knockback
+					Activated Ability: Fires an explosive projectile with powerful knockback
 					Has incredibly high recoil, launching the user in the direction opposite of fire
 					'Screaming eagles!'
 					'''
@@ -829,7 +803,7 @@ Mods: {
 				Tooltip:
 					'''
 					Enemies are less likely to target you
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Enemies become even less likely to target you for 10 seconds
+					Activated Ability: Enemies become even less likely to target you for 10 seconds
 					Inflicting damage during this period of time will cause the strike's damage to be multiplied by 5, ending the ability's effects in the process
 					[placeholder]
 					'''
@@ -841,7 +815,7 @@ Mods: {
 					'''
 					Enemies are more likely to target you
 					5% increased critical strike chance
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Enemies become even more likely to target you for 10 seconds
+					Activated Ability: Enemies become even more likely to target you for 10 seconds
 					Also taunts nearby enemies, causing their contact damage to increase, but also increasing the damage they take
 					'Swag Messiah!'
 					'''
@@ -852,7 +826,7 @@ Mods: {
 				Tooltip:
 					'''
 					Enemies are more likely to target you
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Enemies become even more likely to target you for 10 seconds
+					Activated Ability: Enemies become even more likely to target you for 10 seconds
 					[placeholder]
 					'''
 			}
@@ -862,7 +836,7 @@ Mods: {
 				Tooltip:
 					'''
 					Enemies are less likely to target you
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Enemies become even less likely to target you for 10 seconds
+					Activated Ability: Enemies become even less likely to target you for 10 seconds
 					[placeholder]
 					'''
 			}
@@ -871,7 +845,7 @@ Mods: {
 				DisplayName: Ornate Ring
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Creates a sparkling flash, confusing enemies and increasing player life and mana regen for 5 seconds
+					Activated Ability: Creates a sparkling flash, confusing enemies and increasing player life and mana regen for 5 seconds
 					[placeholder]
 					'''
 			}
@@ -881,7 +855,7 @@ Mods: {
 				Tooltip:
 					'''
 					Attackers take damage on contact
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Grants +4 defense and an improved thorns effect for 10 seconds
+					Activated Ability: Grants +4 defense and an improved thorns effect for 10 seconds
 					'Despite the rust, its spikes easily deploy, retract, and - most importantly - pierce'
 					'''
 			}
@@ -890,7 +864,7 @@ Mods: {
 				DisplayName: Dark Leech
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Launches a tether that will attach to enemies, draining life for up to 10 seconds
+					Activated Ability: Launches a tether that will attach to enemies, draining life for up to 10 seconds
 					Leeched life is used to heal the player with the lowest health
 					[placeholder]
 					'''
@@ -900,7 +874,7 @@ Mods: {
 				DisplayName: Leeching Tether
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Launches a tether that will attach to enemies, draining life for up to 10 seconds
+					Activated Ability: Launches a tether that will attach to enemies, draining life for up to 10 seconds
 					Leeched life is used to heal the player with the lowest health
 					[placeholder]
 					'''
@@ -910,7 +884,7 @@ Mods: {
 				DisplayName: Lifeline
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Launches a tether that will attach to enemies, rapidly draining life for up to 10 seconds
+					Activated Ability: Launches a tether that will attach to enemies, rapidly draining life for up to 10 seconds
 					Leeched life is used to heal the player with the lowest health
 					'Lifeforce draining technologies at their finest; now with 5G transfer speeds!'
 					'''
@@ -920,7 +894,7 @@ Mods: {
 				DisplayName: Necrotic Harvester
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Unleashes a massive, necrotic explosion, damaging all enemies caught in the blast
+					Activated Ability: Unleashes a massive, necrotic explosion, damaging all enemies caught in the blast
 					Dealing damage to enemies before triggering the blast will gradually build up extra power, boosting the next explosion's damage and knockback
 					'A hexxed lantern, tampered with to achieve even more dangerous ends...'
 					'''
@@ -930,7 +904,7 @@ Mods: {
 				DisplayName: Probe Pack
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Creates three probes that will orbit and defend you for 25 seconds
+					Activated Ability: Creates three probes that will orbit and defend you for 25 seconds
 					[placeholder]
 					'''
 			}
@@ -939,7 +913,7 @@ Mods: {
 				DisplayName: Soul Emulator
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Buffs all nearby players for 5 seconds
+					Activated Ability: Buffs all nearby players for 5 seconds
 					The buff granted cycles between 3 states with different effects per use; Fright, Sight, and Might
 					Any buffed player with a Soul Emulator - including the user - gains the buff for 10 seconds instead of 5
 					Additionally, the buff their Emulator will provide is cycled forward
@@ -951,7 +925,7 @@ Mods: {
 				DisplayName: Obliteration Core
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Charges and fires a devastating deathray in the direction the you are facing
+					Activated Ability: Charges and fires a devastating deathray in the direction the you are facing
 					While firing, you move slower and cannot use other items
 					'Yo!'
 					'''
@@ -961,7 +935,7 @@ Mods: {
 				DisplayName: Missile Array
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Launches a barrage of missiles that seek out and destroy nearby enemies
+					Activated Ability: Launches a barrage of missiles that seek out and destroy nearby enemies
 					[placeholder]
 					'''
 			}
@@ -970,7 +944,7 @@ Mods: {
 				DisplayName: Fear Reaper
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Manifests a pair of pumpking scythes that will spin around you for 15 seconds
+					Activated Ability: Manifests a pair of pumpking scythes that will spin around you for 15 seconds
 					While the scythes are active, you take 10% less damage
 					When the scythes inflict damage, this reduction slightly increases, up to a max of 25% less damage
 					[placeholder]
@@ -981,7 +955,7 @@ Mods: {
 				DisplayName: Foreboding Charm
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Triggers a random, offensive ability to an unpredictable effect...
+					Activated Ability: Triggers a random, offensive ability to an unpredictable effect...
 					'Though it appears sinister in nature, it is said to bestow supernatural luck upon its holder'
 					'''
 			}
@@ -990,7 +964,7 @@ Mods: {
 				DisplayName: Lucky Present
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Applies a random effect upon you, which may benefical or detrimental...
+					Activated Ability: Applies a random effect upon you, which may benefical or detrimental...
 					'What am I gonna get? I wonder what I'm gonna get?'
 					'''
 			}
@@ -1000,7 +974,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increases damage and critical strike chance by 4% while abilities are on cooldown
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Charges up an extremely powerful Star Beam over 10 seconds
+					Activated Ability: Charges up an extremely powerful Star Beam over 10 seconds
 					While charging, you take 10% less damage
 					Once charged, the Star Beam will seek out the strongest enemy and cause a devastating, localized supernova
 					'Wish upon the stars; they will answer'
@@ -1011,7 +985,7 @@ Mods: {
 				DisplayName: Moonbite Mark
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Manifests a torrent of ascended vampire knives that will steal the life of enemies they hit
+					Activated Ability: Manifests a torrent of ascended vampire knives that will steal the life of enemies they hit
 					If you already have full HP, the knives may heal the player with lowest health
 					'Dedicated to Jason 'Lienfors' Parker'
 					'Motrality is temporary; impact is timeless'
@@ -1022,7 +996,7 @@ Mods: {
 				DisplayName: Starlight Armillary
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Creates a localized aurora borealis which briefly veils you from all attacks
+					Activated Ability: Creates a localized aurora borealis which briefly veils you from all attacks
 					Players near the aurora - including the user - will have their survivability increased temporarily
 					Enemies near the aurora become confused and take extra damage for a short time
 					'Its effervescent, celestial power seems to be remnant of inverted arcana...'
@@ -1033,7 +1007,7 @@ Mods: {
 				DisplayName: Moonfall
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Call in an orbital strike, firing down a massive laser from above
+					Activated Ability: Call in an orbital strike, firing down a massive laser from above
 					The laser will last for 15 seconds, and slowly follows the cursor
 					'Here comes the moon, doo doo doo doo...'
 					'''
@@ -1474,7 +1448,7 @@ Mods: {
 				Tooltip:
 					'''
 					2% increased critical strike chance
-					{$CommonItemtooltip.ForItems.SlowlyRegeneratesLife}
+					Slowly regenerates life
 					Increases maximum life by 20
 					Critical hits occasionally boost life regeneration briefly
 					'''
@@ -1484,7 +1458,7 @@ Mods: {
 				DisplayName: Lifeforce Band
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.SlowlyRegeneratesLife}
+					Slowly regenerates life
 					Increases maximum life by 20
 					'''
 			}
@@ -1499,7 +1473,7 @@ Mods: {
 				Tooltip:
 					'''
 					2% increased critical strike chance
-					{$CommonItemtooltip.ForItems.SlowlyRegeneratesLife}
+					Slowly regenerates life
 					Increases maximum life by 20
 					Slightly increases pickup range for life hearts
 					Defeating enemies or landing critical hits occasionally generates a mini-heart
@@ -1804,7 +1778,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increases damage by 15% when below 25% life
-					{$CommonItemtooltip.ForItems.NoKnockback}
+					Grants immunity to knockback
 					Enemies are less likely to target you
 					'Not all follow the path of righteousness unwaveringly...'
 					'''
@@ -1858,7 +1832,7 @@ Mods: {
 				DisplayName: Terra Shield
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.NoKnockback}
+					Grants immunity to knockback
 					Grants immunity to most debuffs
 					Above 25% life, nearby allies are protected from dying. Below 25% life, only you are protected
 					Protected players who take fatal damage are instead left with 1 HP
@@ -1871,7 +1845,7 @@ Mods: {
 				DisplayName: Twin Shield
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.NoKnockback}
+					Grants immunity to knockback
 					Occasionally fires lasers at enemies in front of you
 					Allows the player to dash into the enemy
 					Double tap a direction
