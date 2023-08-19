@@ -27,8 +27,7 @@ namespace ArtificerMod.Content.Items.AbilityAccH
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual)
-		{
-			
+		{	
 			player.GetModPlayer<ArtificerPlayer>().hpStimType = 4;
 		}
 

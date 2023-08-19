@@ -2784,22 +2784,22 @@ namespace ArtificerMod.Common
                 if (manaStim > 0)
                 {
                     int manaRate = 0;
-                    if (manaStim == 1)
+                    if (healthStim == 1)
                     {
                         manaRate = 1;
                         stimTimerM = 10;
                     }
-                    else if (manaStim == 2)
+                    else if (healthStim == 2)
                     {
                         manaRate = 2;
                         stimTimerM = 10;
                     }
-                    else if (manaStim == 3)
+                    else if (healthStim == 3)
                     {
                         manaRate = 3;
                         stimTimerM = 10;
                     }
-                    else if (manaStim == 4)
+                    else if (healthStim == 4)
                     {
                         manaRate = 4;
                         stimTimerM = 10;
