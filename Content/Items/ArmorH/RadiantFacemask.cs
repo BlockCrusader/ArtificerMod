@@ -5,12 +5,18 @@ using Terraria.GameContent.Creative;
 using ArtificerMod.Common;
 using ArtificerMod.Content.Glowmasks;
 using Microsoft.Xna.Framework.Graphics;
+using Terraria.Localization;
+using Humanizer;
 
 namespace ArtificerMod.Content.Items.ArmorH
 {
 	[AutoloadEquip(EquipType.Head)]
 	public class RadiantFacemask : ModItem
 	{
+		public static int IncreasedDmgCritChance = 2;
+		public static int MaxMinion = 1;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedDmgCritChance, MaxMinion);
+
 		public override void SetStaticDefaults()
 		{
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
@@ -56,11 +62,7 @@ namespace ArtificerMod.Content.Items.ArmorH
 				bonusTrigger = "UP";
 			}
 
-			player.setBonus = "+1 Artificer Accessory Slot" +
-				"\nSummons a mystical crystal that channels melee, ranged, magic, or summon damage" +
-				"\nYou and other nearby players gain a power boost in the channeled damage type" +
-				"\nPlayers with their own crystal, including you, recieve increased benefit from this effect" +
-				$"\nDouble tap {bonusTrigger} to cycle your crystal's damage type"; 
+			player.setBonus = Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.Armorset.Radiant").FormatWith(bonusTrigger); 
 			player.GetModPlayer<ArtificerPlayer>().prismSetBonus = true;
 		}
 

@@ -5,12 +5,17 @@ using Terraria.GameContent.Creative;
 using ArtificerMod.Common;
 using ArtificerMod.Content.Glowmasks;
 using Microsoft.Xna.Framework.Graphics;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.ArmorPH
 {
 	[AutoloadEquip(EquipType.Head)]
 	public class TechHeadgear : ModItem
 	{
+		public static int IncreasedMaxMana = 20;
+		public static int IncreasedDmg = 1;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedMaxMana, IncreasedDmg);
+
 		public override void SetStaticDefaults() {
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 			ArmorIDs.Head.Sets.DrawFullHair[Item.headSlot] = true; 
@@ -47,9 +52,7 @@ namespace ArtificerMod.Content.Items.ArmorPH
 
 		public override void UpdateArmorSet(Player player)
 		{
-			player.setBonus = "+1 Artificer Accessory Slot" +
-                "\nAbility Accessory cooldowns are no longer extended" +
-				"\n17% reduced Ability Accessory cooldowns"; 
+			player.setBonus = Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.Armorset.Tech"); 
 			player.GetModPlayer<ArtificerPlayer>().techSetBonus = true;
 		}
 	}

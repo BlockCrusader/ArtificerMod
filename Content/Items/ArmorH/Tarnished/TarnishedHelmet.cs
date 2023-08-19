@@ -6,12 +6,17 @@ using ArtificerMod.Common;
 using ArtificerMod.Content.Glowmasks;
 using Microsoft.Xna.Framework.Graphics;
 using ArtificerMod.Content.Buffs.ArmorH;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.ArmorH.Tarnished
 {
 	[AutoloadEquip(EquipType.Head)]
 	public class TarnishedHelmet : ModItem
 	{
+		public static int IncreasedDmgCritChance = 3;
+		public static int ChanceSaveAmmo = 5;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedDmgCritChance, ChanceSaveAmmo);
+
 		public override void SetStaticDefaults() {
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
@@ -49,10 +54,7 @@ namespace ArtificerMod.Content.Items.ArmorH.Tarnished
 
 		public override void UpdateArmorSet(Player player)
 		{
-			player.setBonus = "+1 Artificer Accessory Slot" +
-				"\nAbility Accessory cooldowns are no longer extended" +
-				"\nIf you take fatal damage, protective souls will instantly restore you to 100 health" +
-				"\nThis revival effect has a 5 minute cooldown";
+			player.setBonus = Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.Armorset.Tarnished");
 			player.GetModPlayer<ArtificerPlayer>().tarnishedSetBonus = true;
 		}
 

@@ -4,12 +4,17 @@ using Terraria.GameContent.Creative;
 using Terraria.ID;
 using ArtificerMod.Content.Glowmasks;
 using Microsoft.Xna.Framework.Graphics;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.ArmorH
 {
 	[AutoloadEquip(EquipType.Legs)]
 	public class RadiantLeggings : ModItem
 	{
+		public static int IncreasedDmgCritChance = 3;
+		public static int IncreasedMovementSpeed = 5;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedDmgCritChance, IncreasedMovementSpeed);
+
 		public override void SetStaticDefaults() {
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 

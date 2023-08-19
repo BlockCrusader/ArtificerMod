@@ -5,12 +5,18 @@ using ArtificerMod.Content.Items.Others;
 using Terraria.ID;
 using ArtificerMod.Content.Glowmasks;
 using Microsoft.Xna.Framework.Graphics;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.ArmorH
 {
 	[AutoloadEquip(EquipType.Legs)]
 	public class XenoLeggings : ModItem
 	{
+		public static int IncreasedDmg = 3;
+		public static int IncreasedCritChance = 5;
+		public static int IncreasedMovementSpeed = 8;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedDmg, IncreasedCritChance, IncreasedMovementSpeed);
+
 		public override void SetStaticDefaults() {
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 

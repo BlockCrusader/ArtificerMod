@@ -4,11 +4,16 @@ using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using ArtificerMod.Content.Items.Others;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.AccessoriesH
 {
 	public class SolarEmblem : ModItem
 	{
+		public static int IncreasedMeleeDamage = 16;
+		public static int IncreasedMeleeSpeed = 5;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedMeleeDamage, IncreasedMeleeSpeed);
+
 		public override void SetStaticDefaults()
 		{
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;

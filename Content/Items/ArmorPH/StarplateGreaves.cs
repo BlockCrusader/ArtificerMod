@@ -6,12 +6,16 @@ using ArtificerMod.Content.Items.Others;
 using Terraria.ID;
 using Microsoft.Xna.Framework.Graphics;
 using ArtificerMod.Content.Glowmasks;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.ArmorPH
 {
 	[AutoloadEquip(EquipType.Legs)]
 	public class StarplateGreaves : ModItem
 	{
+		public static int IncreasedDmgCritChance = 1;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedDmgCritChance);
+
 		public override void SetStaticDefaults() {
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 

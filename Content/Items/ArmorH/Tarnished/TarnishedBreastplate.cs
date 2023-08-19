@@ -4,12 +4,17 @@ using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.ArmorH.Tarnished
 {
 	[AutoloadEquip(EquipType.Body)]
 	public class TarnishedBreastplate : ModItem
 	{
+		public static int IncreasedCritChance = 4;
+		public static int MaxMinion = 1;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedCritChance, MaxMinion);
+
 		public override void SetStaticDefaults()
 		{
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;

@@ -9,12 +9,18 @@ using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.ArmorH
 {
 	[AutoloadEquip(EquipType.Body)]
 	public class ChampionsCuirass : ModItem
 	{
+		public static int IncreasedMaxMana = 20;
+		public static int IncreasedDmgCritChance = 3;
+		public static int MaxMinion = 1;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedMaxMana, IncreasedDmgCritChance, MaxMinion);
+
 		private int cape = -1;
 
 		public override void Load()

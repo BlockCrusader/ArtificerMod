@@ -2,11 +2,16 @@ using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Terraria.ID;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.AccessoriesH
 {
 	public class DarkmoonPact : ModItem
 	{
+		public static int IncreasedDmg = 15;
+		public static int IncreasedCritChance = 10;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedDmg, IncreasedCritChance);
+
 		public override void SetStaticDefaults()
 		{
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;

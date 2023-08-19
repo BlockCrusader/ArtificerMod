@@ -4,12 +4,18 @@ using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Microsoft.Xna.Framework.Graphics;
 using ArtificerMod.Content.Glowmasks;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.ArmorH
 {
 	[AutoloadEquip(EquipType.Legs)]
 	public class LihzahrdGreaves : ModItem
 	{
+		public static int IncreasedDmg = 6;
+		public static int IncreasedCritChance = 3;
+		public static int IncreasedMovementSpeed = 10;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedDmg, IncreasedCritChance, IncreasedMovementSpeed);
+
 		public override void SetStaticDefaults() {
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 

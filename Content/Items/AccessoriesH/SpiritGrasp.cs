@@ -2,6 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.AccessoriesH
 {
@@ -12,6 +13,11 @@ namespace ArtificerMod.Content.Items.AccessoriesH
 	})]
 	public class SpiritGrasp : ModItem
 	{
+		public static int IncreasedSummonDamage = 15;
+		public static int IncreasedWhipSpeed = 12;
+		public static int IncreasedWhipRange = 25;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedSummonDamage, IncreasedWhipSpeed, IncreasedWhipRange);
+
 		public override void SetStaticDefaults()
 		{
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;

@@ -4,11 +4,16 @@ using Terraria.ModLoader;
 using ArtificerMod.Common;
 using ArtificerMod.Content.Items.AccessoriesPH;
 using Terraria.ID;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.AccessoriesH
 {
 	public class ArtificerEmblem : ModItem
 	{
+		public static int IncreasedDmg = 5;
+		public static int Cooldown = 17;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedDmg, Cooldown);
+
 		public override void SetStaticDefaults()
 		{
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;

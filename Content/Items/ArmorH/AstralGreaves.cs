@@ -6,12 +6,18 @@ using ArtificerMod.Content.Items.Others;
 using Terraria.ID;
 using ArtificerMod.Content.Glowmasks;
 using Microsoft.Xna.Framework.Graphics;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.ArmorH
 {
 	[AutoloadEquip(EquipType.Legs)]
 	public class AstralGreaves : ModItem
 	{
+		public static int IncreasedMaxMana = 20;
+		public static int IncreasedDmgCritChance = 4;
+		public static int IncreasedMovementSpeed = 12;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedMaxMana, IncreasedDmgCritChance, IncreasedMovementSpeed);
+
 		public override void SetStaticDefaults() {
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 

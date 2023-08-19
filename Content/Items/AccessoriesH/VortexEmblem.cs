@@ -4,11 +4,16 @@ using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using ArtificerMod.Content.Items.Others;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.AccessoriesH
 {
 	public class VortexEmblem : ModItem
 	{
+		public static int IncreasedRangedDamage = 16;
+		public static int IncreasedRangedCritChance = 5;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedRangedDamage, IncreasedRangedCritChance);
+
 		public override void SetStaticDefaults()
 		{
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;

@@ -6,12 +6,16 @@ using Microsoft.Xna.Framework;
 using ArtificerMod.Common;
 using ArtificerMod.Content.Items.Others;
 using System.Collections.Generic;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.ArmorPH
 {
 	[AutoloadEquip(EquipType.Head)]
 	public class OrnateHelmet : ModItem
 	{
+		public static int IncreasedCritChance = 2;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedCritChance);
+
 		public override void SetStaticDefaults() {
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
@@ -37,9 +41,7 @@ namespace ArtificerMod.Content.Items.ArmorPH
 
 		public override void UpdateArmorSet(Player player)
 		{
-			player.setBonus = "+1 Artificer Accessory Slot" +
-                "\nAbility Accessory cooldowns are no longer extended" +
-				"\n2 defense"; 
+			player.setBonus = Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.Armorset.Ornate"); 
 			player.GetModPlayer<ArtificerPlayer>().ornateSetBonus = true;
 			player.statDefense += 2;
 		}

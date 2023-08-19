@@ -35,6 +35,87 @@ Mods: {
 				NoKnockback: Grants immunity to knockback
 				ArcanaStimulator: Restores {0} mana over 5 seconds
 				VitalStimulator: Restores {0} life over 5 seconds
+				LeechedLifeHeal:
+					'''
+					Launches a tether that will attach to enemies, draining life for up to 10 seconds
+					Leeched life is used to heal the player with the lowest health
+					'''
+				ReducedAbilityCooldown: "{0}% reduced Ability Accessory cooldowns"
+				PercentIncreasedWhipSpeed: "{0}% increased whip speed"
+				PercentIncreasedWhipRange: "{0}% increased whip range"
+				Target: Enemies are slightly more likely to target you
+			}
+
+			Armorset: {
+				AstralNova:
+					'''
+					+3 Artificer Accessory Slots
+					25% reduced Ability Accessory cooldowns
+					Activating accessory abilities unleashes a surge of energy, increasing your offensive and defensive capabilities while on cooldown
+					'''
+				Champions:
+					'''
+					+2 Artificer Accessory Slots
+					Terraria itself grants you increased damage or increased survivability, based on your health
+					'''
+
+				Lihzahrd: {
+					Target: Enemies are slightly more likely to target you
+					SetBonus:
+						'''
+						+2 Artificer Accessory Slots
+						When attacked, you may unleash retailitory energy beams and gain a brief damage boost
+						Enemies are slightly more likely to target you
+						'''
+				}
+
+				Mechanical:
+					'''
+					+2 Artificer Accessory Slots
+					20% reduced Ability Accessory cooldowns
+					Critical hits may briefly inflict enemies with a shock
+					Shocked enemies deal less contact damage and take more damage
+					'''
+				Radiant:
+					'''
+					+1 Artificer Accessory Slots
+					Summons a mystical crystal that channels melee, ranged, magic, or summon damage
+					You and other nearby players gain a power boost in the channeled damage type
+					Players with their own crystal, including you, recieve increased benefit from this effect
+					Double tap {0} to cycle your crystal's damage type
+					'''
+				Tarnished:
+					'''
+					+1 Artificer Accessory Slots
+					Ability Accessory cooldowns are no longer extended
+					If you take fatal damage, protective souls will instantly restore you to 100 health
+					This revival effect has a 5 minute cooldown
+					'''
+				Xeno:
+					'''
+					+2 Artificer Accessory Slots
+					Over time, your armor will charge a temporarily energy shield that can absorb some damage
+					'''
+				Ornate:
+					'''
+					+1 Artificer Accessory Slots
+					Ability Accessory cooldowns are no longer extended
+					2 defense
+					'''
+				Starplate:
+					'''
+					+1 Artificer Accessory Slots
+					Ability Accessory cooldowns are no longer extended
+					You gain a small stat boost based on the time of day:
+					At day damage and movement speed are increased
+					At night defense and life regeneration are increased
+					'''
+				Tech:
+					'''
+					+1 Artificer Accessory Slots
+					Ability Accessory cooldowns are no longer extended
+					17% reduced Ability Accessory cooldowns
+					'''
 			}
 		}
 
@@ -890,8 +971,7 @@ Mods: {
 				DisplayName: Dark Leech
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Launches a tether that will attach to enemies, draining life for up to 10 seconds
-					Leeched life is used to heal the player with the lowest health
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.LeechedLifeHeal}
 					[placeholder]
 					'''
 			}
@@ -900,8 +980,7 @@ Mods: {
 				DisplayName: Leeching Tether
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Launches a tether that will attach to enemies, draining life for up to 10 seconds
-					Leeched life is used to heal the player with the lowest health
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.LeechedLifeHeal}
 					[placeholder]
 					'''
 			}
@@ -910,8 +989,7 @@ Mods: {
 				DisplayName: Lifeline
 				Tooltip:
 					'''
-					{$CommonItemtooltip.ForItems.ActivatedAbility}Launches a tether that will attach to enemies, rapidly draining life for up to 10 seconds
-					Leeched life is used to heal the player with the lowest health
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.LeechedLifeHeal}
 					'Lifeforce draining technologies at their finest; now with 5G transfer speeds!'
 					'''
 			}
@@ -1043,8 +1121,8 @@ Mods: {
 				DisplayName: Artificer Emblem
 				Tooltip:
 					'''
-					5% increased damage
-					17% reduced Ability Accessory cooldowns
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemtooltip.ForItems.ReducedAbilityCooldown@1}
 					'''
 			}
 
@@ -1052,7 +1130,7 @@ Mods: {
 				DisplayName: Cryo-Cooling Cell
 				Tooltip:
 					'''
-					20% reduced Ability Accessory cooldowns
+					{$CommonItemtooltip.ForItems.ReducedAbilityCooldown}
 					Provides immunity to chill, frostburn, and freezing effects
 					'''
 			}
@@ -1063,8 +1141,8 @@ Mods: {
 					'''
 					Reduces max life by up to 20% and increases damage taken by 10%
 					In return, the following effects are granted:
-					15% increased damage
-					10% increased critical strike chance
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
 					Increased life regeneration
 					'Always remember that power has a price...'
 					'''
@@ -1074,8 +1152,8 @@ Mods: {
 				DisplayName: Nova Emblem
 				Tooltip:
 					'''
-					5% increased damage
-					33% reduced Ability Accessory cooldowns
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemtooltip.ForItems.ReducedAbilityCooldown@1}
 					'''
 			}
 
@@ -1108,7 +1186,7 @@ Mods: {
 				DisplayName: Dire Glaze
 				Tooltip:
 					'''
-					2% increased critical strike chance
+					{$CommonItemTooltip.PercentIncreasedCritChance}
 					'Its gaze is dead, yet it pierces your soul...'
 					'''
 			}
@@ -1117,7 +1195,7 @@ Mods: {
 				DisplayName: Energy Cell
 				Tooltip:
 					'''
-					10% reduced Ability Accessory cooldowns
+					{$CommonItemtooltip.ForItems.ReducedAbilityCooldown}
 					'AAAA'
 					'''
 			}
@@ -1126,24 +1204,24 @@ Mods: {
 				DisplayName: Gift Of Channeling
 				Tooltip:
 					'''
-					12% reduced mana cost
+					{$CommonItemTooltip.PercentReducedManaCost}
 					Automatically use mana potions when needed
-					Increases maximum mana by 20
+					{$CommonItemTooltip.IncreasesMaxManaBy@1}
 					'''
 			}
 
 			SpaceCore: {
 				DisplayName: Space Core
-				Tooltip: 3% increased magic damage and critical strike chance
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedMagicCritChance}"
 			}
 
 			AstralCuirass: {
 				DisplayName: Nova Cuirass
 				Tooltip:
 					'''
-					6% increased damage
-					3% increased critical strike chance
-					Increases your max number of minions by 1
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@2}
 					Grants minor life regeneration
 					'''
 			}
@@ -1152,9 +1230,9 @@ Mods: {
 				DisplayName: Nova Greaves
 				Tooltip:
 					'''
-					Increases maximum mana by 20
-					4% increased damage and critical strike chance
-					12% increased movement speed
+					{$CommonItemTooltip.IncreasesMaxManaBy}
+					{$CommonItemTooltip.PercentIncreasedDamageCritChance@1}
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed@2}
 					'''
 			}
 
@@ -1162,11 +1240,11 @@ Mods: {
 				DisplayName: Nova Headgear
 				Tooltip:
 					'''
-					3% increased damage
-					6% increased critical strike chance
-					5% reduced mana cost
-					10% chance to not consume ammo
-					Increases your max number of minions by 1
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentReducedManaCost@2}
+					{$CommonItemTooltip.PercentChanceToSaveAmmo@3}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@4}
 					'''
 			}
 
@@ -1174,9 +1252,9 @@ Mods: {
 				DisplayName: Champion's Boots
 				Tooltip:
 					'''
-					5% increased damage
-					3% increased critical strike chance
-					5% increased movement speed
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed@2}
 					'Treasured boots passed down for ages and reinforced with ancient metals; they will surely help you on your journey'
 					'''
 			}
@@ -1185,9 +1263,9 @@ Mods: {
 				DisplayName: Champion's Cuirass
 				Tooltip:
 					'''
-					Increases maximum mana by 20
-					3% increased damage and increased critical strike chance
-					Increases your max number of minions by 1
+					{$CommonItemTooltip.IncreasesMaxManaBy}
+					{$CommonItemTooltip.PercentIncreasedDamageCritChance@1}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@2}
 					'A treasured garment, once worn by those in good standings with a distant kingdom of the past'
 					'''
 			}
@@ -1196,9 +1274,9 @@ Mods: {
 				DisplayName: Champion's Hood
 				Tooltip:
 					'''
-					3% increased damage
-					4% increased critical strike chance
-					5% chance to not consume ammo
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentChanceToSaveAmmo@2}
 					'Though made of simple cloth, this treasured hood's defensive capabilities are enhanced with protective enchantments'
 					'''
 			}
@@ -1207,10 +1285,10 @@ Mods: {
 				DisplayName: Lihzahrd Greaves
 				Tooltip:
 					'''
-					6% increased damage
-					3% increased critical strike chance
-					10% increased movement speed
-					Enemies are slightly more likely to target you
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed@2}
+					{$CommonItemtooltip.Armorset.Lihzahrd.Target}
 					'''
 			}
 
@@ -1218,11 +1296,11 @@ Mods: {
 				DisplayName: Lihzahrd Plate
 				Tooltip:
 					'''
-					6% increased damage
-					3% increased critical strike chance
-					5% chance to not consume ammo
-					Increases your max number of minions by 1
-					Enemies are slightly more likely to target you
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentChanceToSaveAmmo@2}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@3}
+					{$CommonItemtooltip.Armorset.Lihzahrd.Target}
 					'''
 			}
 
@@ -1230,11 +1308,11 @@ Mods: {
 				DisplayName: Lihzahrd Visage
 				Tooltip:
 					'''
-					4% increased damage
-					3% increased critical strike chance
-					10% reduced mana cost
-					Increases your max number of minions by 1
-					Enemies are slightly more likely to target you
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentReducedManaCost@2}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@3}
+					{$CommonItemtooltip.Armorset.Lihzahrd.Target}
 					'''
 			}
 
@@ -1242,8 +1320,8 @@ Mods: {
 				DisplayName: Mechanical Greaves
 				Tooltip:
 					'''
-					4% increased damage and increased critical strike chance
-					5% increased movement speed
+					{$CommonItemTooltip.PercentIncreasedDamageCritChance}
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed@1}
 					'''
 			}
 
@@ -1251,9 +1329,9 @@ Mods: {
 				DisplayName: Mechanical Mask
 				Tooltip:
 					'''
-					Increases maximum mana by 20
-					2% increased critical strike chance
-					Increases your max number of minions by 1
+					{$CommonItemTooltip.IncreasesMaxManaBy}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@2}
 					'''
 			}
 
@@ -1261,8 +1339,8 @@ Mods: {
 				DisplayName: Mechanical Plate
 				Tooltip:
 					'''
-					10% increased damage
-					5% chance to not consume ammo
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentChanceToSaveAmmo@1}
 					'''
 			}
 
@@ -1270,9 +1348,9 @@ Mods: {
 				DisplayName: Radiant Breastplate
 				Tooltip:
 					'''
-					5% increased damage
-					2% increased critical strike chance
-					5% reduced mana cost
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentReducedManaCost@2}
 					'''
 			}
 
@@ -1280,8 +1358,8 @@ Mods: {
 				DisplayName: Radiant Facemask
 				Tooltip:
 					'''
-					2% increased damage and critical strike chance
-					Increases your max number of minions by 1
+					{$CommonItemTooltip.PercentIncreasedDamageCritChance}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@1}
 					'''
 			}
 
@@ -1289,8 +1367,8 @@ Mods: {
 				DisplayName: Radiant Leggings
 				Tooltip:
 					'''
-					3% increased damage and increased critical strike chance
-					5% increased movement speed
+					{$CommonItemTooltip.PercentIncreasedDamageCritChance}
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed@1}
 					'''
 			}
 
@@ -1313,8 +1391,8 @@ Mods: {
 				DisplayName: Tarnished Breastplate
 				Tooltip:
 					'''
-					4% increased critical strike chance
-					Increases your max number of minions by 1
+					{$CommonItemTooltip.PercentIncreasedCritChance}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@1}
 					'Dark souls within this armor have been harnessed to provide extra protection'
 					'''
 			}
@@ -1323,8 +1401,8 @@ Mods: {
 				DisplayName: Tarnished Helmet
 				Tooltip:
 					'''
-					3% increased damage and critical strike chance
-					5% chance to not consume ammo
+					{$CommonItemTooltip.PercentIncreasedDamageCritChance}
+					{$CommonItemTooltip.PercentChanceToSaveAmmo@1}
 					'Dark souls within this armor have been harnessed to provide extra protection'
 					'''
 			}
@@ -1333,9 +1411,9 @@ Mods: {
 				DisplayName: Tarnished Leggings
 				Tooltip:
 					'''
-					4% increased damage
-					2% increased critical strike chance
-					5% increased movement speed
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed@2}
 					'Dark souls within this armor have been harnessed to provide extra protection'
 					'''
 			}
@@ -1344,9 +1422,9 @@ Mods: {
 				DisplayName: Xeno Leggings
 				Tooltip:
 					'''
-					3% increased damage
-					5% increased critical strike chance
-					8% increased movement speed
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed@2}
 					'''
 			}
 
@@ -1354,10 +1432,10 @@ Mods: {
 				DisplayName: Xeno Suit
 				Tooltip:
 					'''
-					Increases maximum mana by 20
-					3% increased damage
-					4% increased critical strike chance
-					Increases your max number of minions by 1
+					{$CommonItemTooltip.IncreasesMaxManaBy}
+					{$CommonItemTooltip.PercentIncreasedDamage@1}
+					{$CommonItemTooltip.PercentIncreasedCritChance@2}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@3}
 					'''
 			}
 
@@ -1365,49 +1443,49 @@ Mods: {
 				DisplayName: Xeno Visor
 				Tooltip:
 					'''
-					3% increased damage
-					5% increased critical strike chance
-					10% chance to not consume ammo
-					Increases your max number of minions by 1
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentChanceToSaveAmmo@2}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@3}
 					'''
 			}
 
 			OrnateBreastplate: {
 				DisplayName: Ornate Breastplate
-				Tooltip: 2% increased damage
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedDamage}"
 			}
 
 			OrnateHelmet: {
 				DisplayName: Ornate Helmet
-				Tooltip: 2% increased critical strike chance
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedCritChance}"
 			}
 
 			OrnateLeggings: {
 				DisplayName: Ornate Leggings
-				Tooltip: 1% increased damage
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedDamage}"
 			}
 
 			StarplateBreastplate: {
 				DisplayName: Starplate Breastplate
-				Tooltip: 3% increased damage
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedDamage}"
 			}
 
 			StarplateGreaves: {
 				DisplayName: Starplate Greaves
-				Tooltip: 1% increased damage and increased critical strike chance
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedDamageCritChance}"
 			}
 
 			StarplateVisor: {
 				DisplayName: Starplate Visor
-				Tooltip: 2% increased critical strike chance
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedCritChance}"
 			}
 
 			TechBreastplate: {
 				DisplayName: Tech Suit
 				Tooltip:
 					'''
-					2% increased damage
-					1% increased critical strike chance
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
 					'''
 			}
 
@@ -1415,14 +1493,14 @@ Mods: {
 				DisplayName: Tech Headgear
 				Tooltip:
 					'''
-					Increases maximum mana by 20
-					1% increased damage
+					{$CommonItemTooltip.IncreasesMaxManaBy}
+					{$CommonItemTooltip.PercentIncreasedDamage@1}
 					'''
 			}
 
 			TechLeggings: {
 				DisplayName: Tech Leggings
-				Tooltip: 2% increased damage and increased critical strike chance
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedDamageCritChance}"
 			}
 
 			GazersGoggles: {
@@ -1430,7 +1508,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increases view range
-					Right click to zoom out
+					<right> to zoom out
 					'''
 			}
 
@@ -1453,7 +1531,7 @@ Mods: {
 					Shows the location of enemies
 					Allows you to see nearby danger sources
 					Increases view range
-					Right click to zoom out
+					<right> to zoom out
 					'The ultimate in spelunking'
 					'''
 			}
@@ -1464,7 +1542,7 @@ Mods: {
 					'''
 					Improves vision and provides light when worn
 					Increases view range
-					Right click to zoom out
+					<right> to zoom out
 					'The darkness holds no secrets for you'
 					'''
 			}
@@ -1473,9 +1551,9 @@ Mods: {
 				DisplayName: Lifesurge Band
 				Tooltip:
 					'''
-					2% increased critical strike chance
+					{$CommonItemTooltip.PercentIncreasedCritChance}
 					{$CommonItemtooltip.ForItems.SlowlyRegeneratesLife}
-					Increases maximum life by 20
+					{$CommonItemTooltip.IncreasesMaxLifeBy@1}
 					Critical hits occasionally boost life regeneration briefly
 					'''
 			}
@@ -1485,7 +1563,7 @@ Mods: {
 				Tooltip:
 					'''
 					{$CommonItemtooltip.ForItems.SlowlyRegeneratesLife}
-					Increases maximum life by 20
+					{$CommonItemTooltip.IncreasesMaxLifeBy}
 					'''
 			}
 
@@ -1498,9 +1576,9 @@ Mods: {
 				DisplayName: Heartsurge Charm
 				Tooltip:
 					'''
-					2% increased critical strike chance
+					{$CommonItemTooltip.PercentIncreasedCritChance}
 					{$CommonItemtooltip.ForItems.SlowlyRegeneratesLife}
-					Increases maximum life by 20
+					{$CommonItemTooltip.IncreasesMaxLifeBy@1}
 					Slightly increases pickup range for life hearts
 					Defeating enemies or landing critical hits occasionally generates a mini-heart
 					'''
@@ -1548,7 +1626,7 @@ Mods: {
 
 			HunterCharm: {
 				DisplayName: Hunter Charm
-				Tooltip: 5% increased ranged critical strike chance
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedRangedCritChance}"
 			}
 
 			SandstormCarpet: {
@@ -1599,9 +1677,9 @@ Mods: {
 				DisplayName: Beastmaster Glove
 				Tooltip:
 					'''
-					15% increased summon damage
-					12% increased whip speed
-					15% increased whip range
+					{$CommonItemTooltip.PercentIncreasedSummonDamage}
+					{$CommonItemtooltip.ForItems.PercentIncreasedWhipSpeed@1}
+					{$CommonItemtooltip.ForItems.PercentIncreasedWhipRange@2}
 					Enables auto swing for melee weapons and whips
 					'''
 			}
@@ -1610,9 +1688,9 @@ Mods: {
 				DisplayName: Defender Emblem
 				Tooltip:
 					'''
-					5% increased damage
-					10% increased summon damage
-					Increase your max number of sentries by 1
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedSummonDamage@1}
+					{$CommonItemTooltip.IncreasesMaxSentriesBy@2}
 					'''
 			}
 
@@ -1620,8 +1698,8 @@ Mods: {
 				DisplayName: Nebula Emblem
 				Tooltip:
 					'''
-					19% increased magic damage
-					12% reduced mana usage
+					{$CommonItemTooltip.PercentIncreasedMagicDamage}
+					{$CommonItemTooltip.PercentReducedManaCost@1}
 					'''
 			}
 
@@ -1629,8 +1707,8 @@ Mods: {
 				DisplayName: Solar Emblem
 				Tooltip:
 					'''
-					16% increased melee damage
-					5% increased melee speed
+					{$CommonItemTooltip.PercentIncreasedMeleeDamage}
+					{$CommonItemTooltip.PercentIncreasedMeleeSpeed@1}
 					'''
 			}
 
@@ -1638,16 +1716,16 @@ Mods: {
 				DisplayName: Spirit Grasp
 				Tooltip:
 					'''
-					15% increased summon damage
-					12% increased whip speed
-					25% increased whip range
+					{$CommonItemTooltip.PercentIncreasedSummonDamage}
+					{$CommonItemtooltip.ForItems.PercentIncreasedWhipSpeed@1}
+					{$CommonItemtooltip.ForItems.PercentIncreasedWhipRange@2}
 					Enables auto swing for melee weapons and whips
 					'''
 			}
 
 			StardustEmblem: {
 				DisplayName: Stardust Emblem
-				Tooltip: 22% increased summon damage
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedSummonDamage}"
 			}
 
 			SummonersMitt: {
@@ -1655,7 +1733,7 @@ Mods: {
 				Tooltip:
 					'''
 					15% increased whip damage
-					12% increased whip speed
+					{$CommonItemtooltip.ForItems.PercentIncreasedWhipSpeed}
 					Enables auto swing for melee weapons and whips
 					'''
 			}
@@ -1664,8 +1742,8 @@ Mods: {
 				DisplayName: Vortex Emblem
 				Tooltip:
 					'''
-					16% increased ranged damage
-					5% increased ranged critical strike chance
+					{$CommonItemTooltip.PercentIncreasedRangedDamage}
+					{$CommonItemTooltip.PercentIncreasedRangedCritChance@1}
 					'''
 			}
 
@@ -1680,14 +1758,14 @@ Mods: {
 
 			PygmyBracer: {
 				DisplayName: Pygmy Bracer
-				Tooltip: Increases whip range by 15%
+				Tooltip: "{$CommonItemtooltip.ForItems.PercentIncreasedWhipRange}"
 			}
 
 			ShadowflameScroll: {
 				DisplayName: Shadowflame Scroll
 				Tooltip:
 					'''
-					Increases magic critical strike chance by 10%
+					{$CommonItemTooltip.PercentIncreasedMagicCritChance}
 					Magic critical strikes inflict Shadowflame
 					'We love casting spells!'
 					'''
@@ -1705,7 +1783,7 @@ Mods: {
 
 			TerraEmblem: {
 				DisplayName: Terra Emblem
-				Tooltip: 20% increased damage
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedDamage}"
 			}
 
 			ActionStar: {
@@ -1757,7 +1835,7 @@ Mods: {
 					The wearer can run super fast
 					Allows the ability to dash
 					Double tap a direction
-					10% increased movement speed
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed}
 					'''
 			}
 
@@ -1769,7 +1847,7 @@ Mods: {
 					Allows the ability to perform a teleporting dash
 					Double tap a direction
 					The teleport can bypass walls if there is enough space at the destination
-					12% increased movement speed
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed}
 					'Maybe you can clip into parallel universes now'
 					'''
 			}
@@ -1837,7 +1915,7 @@ Mods: {
 				DisplayName: Clockwork Stopwatch
 				Tooltip:
 					'''
-					25% reduced Ability Accessory cooldowns
+					{$CommonItemtooltip.ForItems.ReducedAbilityCooldown}
 					Automatically activates Ability Accessories for you while in combat
 					'Always on time'
 					'''

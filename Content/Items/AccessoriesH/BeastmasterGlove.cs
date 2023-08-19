@@ -3,6 +3,7 @@ using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using ArtificerMod.Content.Items.AccessoriesPH;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.AccessoriesH
 {
@@ -13,6 +14,11 @@ namespace ArtificerMod.Content.Items.AccessoriesH
 	})]
 	public class BeastmasterGlove : ModItem
 	{
+		public static int IncreasedSummonDamage = 15;
+		public static int IncreasedWhipSpeed = 12;
+		public static int IncreasedWhipRange = 15;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedSummonDamage, IncreasedWhipSpeed, IncreasedWhipRange);
+
 		public override void SetStaticDefaults()
 		{
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;

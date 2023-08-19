@@ -6,6 +6,7 @@ using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.ArmorH
 {
@@ -13,6 +14,11 @@ namespace ArtificerMod.Content.Items.ArmorH
 	public class AstralCuirass : ModItem
 	{
 		private int cape = -1;
+
+		public static int IncreasedDmg = 6;
+		public static int IncreasedCritChance = 3;
+		public static int MaxMinion = 1;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedDmg, IncreasedCritChance, MaxMinion);
 
 		public override void Load()
 		{

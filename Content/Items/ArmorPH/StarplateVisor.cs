@@ -5,12 +5,16 @@ using Terraria.GameContent.Creative;
 using ArtificerMod.Common;
 using ArtificerMod.Content.Glowmasks;
 using Microsoft.Xna.Framework.Graphics;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.ArmorPH
 {
 	[AutoloadEquip(EquipType.Head)]
 	public class StarplateVisor : ModItem
 	{
+		public static int IncreasedCritChance = 2;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedCritChance);
+
 		public override void SetStaticDefaults() {
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 
@@ -48,11 +52,7 @@ namespace ArtificerMod.Content.Items.ArmorPH
 
 		public override void UpdateArmorSet(Player player)
 		{
-			player.setBonus = "+1 Artificer Accessory Slot" +
-                "\nAbility Accessory cooldowns are no longer extended" +
-				"\nYou gain a small stat boost based on the time of day:" +
-				"\nAt day damage and movement speed are increased" +
-				"\nAt night defense and life regeneration are increased"; 
+			player.setBonus = Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.Armorset.Starplate"); 
 			player.GetModPlayer<ArtificerPlayer>().starplateSetBonus = true;
 		}
 

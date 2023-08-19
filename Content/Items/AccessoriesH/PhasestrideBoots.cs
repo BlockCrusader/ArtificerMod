@@ -4,12 +4,16 @@ using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using ArtificerMod.Content.Items.AbilityAccH;
 using Microsoft.Xna.Framework;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.AccessoriesH
 {
 	[AutoloadEquip(EquipType.Shoes)]
 	public class PhasestrideBoots : ModItem
 	{
+		public static int IncreasedMovementSpeed = 12;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedMovementSpeed);
+
 		public override void SetStaticDefaults()
 		{
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
