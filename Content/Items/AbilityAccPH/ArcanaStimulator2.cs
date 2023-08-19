@@ -9,9 +9,10 @@ namespace ArtificerMod.Content.Items.AbilityAccPH
 {
 	public class ArcanaStimulator2 : ModItem
 	{
-        public static int ManaRestore2 = 2 * 30;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(ManaRestore2);
-        public override void SetStaticDefaults()
+		public static int ManaRestore2 = 2 * 30;
+		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(ManaRestore2);
+		
+		public override void SetStaticDefaults()
 		{
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}

@@ -9,9 +9,10 @@ namespace ArtificerMod.Content.Items.AbilityAccPH
 {
 	public class VitalStimulator : ModItem
 	{
-        public static int HealthRestore1 = 2*20;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(HealthRestore1);
-        public override void SetStaticDefaults()
+		public static int HealthRestore1 = 2*20;
+		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(HealthRestore1);
+		
+		public override void SetStaticDefaults()
 		{
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
@@ -25,7 +26,7 @@ namespace ArtificerMod.Content.Items.AbilityAccPH
 			Item.value = Item.buyPrice(0, 6, 0, 0);
 		}
 
-        public override void UpdateAccessory(Player player, bool hideVisual)
+		public override void UpdateAccessory(Player player, bool hideVisual)
 		{
 			player.GetModPlayer<ArtificerPlayer>().hpStimType = 1;
 		}

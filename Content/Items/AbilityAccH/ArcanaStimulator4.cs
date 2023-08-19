@@ -9,9 +9,10 @@ namespace ArtificerMod.Content.Items.AbilityAccH
 {
 	public class ArcanaStimulator4 : ModItem
 	{
-        public static int ManaRestore4 = 4 * 30;
-        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(ManaRestore4);
-        public override void SetStaticDefaults()
+		public static int ManaRestore4 = 4 * 30;
+		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(ManaRestore4);
+		
+		public override void SetStaticDefaults()
 		{
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
