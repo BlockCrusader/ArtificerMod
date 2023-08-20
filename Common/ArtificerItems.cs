@@ -106,13 +106,13 @@ namespace ArtificerMod.Common
             {
                 coolTimeColorHex = "[c/78be78:";
                 tooltips.Insert(index, new TooltipLine(Mod, "cooldownTime",
-                Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.Cooldown.CooldowntimeColored").FormatWith(baseCooldown, finalCooldown)));
+                Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.Cooldown.CooldowntimeNegative").FormatWith(baseCooldown, finalCooldown)));
             }
             else if (negativeMods)
             {
                 coolTimeColorHex = "[c/be7878:";
                 tooltips.Insert(index, new TooltipLine(Mod, "cooldownTime",
-                Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.Cooldown.CooldowntimeColored").FormatWith(baseCooldown, finalCooldown)));
+                Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.Cooldown.CooldowntimePositive").FormatWith(baseCooldown, finalCooldown)));
             }
             else
             {
