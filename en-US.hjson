@@ -44,18 +44,19 @@ Mods: {
 				PercentIncreasedWhipSpeed: "{0}% increased whip speed"
 				PercentIncreasedWhipRange: "{0}% increased whip range"
 				Target: Enemies are slightly more likely to target you
+				AccessorySlot: Artificer Accessory Slots
 			}
 
 			Armorset: {
 				AstralNova:
 					'''
-					+3 Artificer Accessory Slots
+					+3 {$CommonItemtooltip.ForItems.AccessorySlot}
 					25% reduced Ability Accessory cooldowns
 					Activating accessory abilities unleashes a surge of energy, increasing your offensive and defensive capabilities while on cooldown
 					'''
 				Champions:
 					'''
-					+2 Artificer Accessory Slots
+					+2 {$CommonItemtooltip.ForItems.AccessorySlot}
 					Terraria itself grants you increased damage or increased survivability, based on your health
 					'''
 
@@ -63,7 +64,7 @@ Mods: {
 					Target: Enemies are slightly more likely to target you
 					SetBonus:
 						'''
-						+2 Artificer Accessory Slots
+						+2 {$CommonItemtooltip.ForItems.AccessorySlot}
 						When attacked, you may unleash retailitory energy beams and gain a brief damage boost
 						Enemies are slightly more likely to target you
 						'''
@@ -71,14 +72,14 @@ Mods: {
 
 				Mechanical:
 					'''
-					+2 Artificer Accessory Slots
+					+2 {$CommonItemtooltip.ForItems.AccessorySlot}
 					20% reduced Ability Accessory cooldowns
 					Critical hits may briefly inflict enemies with a shock
 					Shocked enemies deal less contact damage and take more damage
 					'''
 				Radiant:
 					'''
-					+1 Artificer Accessory Slots
+					+1 {$CommonItemtooltip.ForItems.AccessorySlot}
 					Summons a mystical crystal that channels melee, ranged, magic, or summon damage
 					You and other nearby players gain a power boost in the channeled damage type
 					Players with their own crystal, including you, recieve increased benefit from this effect
@@ -86,25 +87,25 @@ Mods: {
 					'''
 				Tarnished:
 					'''
-					+1 Artificer Accessory Slots
+					+1 {$CommonItemtooltip.ForItems.AccessorySlot}
 					Ability Accessory cooldowns are no longer extended
 					If you take fatal damage, protective souls will instantly restore you to 100 health
 					This revival effect has a 5 minute cooldown
 					'''
 				Xeno:
 					'''
-					+2 Artificer Accessory Slots
+					+2 {$CommonItemtooltip.ForItems.AccessorySlot}
 					Over time, your armor will charge a temporarily energy shield that can absorb some damage
 					'''
 				Ornate:
 					'''
-					+1 Artificer Accessory Slots
+					+1 {$CommonItemtooltip.ForItems.AccessorySlot}
 					Ability Accessory cooldowns are no longer extended
-					2 defense
+					Increase 2 defense
 					'''
 				Starplate:
 					'''
-					+1 Artificer Accessory Slots
+					+1 {$CommonItemtooltip.ForItems.AccessorySlot}
 					Ability Accessory cooldowns are no longer extended
 					You gain a small stat boost based on the time of day:
 					At day damage and movement speed are increased
@@ -112,7 +113,7 @@ Mods: {
 					'''
 				Tech:
 					'''
-					+1 Artificer Accessory Slots
+					+1 {$CommonItemtooltip.ForItems.AccessorySlot}
 					Ability Accessory cooldowns are no longer extended
 					17% reduced Ability Accessory cooldowns
 					'''
