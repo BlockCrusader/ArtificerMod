@@ -1,0 +1,2116 @@
+Mods: {
+	ArtificerMod: {
+		CommonItemtooltip: {
+			HotkeySet: WARNING: No hotkey set for abilities! Assign one in the 'Controls' section of the settings menu!
+
+			Cooldown: {
+				CooldowntimeColored: Cooldown time: [c/78be78:{1} seconds] (Base: {0} sec)
+				Cooldowntime: Cooldown time: {1} seconds (Base: {0} sec)
+				SlightlyExtended: Cooldown is slightly extended without an Artificer armor set equipped
+				GreatlyExtended: Cooldown is greatly extended without an ability accessory equipped
+				DrasticallyExtended: Cooldown is drastically extended without an Artificer armor set or an ability accessory equipped
+			}
+
+			ForBuffs: {
+				RegeneratingHealth: Rapidly regenerating health
+				RegeneratingMana: Rapidly regenerating mana
+				Lucky: Lucky!
+				Unlucky: Unlucky...
+				IncreasedCriticalChance: Increased critical strike chance
+				DecreasedCriticalChance: Decreased critical strike chance
+				IncreasedDefense: Increased defense
+				DncreasedDefense: Dncreased defense
+				IncreasedDamage: Increased damage
+				DecreasedDamage: Decreased damage
+				DecreasedDamageTaken: Decreased damage taken
+				IncreasedDamageTaken: Increased damage taken
+			}
+
+			ForItems: {
+				ActivatedAbility: "Activated Ability: "
+				BrieflyLifeRegen: If a debuff is cured, you briefly gain rapid life regen
+				ManaSicknessInflicted: Mana sickness is inflicted for the duration of regeneration
+				PotionSicknessInflicted: Potion sickness is inflicted for the duration of regeneration
+				SlowlyRegeneratesLife: Slowly regenerates life
+				NoKnockback: Grants immunity to knockback
+				ArcanaStimulator: Restores {0} mana over 5 seconds
+				VitalStimulator: Restores {0} life over 5 seconds
+				LeechedLifeHeal:
+					'''
+					Launches a tether that will attach to enemies, draining life for up to 10 seconds
+					Leeched life is used to heal the player with the lowest health
+					'''
+				ReducedAbilityCooldown: "{0}% reduced Ability Accessory cooldowns"
+				PercentIncreasedWhipSpeed: "{0}% increased whip speed"
+				PercentIncreasedWhipRange: "{0}% increased whip range"
+				Target: Enemies are slightly more likely to target you
+				AccessorySlot: Artificer Accessory Slots
+			}
+
+			Armorset: {
+				AstralNova:
+					'''
+					+3 {$CommonItemtooltip.ForItems.AccessorySlot}
+					25% reduced Ability Accessory cooldowns
+					Activating accessory abilities unleashes a surge of energy, increasing your offensive and defensive capabilities while on cooldown
+					'''
+				Champions:
+					'''
+					+2 {$CommonItemtooltip.ForItems.AccessorySlot}
+					Terraria itself grants you increased damage or increased survivability, based on your health
+					'''
+
+				Lihzahrd: {
+					Target: Enemies are slightly more likely to target you
+					SetBonus:
+						'''
+						+2 {$CommonItemtooltip.ForItems.AccessorySlot}
+						When attacked, you may unleash retailitory energy beams and gain a brief damage boost
+						Enemies are slightly more likely to target you
+						'''
+				}
+
+				Mechanical:
+					'''
+					+2 {$CommonItemtooltip.ForItems.AccessorySlot}
+					20% reduced Ability Accessory cooldowns
+					Critical hits may briefly inflict enemies with a shock
+					Shocked enemies deal less contact damage and take more damage
+					'''
+				Radiant:
+					'''
+					+1 {$CommonItemtooltip.ForItems.AccessorySlot}
+					Summons a mystical crystal that channels melee, ranged, magic, or summon damage
+					You and other nearby players gain a power boost in the channeled damage type
+					Players with their own crystal, including you, recieve increased benefit from this effect
+					Double tap {0} to cycle your crystal's damage type
+					'''
+				Tarnished:
+					'''
+					+1 {$CommonItemtooltip.ForItems.AccessorySlot}
+					Ability Accessory cooldowns are no longer extended
+					If you take fatal damage, protective souls will instantly restore you to 100 health
+					This revival effect has a 5 minute cooldown
+					'''
+				Xeno:
+					'''
+					+2 {$CommonItemtooltip.ForItems.AccessorySlot}
+					Over time, your armor will charge a temporarily energy shield that can absorb some damage
+					'''
+				Ornate:
+					'''
+					+1 {$CommonItemtooltip.ForItems.AccessorySlot}
+					Ability Accessory cooldowns are no longer extended
+					Increase 2 defense
+					'''
+				Starplate:
+					'''
+					+1 {$CommonItemtooltip.ForItems.AccessorySlot}
+					Ability Accessory cooldowns are no longer extended
+					You gain a small stat boost based on the time of day:
+					At day damage and movement speed are increased
+					At night defense and life regeneration are increased
+					'''
+				Tech:
+					'''
+					+1 {$CommonItemtooltip.ForItems.AccessorySlot}
+					Ability Accessory cooldowns are no longer extended
+					17% reduced Ability Accessory cooldowns
+					'''
+			}
+		}
+
+		Buffs: {
+			BewitchedBulwarkBuff: {
+				DisplayName: Warding Bulwark
+				Description: A sentient shield is increasing your defense!
+			}
+
+			CyborgCoreBuff: {
+				DisplayName: Nanomachines
+				Description: Slowed movement, but vastly increased defense and life regeneration
+			}
+
+			HPStim3: {
+				DisplayName: Greater Vital Stimulation
+				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingHealth}"
+			}
+
+			HPStim4: {
+				DisplayName: Super Vital Stimulation
+				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingHealth}"
+			}
+
+			ManaStim3: {
+				DisplayName: Greater Arcana Stimulation
+				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingMana}"
+			}
+
+			ManaStim4: {
+				DisplayName: Super Arcana Stimulation
+				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingMana}"
+			}
+
+			PowerArmorBuff: {
+				DisplayName: Power Armor
+				Description: Equipped with power armor that immensely decreases damage taken!
+			}
+
+			ArtificerArmorBuff: {
+				DisplayName: Artificer's Armor
+				Description: Equipped with enchanted armor that greatly reduces damage taken!
+			}
+
+			HPStim1: {
+				DisplayName: Lesser Vital Stimulation
+				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingHealth}"
+			}
+
+			HPStim2: {
+				DisplayName: Vital Stimulation
+				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingHealth}"
+			}
+
+			LifeChargerBuff: {
+				DisplayName: Life Charger
+				Description: Charging up life restoring energy... Just don't get hit!
+			}
+
+			ManaChargerBuff: {
+				DisplayName: Mana Charger
+				Description: Charging up mana restoring energy... Just don't get hit!
+			}
+
+			ManaStim1: {
+				DisplayName: Lesser Arcana Stimulation
+				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingMana}"
+			}
+
+			ManaStim2: {
+				DisplayName: Arcana Stimulation
+				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingMana}"
+			}
+
+			RadarPing: {
+				DisplayName: Radar Ping
+				Description: Revealed and emitting light
+			}
+
+			RetributionBuff: {
+				DisplayName: Retribution
+				Description: Pain only makes you stronger!
+			}
+
+			AbilityCooldown: {
+				DisplayName: Ability Cooldown
+				Description: Cannot use any accessory's activated ability
+			}
+
+			ChampionDef: {
+				DisplayName: Terraria's Determination
+				Description: The forces of Terraria empower your defense and regeneration!
+			}
+
+			ChampionOff: {
+				DisplayName: Terraria's Valor
+				Description: The forces of Terraria empower your attacks!
+			}
+
+			MechShock: {
+				DisplayName: Mechanical Shock
+				Description: The enemy is weak to players with Mechanical Armor
+			}
+
+			PrismMagic: {
+				DisplayName: Sorcerers' Conduit
+				Description: A mystical crystal is empowering your magic attacks
+			}
+
+			PrismMelee: {
+				DisplayName: Warriors' Conduit
+				Description: A mystical crystal is empowering your melee attacks
+			}
+
+			PrismRanged: {
+				DisplayName: Rangers' Conduit
+				Description: A mystical crystal is empowering your ranged attacks
+			}
+
+			PrismSummon: {
+				DisplayName: Summoners' Conduit
+				Description: A mystical crystal is empowering your summon attacks
+			}
+
+			SolarOverdrive: {
+				DisplayName: Solar Overdrive
+				Description: Retaliate with a damage boost!
+			}
+
+			TarnishedRevive: {
+				DisplayName: Soul Recuperation
+				Description: The protective souls of the Tarnished Armor are on cooldown
+			}
+
+			XenoShieldDisplay: {
+				DisplayName: Energy Shield
+				Description: Your armor is charged and will block some incoming damage!
+			}
+
+			StarplateDay: {
+				DisplayName: Solar Power
+				Description: Your Starplate Armor is slightly boosting your attack and movement speed
+			}
+
+			StarplateNight: {
+				DisplayName: Lunar Power
+				Description: Your Starplate Armor is slightly boosting your defense and life regeneration
+			}
+
+			LifesurgeBuff: {
+				DisplayName: Lifesurge Buff
+				Description: Increased life regeneration
+			}
+
+			SoulHunt: {
+				Description: The enemy's defense is reduced
+				DisplayName: Soul Hunt
+			}
+
+			BloodDrive: {
+				Description: Movement and attack speed are increased
+				DisplayName: Blood Drive
+			}
+
+			PermafrostProtection: {
+				Description: Increased defense and rapid life regeneration
+				DisplayName: Permafrost Protection
+			}
+
+			ElectrifiedEnemy: {
+				Description: The enemy is taking damage over time
+				DisplayName: Electrified Enemy
+			}
+
+			ChampionProtec: {
+				DisplayName: Champion's Protection
+				Description: Attackers will take damage instead of you!
+			}
+
+			TerraCooldown: {
+				DisplayName: Terra Exhaustion
+				Description: The power of the Terra Shield cannot protect you any longer
+			}
+
+			LastStand: {
+				DisplayName: Terra Guard
+				Description: A nearby Terra Shield is safeguarding you from death!
+			}
+
+			TerraRevive: {
+				DisplayName: Last Stand
+				Description: You are immune to damage over time. Turn this fight around!
+			}
+
+			PrimeRage: {
+				DisplayName: Prime Rage
+				Description: Your Prime Gauntlet is supercharged!
+			}
+
+			CounterstrikeProtocol: {
+				DisplayName: Counter-strike Protocol
+				Description: Increased damage and greatly reduced chance for enemies to target you
+			}
+
+			TurboBoost: {
+				DisplayName: Turbo Boost
+				Description: Movement speed greatly increased
+			}
+
+			OverdriveBoost: {
+				DisplayName: Overdrive Boost
+				Description: Movement and jump speed greatly increased
+			}
+
+			Supercharged: {
+				DisplayName: Supercharged
+				Description: Melee and whip speed greatly increased
+			}
+
+			ProstheticsBuff: {
+				DisplayName: Energized Prosthetics
+				Description: Movement, jump, melee, and whip speed greatly increased
+			}
+
+			SwaggerTaunt: {
+				DisplayName: Swagger Taunt
+				Description: The enemy deals more contact damage, but recieves more damage
+			}
+
+			SwaggerCapeBuff: {
+				DisplayName: Swagger Taunt
+				Description: Enemies are much more likely to target you
+			}
+
+			ShadowShroudBuff: {
+				DisplayName: Shadow Sneak
+				Description: Enemies are much less likely to target you, and your next strike deals amplified damage
+			}
+
+			FlamboyantCapeBuff: {
+				DisplayName: Flamboyant!
+				Description: Enemies are much more likely to target you
+			}
+
+			StealthShroudBuff: {
+				DisplayName: Stealth
+				Description: Enemies are much less likely to target you
+			}
+
+			OrnateSpark: {
+				DisplayName: Ornate Spark
+				Description: Increased life and mana regeneration
+			}
+
+			SpikeShield: {
+				DisplayName: Spike Shield
+				Description: Increases defense and causes attackers to take damage
+			}
+
+			Leech: {
+				DisplayName: Leeched
+				Description: The enemy's health is being drained
+			}
+
+			EmulatorS: {
+				DisplayName: Aura of Sight
+				Description: Increased crit chance and movement speed
+			}
+
+			EmulatorM: {
+				DisplayName: Aura of Might
+				Description: Increased damage and life regeneration
+			}
+
+			EmulatorF: {
+				DisplayName: Aura of Fright
+				Description: Increased knockback and defense
+			}
+
+			CritBuff3: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedCriticalChance}"
+			}
+
+			CritBuff2: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedCriticalChance}"
+			}
+
+			CritBuff1: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedCriticalChance}"
+			}
+
+			CritNerf1: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.DecreasedCriticalChance}"
+			}
+
+			CritNerf2: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedCriticalChance}"
+			}
+
+			DefBuff1: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDefense}"
+			}
+
+			DefBuff2: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDefense}"
+			}
+
+			DefBuff3: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDefense}"
+			}
+
+			DefNerf1: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.DecreasedDefense}"
+			}
+
+			DefNerf2: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.DecreasedDefense}"
+			}
+
+			DmgBuff1: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDamage}"
+			}
+
+			DmgBuff2: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDamage}"
+			}
+
+			DmgBuff3: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDamage}"
+			}
+
+			DmgNerf1: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.DecreasedDamage}"
+			}
+
+			DmgNerf2: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.DecreasedDamage}"
+			}
+
+			DRBuff1: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.DecreasedDamageTaken}"
+			}
+
+			DRBuff2: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.DecreasedDamageTaken}"
+			}
+
+			DRBuff3: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.DecreasedDamageTaken}"
+			}
+
+			DRNerf1: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDamageTaken}"
+			}
+
+			DRNerf2: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDamageTaken}"
+			}
+
+			BorealisBurn: {
+				DisplayName: Borealis Burn
+				Description: The enemy will take far more damage than normal
+			}
+
+			BorealisBarrier: {
+				DisplayName: Borealis Barrier
+				Description: Increased survivability
+			}
+
+			Refresh: {
+				DisplayName: Refreshed
+				Description: Regenerating life. Refresh to be fresh
+			}
+		}
+
+		Items: {
+			AnkhRenewer: {
+				DisplayName: Ankh Renewer
+				Tooltip:
+					'''
+					Grants immunity to most debuffs
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Cures you of almost all debuffs not already covered
+					{$CommonItemtooltip.ForItems.BrieflyLifeRegen}
+					[placeholder]
+					'''
+			}
+
+			ArcanaStimulator3: {
+				DisplayName: Arcana Stimulator Mk3
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.ArcanaStimulator}
+					{$CommonItemtooltip.ForItems.ManaSicknessInflicted}
+					[placeholder]
+					'''
+			}
+
+			ArcanaStimulator4: {
+				DisplayName: Arcana Stimulator Mk4
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.ArcanaStimulator}
+					{$CommonItemtooltip.ForItems.ManaSicknessInflicted}
+					[placeholder]
+					'''
+			}
+
+			BewitchedBulwark: {
+				DisplayName: Bewitched Bulwark
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.NoKnockback}
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Summons a sentient shield at the cursor position
+					The shield creates an aura which increases player defense and damages and draws in enemies
+					The shield lasts for 10 seconds
+					[placeholder]
+					'''
+			}
+
+			ChaosGem: {
+				DisplayName: Discordant Jewel
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Teleports you to the position of the mouse
+					'You mean... the chaos emeralds?'
+					'''
+			}
+
+			CyborgCore: {
+				DisplayName: Cyborg's Core
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.SlowlyRegeneratesLife}
+					{$CommonItemtooltip.ForItems.ActivatedAbility}For 5 seconds, your movement speed is decreased, but you gain a massive boost to defense and life regeneration
+					'Nanomachines, son'
+					'''
+			}
+
+			FirstPrism: {
+				DisplayName: First Prism
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Summons a crystal prism above you that fires a series of beams at nearby foes
+					Fires up to twelve beams, each of which will randomly inherit melee, ranged, magic, or summon damage types
+					'The lost predecesor to a mythical prism of immense power...'
+					'''
+			}
+
+			PowerArmor: {
+				DisplayName: Power Armor
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Outfits you in a set of enchanted power armor on top of your normal armor
+					The power armor lasts for 10 seconds and immensely reduces damage taken
+					'Futuristic armor meticulously forged to fold in on itself, and instantly unfold to protect the wearer upon activation'
+					'''
+			}
+
+			PrismaticArcanum: {
+				DisplayName: Prismatic Arcanum
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Unleashes a swarm of chromatic energy
+					[placeholder]
+					'''
+			}
+
+			SolarBlaster: {
+				DisplayName: Solar Blaster
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Fires a spread of super powerful energy beams
+					[placeholder]
+					'''
+			}
+
+			Starwriter: {
+				DisplayName: Starwriter
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Creates a star which preserves your position, health, and mana at the time of creation
+					Using this ability again will restore you to the position and status saved by the star
+					This process inflicts potion and mana sickness, and removes the current star
+					'The galaxy shall remember your name'
+					'''
+			}
+
+			VitalStimulator3: {
+				DisplayName: Vital Stimulator Mk3
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.VitalStimulator}
+					{$CommonItemtooltip.ForItems.PotionSicknessInflicted}
+					[placeholder]
+					'''
+			}
+
+			VitalStimulator4: {
+				DisplayName: Vital Stimulator Mk4
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.VitalStimulator}
+					{$CommonItemtooltip.ForItems.PotionSicknessInflicted}
+					[placeholder]
+					'''
+			}
+
+			ArcanaStimulator: {
+				DisplayName: Arcana Stimulator
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.ArcanaStimulator}
+					{$CommonItemtooltip.ForItems.ManaSicknessInflicted}
+					[placeholder]
+					'''
+			}
+
+			ArcanaStimulator2: {
+				DisplayName: Arcana Stimulator Mk2
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.ArcanaStimulator}
+					{$CommonItemtooltip.ForItems.ManaSicknessInflicted}
+					[placeholder]
+					'''
+			}
+
+			ArtificersArmor: {
+				DisplayName: Artificer's Armor
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Outfits you in a set of enchanted armor on top of your normal armor
+					The enchanted armor lasts for 10 seconds and greatly reduces damage taken
+					'Legendary armor meticulously forged to fold in on itself, and instantly unfold to protect the wearer upon activation'
+					'''
+			}
+
+			Cleanser: {
+				DisplayName: Cleanser
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Cures you of the Poisoned, Acid Venom, On Fire!, Frostburn, Shadowflame, and Cursed Inferno debuffs
+					{$CommonItemtooltip.ForItems.BrieflyLifeRegen}
+					[placeholder]
+					'''
+			}
+
+			Curer: {
+				DisplayName: Curer
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Cures you of the Poisoned and Acid Venom debuffs
+					{$CommonItemtooltip.ForItems.BrieflyLifeRegen}
+					[placeholder]
+					'''
+			}
+
+			Extinguisher: {
+				DisplayName: Douser
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Cures you of the On Fire!, Frostburn, Shadowflame, and Cursed Inferno debuffs
+					{$CommonItemtooltip.ForItems.BrieflyLifeRegen}
+					'Kinda like strapping a fire extinguisher to your back!'
+					'''
+			}
+
+			LifeCharger: {
+				DisplayName: Life Charger
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Restores 100 life after charging for 10 seconds
+					Taking damage will disrupt the charging process, ending it without restoring life
+					[placeholder]
+					'''
+			}
+
+			ManaCharger: {
+				DisplayName: Mana Charger
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Restores 150 mana after charging for 10 seconds
+					Taking damage will disrupt the charging process, ending it without restoring mana
+					[placeholder]
+					'''
+			}
+
+			OverchargedArcanum: {
+				DisplayName: Overcharged Arcanum
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Unleashes a swarm of magic missiles
+					[placeholder]
+					'''
+			}
+
+			RetributionStoker: {
+				DisplayName: Retribution Stoker
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Increases your damage and critical strike chance for 15 seconds
+					Taking damage before using the ability will gradually empower the stat boosts granted the next time it is used
+					'Smite your enemies with a burning revengance!'
+					'''
+			}
+
+			StarplateBlaster: {
+				DisplayName: Starplate Blaster
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Fires a powerful energy beam
+					[placeholder]
+					'''
+			}
+
+			VitalStimulator: {
+				DisplayName: Vital Stimulator
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.VitalStimulator}
+					{$CommonItemtooltip.ForItems.PotionSicknessInflicted}
+					[placeholder]
+					'''
+			}
+
+			VitalStimulator2: {
+				DisplayName: Vital Stimulator Mk2
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.VitalStimulator}
+					{$CommonItemtooltip.ForItems.PotionSicknessInflicted}
+					[placeholder]
+					'''
+			}
+
+			XRadar: {
+				DisplayName: X-Radar
+				Tooltip:
+					'''
+					Detects enemies around you
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Creates a pulse of light that reveals both hostiles and friendlies in the proximity
+					Revealed entities will emit light for 30 seconds
+					'Nobody can hide from you'
+					'''
+			}
+
+			LostHeroShield: {
+				DisplayName: Lost Hero's Shield
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.NoKnockback}
+					{$CommonItemtooltip.ForItems.ActivatedAbility}For one second, you will block an incoming attack. Parried attacks damage the attacker and amplify your next melee strike
+					'Though long tarnished and decayed, it still holds much of its former power'
+					'''
+			}
+
+			PrimeGauntlet: {
+				DisplayName: Prime Gauntlet
+				Tooltip:
+					'''
+					Shoots metallic crossbones at enemies while you are attacking
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Energizes the crossbones for five seconds, grealty increasing their fire rate, velocity, and damage
+					[placeholder]
+					'''
+			}
+
+			AugmentedLeg: {
+				DisplayName: Augmented Leg
+				Tooltip:
+					'''
+					Increases jump speed and allows auto-jump
+					Increases fall resistance
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Perform an extremely powerful jump, quickly launching yourself into the air
+					Fall resistance is boosted even more during the jump and shortly afterwards
+					[placeholder]
+					'''
+			}
+
+			OverdriveLeg: {
+				DisplayName: Overdrive Leg
+				Tooltip:
+					'''
+					The wearer can run super fast
+					Increases jump speed and fall resistance, and allows auto-jump
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Greatly increases run and jump speed, and acceleration for 5 seconds
+					'Maximum overdrive!'
+					'''
+			}
+
+			TurboBoots: {
+				DisplayName: Turbo Boots
+				Tooltip:
+					'''
+					The wearer can run super fast
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Greatly increases running speed and acceleration for 5 seconds
+					'Running around at the speed of sound!'
+					'''
+			}
+
+			ArtificerProsthetics: {
+				DisplayName: Artificer's Prosthetics
+				Tooltip:
+					'''
+					The wearer can run super fast
+					Increases jump speed and fall resistance, and allows auto-jump
+					Adds an electric charge to your attacks, causing them to occasionally shock enemies
+					Enables auto swing for melee weapons and whips, and increases their speed by 15%
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Greatly increases run, jump, melee, and whip speed, and acceleration for 10 seconds
+					'Faster, stronger, better'
+					'''
+			}
+
+			SuperchargedArm: {
+				DisplayName: Supercharged Arm
+				Tooltip:
+					'''
+					Adds an electric charge to your attacks, causing them to occasionally shock enemies
+					Enables auto swing for melee weapons and whips, and increases their speed by 15%
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Greatly increases melee and whip speed for 10 seconds
+					'Turbo Charge activated!'
+					'''
+			}
+
+			HiddenBlade: {
+				DisplayName: Hidden Blade
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Shoots a fast, medium-ranged needle
+					[placeholder]
+					'''
+			}
+
+			AssassinNeedles: {
+				DisplayName: Assassin's Needles
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Fires a barrage of fast, short-ranged needles
+					[placeholder]
+					'''
+			}
+
+			NeedleBarrage: {
+				DisplayName: Needle Barrage
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Unleashes a rapid barrage of many fast, short-ranged needles
+					'Death by a thousand needles...'
+					'''
+			}
+
+			RepulseCharge: {
+				DisplayName: Repulse Charge
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Drops an explosive projectile with powerful knockback that releases shockwaves to both sides upon impact
+					'Get some personal space'
+					'''
+			}
+
+			RepulsionRocket: {
+				DisplayName: Repulsion Rocket
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Fires an explosive projectile with powerful knockback
+					Has incredibly high recoil, launching the user in the direction opposite of fire
+					'Screaming eagles!'
+					'''
+			}
+
+			ShadowShroud: {
+				DisplayName: Shadow Shroud
+				Tooltip:
+					'''
+					Enemies are less likely to target you
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Enemies become even less likely to target you for 10 seconds
+					Inflicting damage during this period of time will cause the strike's damage to be multiplied by 5, ending the ability's effects in the process
+					[placeholder]
+					'''
+			}
+
+			SwaggerCape: {
+				DisplayName: Swagger Cape
+				Tooltip:
+					'''
+					Enemies are more likely to target you
+					5% increased critical strike chance
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Enemies become even more likely to target you for 10 seconds
+					Also taunts nearby enemies, causing their contact damage to increase, but also increasing the damage they take
+					'Swag Messiah!'
+					'''
+			}
+
+			FlamboyantCape: {
+				DisplayName: Flamboyant Cape
+				Tooltip:
+					'''
+					Enemies are more likely to target you
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Enemies become even more likely to target you for 10 seconds
+					[placeholder]
+					'''
+			}
+
+			StealthShroud: {
+				DisplayName: Stealth Shroud
+				Tooltip:
+					'''
+					Enemies are less likely to target you
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Enemies become even less likely to target you for 10 seconds
+					[placeholder]
+					'''
+			}
+
+			OrnateRing: {
+				DisplayName: Ornate Ring
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Creates a sparkling flash, confusing enemies and increasing player life and mana regen for 5 seconds
+					[placeholder]
+					'''
+			}
+
+			NeedleSpikeManacle: {
+				DisplayName: Needle-spike Manacle
+				Tooltip:
+					'''
+					Attackers take damage on contact
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Grants +4 defense and an improved thorns effect for 10 seconds
+					'Despite the rust, its spikes easily deploy, retract, and - most importantly - pierce'
+					'''
+			}
+
+			DarkLeech: {
+				DisplayName: Dark Leech
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.LeechedLifeHeal}
+					[placeholder]
+					'''
+			}
+
+			LeechingTether: {
+				DisplayName: Leeching Tether
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.LeechedLifeHeal}
+					[placeholder]
+					'''
+			}
+
+			Lifeline: {
+				DisplayName: Lifeline
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.LeechedLifeHeal}
+					'Lifeforce draining technologies at their finest; now with 5G transfer speeds!'
+					'''
+			}
+
+			Harvester: {
+				DisplayName: Necrotic Harvester
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Unleashes a massive, necrotic explosion, damaging all enemies caught in the blast
+					Dealing damage to enemies before triggering the blast will gradually build up extra power, boosting the next explosion's damage and knockback
+					'A hexxed lantern, tampered with to achieve even more dangerous ends...'
+					'''
+			}
+
+			ProbePack: {
+				DisplayName: Probe Pack
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Creates three probes that will orbit and defend you for 25 seconds
+					[placeholder]
+					'''
+			}
+
+			SoulEmulator: {
+				DisplayName: Soul Emulator
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Buffs all nearby players for 5 seconds
+					The buff granted cycles between 3 states with different effects per use; Fright, Sight, and Might
+					Any buffed player with a Soul Emulator - including the user - gains the buff for 10 seconds instead of 5
+					Additionally, the buff their Emulator will provide is cycled forward
+					[placeholder]
+					'''
+			}
+
+			ObliterationCore: {
+				DisplayName: Obliteration Core
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Charges and fires a devastating deathray in the direction the you are facing
+					While firing, you move slower and cannot use other items
+					'Yo!'
+					'''
+			}
+
+			MissileArray: {
+				DisplayName: Missile Array
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Launches a barrage of missiles that seek out and destroy nearby enemies
+					[placeholder]
+					'''
+			}
+
+			FearReaper: {
+				DisplayName: Fear Reaper
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Manifests a pair of pumpking scythes that will spin around you for 15 seconds
+					While the scythes are active, you take 10% less damage
+					When the scythes inflict damage, this reduction slightly increases, up to a max of 25% less damage
+					[placeholder]
+					'''
+			}
+
+			ForebodingCharm: {
+				DisplayName: Foreboding Charm
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Triggers a random, offensive ability to an unpredictable effect...
+					'Though it appears sinister in nature, it is said to bestow supernatural luck upon its holder'
+					'''
+			}
+
+			LuckyPresent: {
+				DisplayName: Lucky Present
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Applies a random effect upon you, which may benefical or detrimental...
+					'What am I gonna get? I wonder what I'm gonna get?'
+					'''
+			}
+
+			StellarResonator: {
+				DisplayName: Stellar Resonator
+				Tooltip:
+					'''
+					Increases damage and critical strike chance by 4% while abilities are on cooldown
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Charges up an extremely powerful Star Beam over 10 seconds
+					While charging, you take 10% less damage
+					Once charged, the Star Beam will seek out the strongest enemy and cause a devastating, localized supernova
+					'Wish upon the stars; they will answer'
+					'''
+			}
+
+			MoonbiteMark: {
+				DisplayName: Moonbite Mark
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Manifests a torrent of ascended vampire knives that will steal the life of enemies they hit
+					If you already have full HP, the knives may heal the player with lowest health
+					'Dedicated to Jason 'Lienfors' Parker'
+					'Motrality is temporary; impact is timeless'
+					'''
+			}
+
+			StarlightArmillary: {
+				DisplayName: Starlight Armillary
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Creates a localized aurora borealis which briefly veils you from all attacks
+					Players near the aurora - including the user - will have their survivability increased temporarily
+					Enemies near the aurora become confused and take extra damage for a short time
+					'Its effervescent, celestial power seems to be remnant of inverted arcana...'
+					'''
+			}
+
+			Moonfall: {
+				DisplayName: Moonfall
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}Call in an orbital strike, firing down a massive laser from above
+					The laser will last for 15 seconds, and slowly follows the cursor
+					'Here comes the moon, doo doo doo doo...'
+					'''
+			}
+
+			ArtificerEmblem: {
+				DisplayName: Artificer Emblem
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemtooltip.ForItems.ReducedAbilityCooldown@1}
+					'''
+			}
+
+			CoolingCell: {
+				DisplayName: Cryo-Cooling Cell
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ReducedAbilityCooldown}
+					Provides immunity to chill, frostburn, and freezing effects
+					'''
+			}
+
+			DarkmoonPact: {
+				DisplayName: Darkmoon Pact
+				Tooltip:
+					'''
+					Reduces max life by up to 20% and increases damage taken by 10%
+					In return, the following effects are granted:
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					Increased life regeneration
+					'Always remember that power has a price...'
+					'''
+			}
+
+			NovaEmblem: {
+				DisplayName: Nova Emblem
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemtooltip.ForItems.ReducedAbilityCooldown@1}
+					'''
+			}
+
+			RejuvStone: {
+				DisplayName: Stone of Rejuvination
+				Tooltip: Increases the potency of most healing items by 25%
+			}
+
+			SanguineStone: {
+				DisplayName: Sanguine Stone
+				Tooltip:
+					'''
+					Enemies are more likely to target you
+					Reduces the cooldown of healing potions by 25%
+					'Blood for the blood gods!'
+					'''
+			}
+
+			AceOfHearts: {
+				DisplayName: Ace Of Hearts
+				Tooltip:
+					'''
+					Increases the potency and pickup range of life hearts
+					Defeated enemies have an extra chance to drop a life heart
+					'Ace in the hole'
+					'''
+			}
+
+			DireGlaze: {
+				DisplayName: Dire Glaze
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedCritChance}
+					'Its gaze is dead, yet it pierces your soul...'
+					'''
+			}
+
+			EnergyCell: {
+				DisplayName: Energy Cell
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ReducedAbilityCooldown}
+					'AAAA'
+					'''
+			}
+
+			GiftOfChanneling: {
+				DisplayName: Gift Of Channeling
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentReducedManaCost}
+					Automatically use mana potions when needed
+					{$CommonItemTooltip.IncreasesMaxManaBy@1}
+					'''
+			}
+
+			SpaceCore: {
+				DisplayName: Space Core
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedMagicCritChance}"
+			}
+
+			AstralCuirass: {
+				DisplayName: Nova Cuirass
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@2}
+					Grants minor life regeneration
+					'''
+			}
+
+			AstralGreaves: {
+				DisplayName: Nova Greaves
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreasesMaxManaBy}
+					{$CommonItemTooltip.PercentIncreasedDamageCritChance@1}
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed@2}
+					'''
+			}
+
+			AstralHeadgear: {
+				DisplayName: Nova Headgear
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentReducedManaCost@2}
+					{$CommonItemTooltip.PercentChanceToSaveAmmo@3}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@4}
+					'''
+			}
+
+			ChampionsBoots: {
+				DisplayName: Champion's Boots
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed@2}
+					'Treasured boots passed down for ages and reinforced with ancient metals; they will surely help you on your journey'
+					'''
+			}
+
+			ChampionsCuirass: {
+				DisplayName: Champion's Cuirass
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreasesMaxManaBy}
+					{$CommonItemTooltip.PercentIncreasedDamageCritChance@1}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@2}
+					'A treasured garment, once worn by those in good standings with a distant kingdom of the past'
+					'''
+			}
+
+			ChampionsHeadpiece: {
+				DisplayName: Champion's Hood
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentChanceToSaveAmmo@2}
+					'Though made of simple cloth, this treasured hood's defensive capabilities are enhanced with protective enchantments'
+					'''
+			}
+
+			LihzahrdGreaves: {
+				DisplayName: Lihzahrd Greaves
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed@2}
+					{$CommonItemtooltip.Armorset.Lihzahrd.Target}
+					'''
+			}
+
+			LihzahrdPlate: {
+				DisplayName: Lihzahrd Plate
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentChanceToSaveAmmo@2}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@3}
+					{$CommonItemtooltip.Armorset.Lihzahrd.Target}
+					'''
+			}
+
+			LihzahrdVisage: {
+				DisplayName: Lihzahrd Visage
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentReducedManaCost@2}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@3}
+					{$CommonItemtooltip.Armorset.Lihzahrd.Target}
+					'''
+			}
+
+			MechanicalGreaves: {
+				DisplayName: Mechanical Greaves
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamageCritChance}
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed@1}
+					'''
+			}
+
+			MechanicalMask: {
+				DisplayName: Mechanical Mask
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreasesMaxManaBy}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@2}
+					'''
+			}
+
+			MechanicalPlate: {
+				DisplayName: Mechanical Plate
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentChanceToSaveAmmo@1}
+					'''
+			}
+
+			RadiantBreastplate: {
+				DisplayName: Radiant Breastplate
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentReducedManaCost@2}
+					'''
+			}
+
+			RadiantFacemask: {
+				DisplayName: Radiant Facemask
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamageCritChance}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@1}
+					'''
+			}
+
+			RadiantLeggings: {
+				DisplayName: Radiant Leggings
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamageCritChance}
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed@1}
+					'''
+			}
+
+			PossessedBreastplate: {
+				DisplayName: Possessed Breastplate
+				Tooltip: "'Dark souls within this armor prevent it from protecting you...'"
+			}
+
+			PossessedHelmet: {
+				DisplayName: Possessed Helmet
+				Tooltip: "'Dark souls within this armor prevent it from protecting you...'"
+			}
+
+			PossessedLeggings: {
+				DisplayName: Possessed Leggings
+				Tooltip: "'Dark souls within this armor prevent it from protecting you...'"
+			}
+
+			TarnishedBreastplate: {
+				DisplayName: Tarnished Breastplate
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedCritChance}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@1}
+					'Dark souls within this armor have been harnessed to provide extra protection'
+					'''
+			}
+
+			TarnishedHelmet: {
+				DisplayName: Tarnished Helmet
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamageCritChance}
+					{$CommonItemTooltip.PercentChanceToSaveAmmo@1}
+					'Dark souls within this armor have been harnessed to provide extra protection'
+					'''
+			}
+
+			TarnishedLeggings: {
+				DisplayName: Tarnished Leggings
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed@2}
+					'Dark souls within this armor have been harnessed to provide extra protection'
+					'''
+			}
+
+			XenoLeggings: {
+				DisplayName: Xeno Leggings
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed@2}
+					'''
+			}
+
+			XenoSuit: {
+				DisplayName: Xeno Suit
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreasesMaxManaBy}
+					{$CommonItemTooltip.PercentIncreasedDamage@1}
+					{$CommonItemTooltip.PercentIncreasedCritChance@2}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@3}
+					'''
+			}
+
+			XenoVisor: {
+				DisplayName: Xeno Visor
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentChanceToSaveAmmo@2}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@3}
+					'''
+			}
+
+			OrnateBreastplate: {
+				DisplayName: Ornate Breastplate
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedDamage}"
+			}
+
+			OrnateHelmet: {
+				DisplayName: Ornate Helmet
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedCritChance}"
+			}
+
+			OrnateLeggings: {
+				DisplayName: Ornate Leggings
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedDamage}"
+			}
+
+			StarplateBreastplate: {
+				DisplayName: Starplate Breastplate
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedDamage}"
+			}
+
+			StarplateGreaves: {
+				DisplayName: Starplate Greaves
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedDamageCritChance}"
+			}
+
+			StarplateVisor: {
+				DisplayName: Starplate Visor
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedCritChance}"
+			}
+
+			TechBreastplate: {
+				DisplayName: Tech Suit
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					'''
+			}
+
+			TechHeadgear: {
+				DisplayName: Tech Headgear
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreasesMaxManaBy}
+					{$CommonItemTooltip.PercentIncreasedDamage@1}
+					'''
+			}
+
+			TechLeggings: {
+				DisplayName: Tech Leggings
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedDamageCritChance}"
+			}
+
+			GazersGoggles: {
+				DisplayName: Gazer's Goggles
+				Tooltip:
+					'''
+					Increases view range
+					<right> to zoom out
+					'''
+			}
+
+			MartianScrap: {
+				DisplayName: Martian Scrap
+				Tooltip: "'High-tech remains of an alien saucer'"
+			}
+
+			NovaFragment: {
+				DisplayName: Nova Fragment
+				Tooltip: "'Held within this fragment is the destructive force of a dying star'"
+			}
+
+			OmnisightHelmet: {
+				DisplayName: Helm of Omniscience
+				Tooltip:
+					'''
+					Improves vision and provides light when worn
+					Shows the location of treasure and ore
+					Shows the location of enemies
+					Allows you to see nearby danger sources
+					Increases view range
+					<right> to zoom out
+					'The ultimate in spelunking'
+					'''
+			}
+
+			UltrasightHelmet: {
+				DisplayName: Ultrasight Helmet
+				Tooltip:
+					'''
+					Improves vision and provides light when worn
+					Increases view range
+					<right> to zoom out
+					'The darkness holds no secrets for you'
+					'''
+			}
+
+			LifesurgeBand: {
+				DisplayName: Lifesurge Band
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedCritChance}
+					{$CommonItemtooltip.ForItems.SlowlyRegeneratesLife}
+					{$CommonItemTooltip.IncreasesMaxLifeBy@1}
+					Critical hits occasionally boost life regeneration briefly
+					'''
+			}
+
+			LifeforceBand: {
+				DisplayName: Lifeforce Band
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.SlowlyRegeneratesLife}
+					{$CommonItemTooltip.IncreasesMaxLifeBy}
+					'''
+			}
+
+			HeartsurgeHeart: {
+				Tooltip: "'helth'"
+				DisplayName: Mini-Heart
+			}
+
+			HeartsurgeCharm: {
+				DisplayName: Heartsurge Charm
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedCritChance}
+					{$CommonItemtooltip.ForItems.SlowlyRegeneratesLife}
+					{$CommonItemTooltip.IncreasesMaxLifeBy@1}
+					Slightly increases pickup range for life hearts
+					Defeating enemies or landing critical hits occasionally generates a mini-heart
+					'''
+			}
+
+			SoulHunterNecklace: {
+				DisplayName: Soul Hunter Necklace
+				Tooltip: Attacks temporarily reduce enemy defense by 20
+			}
+
+			DynamicBoots: {
+				DisplayName: Dynamic Boots
+				Tooltip:
+					'''
+					Allows flight
+					Increases fall speed and resistance
+					Reduces lowered gravity at high altitudes
+					'''
+			}
+
+			HeavyBoots: {
+				DisplayName: Heavy Boots
+				Tooltip:
+					'''
+					Increases fall speed and resistance
+					Reduces lowered gravity at high altitudes
+					'''
+			}
+
+			MorbidNecklace: {
+				DisplayName: Morbid Necklace
+				Tooltip: Increases armor penetration by 10
+			}
+
+			PowerBoots: {
+				DisplayName: Power Boots
+				Tooltip:
+					'''
+					Allows flight
+					Grants immunity to knockback and fire blocks
+					Increases fall speed and resistance
+					Reduces lowered gravity at high altitudes
+					'''
+			}
+
+			HunterCharm: {
+				DisplayName: Hunter Charm
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedRangedCritChance}"
+			}
+
+			SandstormCarpet: {
+				DisplayName: Sandstorm Carpet
+				Tooltip:
+					'''
+					Grants an improved double jump
+					Allows the owner to float for a few seconds
+					'Can show you the world... Maybe'
+					'''
+			}
+
+			HadopelagicDivingGear: {
+				DisplayName: Hadopelagic Diving Gear
+				Tooltip:
+					'''
+					Grants the ability to swim and greatly extends underwater breathing
+					Improves vision and provides light when worn
+					Provides extra mobility on ice
+					'DISCLAIMER: Not actually effective under Hadopelagic Pressure'
+					'''
+			}
+
+			UltrabrightDivingGear: {
+				DisplayName: Ultrabright Diving Gear
+				Tooltip:
+					'''
+					Grants the ability to swim and greatly extends underwater breathing
+					Improves vision and provides light when worn
+					'The darkness nor the depths hide their secrets from you'
+					'''
+			}
+
+			TerradepthGear: {
+				DisplayName: Terradepth Gear
+				Tooltip:
+					'''
+					Grants the ability to swim and greatly extends underwater breathing
+					Improves vision and provides light when worn
+					Allows the ability to climb walls
+					Increases jump speed and allows auto-jump
+					Increases fall resistance
+					Provides extra mobility on ice
+					'''
+			}
+
+			BeastmasterGlove: {
+				DisplayName: Beastmaster Glove
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedSummonDamage}
+					{$CommonItemtooltip.ForItems.PercentIncreasedWhipSpeed@1}
+					{$CommonItemtooltip.ForItems.PercentIncreasedWhipRange@2}
+					Enables auto swing for melee weapons and whips
+					'''
+			}
+
+			DefenderEmblem: {
+				DisplayName: Defender Emblem
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedSummonDamage@1}
+					{$CommonItemTooltip.IncreasesMaxSentriesBy@2}
+					'''
+			}
+
+			NebulaEmblem: {
+				DisplayName: Nebula Emblem
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedMagicDamage}
+					{$CommonItemTooltip.PercentReducedManaCost@1}
+					'''
+			}
+
+			SolarEmblem: {
+				DisplayName: Solar Emblem
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedMeleeDamage}
+					{$CommonItemTooltip.PercentIncreasedMeleeSpeed@1}
+					'''
+			}
+
+			SpiritGrasp: {
+				DisplayName: Spirit Grasp
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedSummonDamage}
+					{$CommonItemtooltip.ForItems.PercentIncreasedWhipSpeed@1}
+					{$CommonItemtooltip.ForItems.PercentIncreasedWhipRange@2}
+					Enables auto swing for melee weapons and whips
+					'''
+			}
+
+			StardustEmblem: {
+				DisplayName: Stardust Emblem
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedSummonDamage}"
+			}
+
+			SummonersMitt: {
+				DisplayName: Summoners Mitt
+				Tooltip:
+					'''
+					15% increased whip damage
+					{$CommonItemtooltip.ForItems.PercentIncreasedWhipSpeed}
+					Enables auto swing for melee weapons and whips
+					'''
+			}
+
+			VortexEmblem: {
+				DisplayName: Vortex Emblem
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedRangedDamage}
+					{$CommonItemTooltip.PercentIncreasedRangedCritChance@1}
+					'''
+			}
+
+			DeftPouch: {
+				DisplayName: Deft Pouch
+				Tooltip:
+					'''
+					5% increased dart velocity
+					10% chance to not consume darts
+					'''
+			}
+
+			PygmyBracer: {
+				DisplayName: Pygmy Bracer
+				Tooltip: "{$CommonItemtooltip.ForItems.PercentIncreasedWhipRange}"
+			}
+
+			ShadowflameScroll: {
+				DisplayName: Shadowflame Scroll
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedMagicCritChance}
+					Magic critical strikes inflict Shadowflame
+					'We love casting spells!'
+					'''
+			}
+
+			PhilosopherNecklace: {
+				DisplayName: Philosopher Necklace
+				Tooltip:
+					'''
+					Reduces the cooldown of healing potions by 10%
+					Increases length of invincibility after taking damage
+					Taking damage may slightly reduce healing potion cooldown
+					'''
+			}
+
+			TerraEmblem: {
+				DisplayName: Terra Emblem
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedDamage}"
+			}
+
+			ActionStar: {
+				DisplayName: Action Star
+				Tooltip:
+					'''
+					Increases luck
+					Grants a small chance to guarantee critical hits based on luck
+					Critical strikes deal an extra +40% damage
+					'Its bright shine inspires you to command the battlefield!'
+					'''
+			}
+
+			LuckyStar: {
+				DisplayName: Lucky Star
+				Tooltip:
+					'''
+					Increases luck
+					Grants a small chance to guarantee critical hits based on luck
+					'It gives off a warm glow that raises your spirits'
+					'''
+			}
+
+			SuperMagnet: {
+				DisplayName: Super Magnet
+				Tooltip:
+					'''
+					Greatly increases pickup range for items
+					Increases pickup range mana stars, coins, and life hearts farther
+					May still grant a weakened effect even while unequipped
+					'''
+			}
+
+			ElementalBalloon: {
+				DisplayName: Elemental Balloon
+				Tooltip:
+					'''
+					Allows the holder to sextuple jump
+					Increases jump height and negates fall damage
+					Releases bees and douses the user in honey when damaged
+					Incompatible with wings
+					'''
+			}
+
+			ShadowSneakers: {
+				DisplayName: Shadow Sneakers
+				Tooltip:
+					'''
+					The wearer can run super fast
+					Allows the ability to dash
+					Double tap a direction
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed}
+					'''
+			}
+
+			PhasestrideBoots: {
+				DisplayName: Phasestride Boots
+				Tooltip:
+					'''
+					The wearer can run super fast
+					Allows the ability to perform a teleporting dash
+					Double tap a direction
+					The teleport can bypass walls if there is enough space at the destination
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed}
+					'Maybe you can clip into parallel universes now'
+					'''
+			}
+
+			NovaHologlider: {
+				DisplayName: Nova Hologlider
+				Tooltip: Allows flight and slow fall
+			}
+
+			PredatorQuiver: {
+				DisplayName: Predator Quiver
+				Tooltip:
+					'''
+					Increases arrow damage by 10% and greatly increases arrow speed
+					20% chance to not consume arrows
+					Increases armor penetration for ranged weapons
+					'''
+			}
+
+			BloodNecklace: {
+				DisplayName: Blood Necklace
+				Tooltip:
+					'''
+					Increases movement and attack speed after taking damage
+					Enemies are more likely to target you
+					'There will be bloodshed!'
+					'''
+			}
+
+			CorruptedBulwark: {
+				DisplayName: Corrupted Bulwark
+				Tooltip:
+					'''
+					Increases damage by 15% when below 25% life
+					{$CommonItemtooltip.ForItems.NoKnockback}
+					Enemies are less likely to target you
+					'Not all follow the path of righteousness unwaveringly...'
+					'''
+			}
+
+			PermafrostCloak: {
+				DisplayName: Permafrost Cloak
+				Tooltip:
+					'''
+					Increases defense and life regeneration after taking damage
+					Being damaged may release retalitory ice shards that attack nearby foes 
+					Grants immunity to chill and freezing effects
+					'''
+			}
+
+			PermafrostShell: {
+				DisplayName: Permafrost Shell
+				Tooltip:
+					'''
+					Increases defense and life regeneration after taking damage
+					A spiked ice shell orbits the owner when below 50% life, damaging enemies and reducing damage by 25%
+					Being damaged while a shell is present causes it to aggressively ram into an enemy and explode
+					A new shell will replace a destroyed one shortly afterwards
+					Grants immunity to chill and freezing effects
+					'BLUE SHELL?!'
+					'''
+			}
+
+			ClockworkStopwatch: {
+				DisplayName: Clockwork Stopwatch
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ReducedAbilityCooldown}
+					Automatically activates Ability Accessories for you while in combat
+					'Always on time'
+					'''
+			}
+
+			ArtificerArm: {
+				DisplayName: Artificer's Arm
+				Tooltip:
+					'''
+					Adds an electric charge to your attacks, causing them to occasionally shock enemies
+					15% increased melee and whip speed
+					Enables auto swing for melee weapons and whips
+					'I craved the strength and certainty of steel...'
+					'''
+			}
+
+			TerraShield: {
+				DisplayName: Terra Shield
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.NoKnockback}
+					Grants immunity to most debuffs
+					Above 25% life, nearby allies are protected from dying. Below 25% life, only you are protected
+					Protected players who take fatal damage are instead left with 1 HP
+					When this effect triggers, the player becomes briefly immune to damage over time, and has their next melee strike amplified
+					This effect has a 60 second cooldown, which is reduced by 25% while wearing this shield
+					'''
+			}
+
+			TwinShield: {
+				DisplayName: Twin Shield
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.NoKnockback}
+					Occasionally fires lasers at enemies in front of you
+					Allows the player to dash into the enemy
+					Double tap a direction
+					'''
+			}
+
+			DestroyerScarf: {
+				DisplayName: Destroyer Scarf
+				Tooltip:
+					'''
+					Reduces damage taken by 18%
+					Increases armor penetration by 8
+					'''
+			}
+
+			MotherboardOfIllusion: {
+				DisplayName: Motherboard of Illusion
+				Tooltip:
+					'''
+					Enemies are less likely to target you
+					Has a chance to create illusions and dodge an attack
+					A successful dodge temporarily makes enemies far less likely to target you and increases damage
+					May confuse nearby enemies after being struck
+					'''
+			}
+
+			LifeWell: {
+				DisplayName: Life Well
+				Tooltip:
+					'''
+					Reduces the cooldown of healing potions by 25%
+					Automatically use healing potions when needed
+					'''
+			}
+		}
+
+		Projectiles: {
+			BewitchedBulwarkProj.DisplayName: Bewitched Bulwark
+			BulwarkAura.DisplayName: Bulwark Magic
+			FirstPrismBeam.DisplayName: Prism Beam
+			FirstPrismProj.DisplayName: First Prism
+			SolarBlast.DisplayName: Solar Blast
+			StarwriterSavePos.DisplayName: Starwriter Star
+			StarplateBlast.DisplayName: Starplate Blast
+			LihzahrdArmorBeam.DisplayName: Solar Energy
+			PermafrostCloakSpikes.DisplayName: Ice Shard
+			BlueShell.DisplayName: Icespike Shell
+			MetalCrossbones.DisplayName: Metal Crossbones
+			PlasmaCrossbones.DisplayName: Plasma Crossbones
+			TwinLaser.DisplayName: Twin Laser
+			BarrageNeedle.DisplayName: Barrage Needle
+			AssassinNeedle.DisplayName: Assassin Needle
+			HiddenBladeProj.DisplayName: Hidden Blade
+			RepulseBomb.DisplayName: Repulse Bomb
+			RepulseMissile.DisplayName: Repulse Rocket
+			RepulseShockwave.DisplayName: Repulse Shockwave
+			OrnateRingFlash.DisplayName: Ornate Ring Flash
+			DarkLeechHeal.DisplayName: Dark Lifesteal
+			DarkLeechHook.DisplayName: Dark Leech
+			LeechingTetherHeal.DisplayName: Leech Lifesteal
+			LeechingTetherHook.DisplayName: Leeching Tether
+			LifelineHeal.DisplayName: Vital Lifesteal
+			LifelineHook.DisplayName: Lifeline
+			HarvesterNuke.DisplayName: Necrotic Explosion
+			ProbeLaser.DisplayName: Laser
+			MiniProbe.DisplayName: Mini Probe
+			ObliterationBeam.DisplayName: Deathray
+			Missile.DisplayName: Missile
+			FearReaperBlade.DisplayName: Fear Reaper
+			StellarResonance.DisplayName: Stellar Resonance
+			Supernova.DisplayName: Supernova
+			StarBeam.DisplayName: Star Beam
+			NovaFrag.DisplayName: Nova Frag
+			LienLifesteal.DisplayName: Lien Lifesteal
+			LienKnife.DisplayName: Lien Knife
+			AuroraBorealis.DisplayName: Aurora Borealis
+			MoonfallFlare.DisplayName: Moonfall Flare
+			MoonfallBeam.DisplayName: Moonfall Beam
+		}
+
+		Keybinds: {
+			"Activate Accessory Abilities.DisplayName": Activate Accessory Abilities
+			"Accessory Abilities (Extra hotkey).DisplayName": Accessory Abilities (Extra hotkey)
+		}
+
+		Configs: {
+			ConfigClient: {
+				DisplayName: Client-side Config
+
+				xenoHaloShields: {
+					Label: "[i:ArtificerMod/XenoSuit] Xeno Armor shield custom sfx"
+					Tooltip:
+						'''
+						Toggle if the Xeno Armor's shiled from its set bonus should play custom noises, or ones from vanilla
+						There are noises for when it is charging, and for when it is damaged/broken
+						When false, charging noises won't play, and damage/break noises are swapped to vanilla noises
+						DISCLAIMER: The sounds used are from Halo; I am not affliated in any way, all rights go to respective owner(s)
+						'''
+				}
+
+				cooldownAwareness: {
+					Label: "[i:ArtificerMod/ClockworkStopwatch] Increased cooldown awareness"
+					Tooltip:
+						'''
+						Toggles extra visual effects will occur when Ability Accessory cooldowns end
+						When set to true, additional dust spawns and a text pop-up will appear, increasing awareness/accessibility
+						If custom Xeno Armor sfx is enabled (see above), the refresh sound effect will also be replaced
+						Defaults to false
+						'''
+				}
+			}
+
+			ConfigServer: {
+				DisplayName: Server-side Config
+
+				CultistExpertDrop: {
+					Label: "[i:ArtificerMod/DarkmoonPact] Lunatic Cultist Expert Drop"
+					Tooltip:
+						'''
+						Lets you decide if/how the Lunatic Cultist should drop his treasure bag in Expert Mode
+						This mod adds an Expert drop for the Cultist, which will drop from his treasure bag, which is normally unobtainable
+						Choose 'Drop Bag' to make the Cultist drop his bag with the accessory inside
+						Choose 'No Drops' to make this mod not drop the bag, and prevent the accessory from dropping from the bag
+						Choose 'No Bag' to make this mod not drop the bag, but allow the accessory to still drop from it
+						This option is good for if other mods make the Cultist drop his bag, to prevent multiple bags dropping at once
+						'''
+				}
+
+				GodmodeCooldown: {
+					Label: "[i:ArtificerMod/NovaEmblem] Journey Mode Godmode decreaes ability cooldown times"
+					Tooltip:
+						'''
+						When set to true, using Journey Mode's Godmode feature will reduce Ability Accessory cooldowns by 75%
+						This feature will also disable penalties from not having an Artificer armor set and/or Ability Accessory equipped
+						Good for more easily testing various abilites is Journey Mode
+						Defaults to false
+						'''
+				}
+
+				PresentDeathText: {
+					Label: "[i:ArtificerMod/LuckyPresent] Special death messages from Lucky Present"
+					Tooltip:
+						'''
+						If a player is somehow killed by a damaging effect from the Lucky Present's ability, unique death messages will appear, so long as this setting is true
+						Note that players should almost never die this way, as the Lucky Present's damage effect may only kill players at 1 HP
+						Defaults to true
+						'''
+				}
+
+				BonusArtificerSlot: {
+					Label: "[i:ArtificerMod/AstralCuirass] Artificer Set Bonuses grant +1 more accessory slots"
+					Tooltip:
+						'''
+						When set to true, Artificer armor set bonuses will grant one more extra accessory slot than normal
+						For example, Champion's Armor - which adds +2 normally - will grant +3 slots with this setting turned on
+						For balanced play, it is recommened to only use this if you have a large amount of extra slots from other mods (Ex: wing slot, shoe slot, etc)
+						Defaults to false
+						'''
+				}
+			}
+		}
+	}
+}
