@@ -4,11 +4,15 @@ using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using ArtificerMod.Common;
 using ArtificerMod.Content.Items.AccessoriesPH;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.AccessoriesH
 {
 	public class ClockworkStopwatch : ModItem
 	{
+		public static int Cooldown = 25;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(Cooldown);
+
 		public override void SetStaticDefaults()
 		{
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;

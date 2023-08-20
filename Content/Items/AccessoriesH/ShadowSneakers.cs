@@ -2,12 +2,16 @@ using Terraria;
 using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.AccessoriesH
 {
 	[AutoloadEquip(EquipType.Shoes)]
 	public class ShadowSneakers : ModItem
 	{
+		public static int IncreasedMovementSpeed = 10;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedMovementSpeed);
+
 		public override void SetStaticDefaults()
 		{
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;

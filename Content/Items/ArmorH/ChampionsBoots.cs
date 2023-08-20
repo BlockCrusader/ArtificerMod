@@ -2,12 +2,18 @@
 using Terraria.ModLoader;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.ArmorH
 {
 	[AutoloadEquip(EquipType.Legs)]
 	public class ChampionsBoots : ModItem
 	{
+		public static int IncreasedDmg = 5;
+		public static int IncreasedCritChance = 3;
+		public static int IncreasedMovementSpeed = 5;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedDmg, IncreasedCritChance, IncreasedMovementSpeed);
+		
 		public override void SetStaticDefaults() 
 		{
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;

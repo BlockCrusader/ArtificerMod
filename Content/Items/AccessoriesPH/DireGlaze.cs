@@ -2,11 +2,15 @@ using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Terraria.ID;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.AccessoriesPH
 {
 	public class DireGlaze : ModItem
 	{
+		public static int IncreasedCritChance = 2;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedCritChance);
+
 		public override void SetStaticDefaults()
 		{
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;

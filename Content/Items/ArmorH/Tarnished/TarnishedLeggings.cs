@@ -2,12 +2,18 @@
 using Terraria.ModLoader;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.ArmorH.Tarnished
 {
 	[AutoloadEquip(EquipType.Legs)]
 	public class TarnishedLeggings : ModItem
 	{
+		public static int IncreasedDmg = 4;
+		public static int IncreasedCritChance = 2;
+		public static int IncreasedMovementSpeed = 5;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedDmg, IncreasedCritChance, IncreasedMovementSpeed);
+
 		public override void SetStaticDefaults() {
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}

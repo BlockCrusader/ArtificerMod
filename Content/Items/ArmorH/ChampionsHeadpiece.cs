@@ -3,12 +3,18 @@ using Terraria.ModLoader;
 using Terraria.ID;
 using Terraria.GameContent.Creative;
 using ArtificerMod.Common;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.ArmorH
 {
 	[AutoloadEquip(EquipType.Head)]
 	public class ChampionsHeadpiece : ModItem
 	{
+		public static int IncreasedDmg = 3;
+		public static int IncreasedCritChance = 4;
+		public static int ChanceSaveAmmo = 5;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedDmg, IncreasedCritChance, ChanceSaveAmmo);
+
 		public override void SetStaticDefaults() {
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 
@@ -38,8 +44,7 @@ namespace ArtificerMod.Content.Items.ArmorH
 
 		public override void UpdateArmorSet(Player player)
 		{
-			player.setBonus = "+2 Artificer Accessory Slots" +
-				"\nTerraria itself grants you increased damage or increased survivability, based on your health"; 
+			player.setBonus = Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.Armorset.Champions"); 
 			player.GetModPlayer<ArtificerPlayer>().championSetBonus = true;
 		}
 	}

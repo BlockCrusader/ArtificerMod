@@ -2,11 +2,15 @@ using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Terraria.ID;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.AccessoriesPH
 {
 	public class SpaceCore : ModItem
 	{
+		public static int IncreasedMagivDmgCritChance = 3;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedMagivDmgCritChance);
+
 		public override void SetStaticDefaults()
 		{
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;

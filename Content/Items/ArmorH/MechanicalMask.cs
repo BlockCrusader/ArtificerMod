@@ -5,12 +5,18 @@ using Terraria.GameContent.Creative;
 using ArtificerMod.Common;
 using Microsoft.Xna.Framework.Graphics;
 using ArtificerMod.Content.Glowmasks;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.ArmorH
 {
 	[AutoloadEquip(EquipType.Head)]
 	public class MechanicalMask : ModItem
 	{
+		public static int IncreasedMaxMana = 20;
+		public static int IncreasedCritChance = 2;
+		public static int MaxMinion = 1;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedMaxMana, IncreasedCritChance, MaxMinion);
+
 		public override void SetStaticDefaults() {
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 
@@ -46,10 +52,7 @@ namespace ArtificerMod.Content.Items.ArmorH
 
 		public override void UpdateArmorSet(Player player)
 		{
-			player.setBonus = "+2 Artificer Accessory Slots" +
-				"\n20% reduced Ability Accessory cooldowns" +
-				"\nCritical hits may briefly inflict enemies with a shock" +
-                "\nShocked enemies deal less contact damage and take more damage"; 
+			player.setBonus = Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.Armorset.Mechanical"); 
 			player.GetModPlayer<ArtificerPlayer>().mechSetBonus = true;
 		}
 

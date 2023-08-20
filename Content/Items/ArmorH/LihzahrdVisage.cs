@@ -5,12 +5,19 @@ using Terraria.GameContent.Creative;
 using ArtificerMod.Common;
 using Microsoft.Xna.Framework.Graphics;
 using ArtificerMod.Content.Glowmasks;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.ArmorH
 {
 	[AutoloadEquip(EquipType.Head)]
 	public class LihzahrdVisage : ModItem
 	{
+		public static int IncreasedDmg = 4;
+		public static int IncreasedCritChance = 3;
+		public static int ReducedManaCost = 10;
+		public static int MaxMinion = 1;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedDmg, IncreasedCritChance, ReducedManaCost, MaxMinion);
+
 		public override void SetStaticDefaults() {
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 
@@ -48,9 +55,7 @@ namespace ArtificerMod.Content.Items.ArmorH
 
 		public override void UpdateArmorSet(Player player)
 		{
-			player.setBonus = "+2 Artificer Accessory Slots" +
-				"\nWhen attacked, you may unleash retailitory energy beams and gain a brief damage boost" +
-				"\nEnemies are slightly more likely to target you"; 
+			player.setBonus = Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.Armorset.Lihzahrd.SetBonus"); 
 			player.GetModPlayer<ArtificerPlayer>().lihzahrdSetBonus = true;
 			player.aggro += 50;
 		}

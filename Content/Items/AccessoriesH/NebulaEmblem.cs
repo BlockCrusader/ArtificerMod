@@ -4,11 +4,16 @@ using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using ArtificerMod.Content.Items.Others;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.AccessoriesH
 {
 	public class NebulaEmblem : ModItem
 	{
+		public static int IncreasedMagicDamage = 19;
+		public static int ReducedManaCost = 12;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedMagicDamage, ReducedManaCost);
+
 		public override void SetStaticDefaults()
 		{
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;

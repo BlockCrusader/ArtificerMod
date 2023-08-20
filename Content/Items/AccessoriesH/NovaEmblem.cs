@@ -6,11 +6,16 @@ using ArtificerMod.Common;
 using ArtificerMod.Content.Items.Others;
 using ArtificerMod.Content.Items.AccessoriesPH;
 using Microsoft.Xna.Framework;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.AccessoriesH
 {
 	public class NovaEmblem : ModItem
 	{
+		public static int IncreasedDmg = 5;
+		public static int Cooldown = 33;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedDmg, Cooldown);
+
 		public override void SetStaticDefaults()
 		{
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;

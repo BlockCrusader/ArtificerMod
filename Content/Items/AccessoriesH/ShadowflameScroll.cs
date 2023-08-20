@@ -3,11 +3,16 @@ using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using ArtificerMod.Common;
 using Terraria.ID;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.AccessoriesH
 {
+	
 	public class ShadowflameScroll : ModItem
 	{
+		public static int IncreasedMagicCritChance = 10;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedMagicCritChance);
+
 		public override void SetStaticDefaults()
 		{
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;

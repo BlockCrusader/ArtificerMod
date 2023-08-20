@@ -2,12 +2,16 @@ using Terraria;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.AccessoriesPH
 {
 	[AutoloadEquip(EquipType.HandsOn)]
 	public class PygmyBracer : ModItem
 	{
+		public static int IncreasedWhipRange = 15;
+		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedWhipRange);
+
 		public override void SetStaticDefaults()
 		{
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;

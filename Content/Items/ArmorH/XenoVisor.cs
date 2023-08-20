@@ -6,12 +6,19 @@ using ArtificerMod.Common;
 using ArtificerMod.Content.Items.Others;
 using ArtificerMod.Content.Glowmasks;
 using Microsoft.Xna.Framework.Graphics;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.ArmorH
 {
 	[AutoloadEquip(EquipType.Head)]
 	public class XenoVisor : ModItem
 	{
+		public static int IncreasedDmg = 3;
+		public static int IncreasedCritChance = 5;
+		public static int ChanceSaveAmmo = 10;
+		public static int MaxMinion = 1;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedDmg, IncreasedCritChance, ChanceSaveAmmo, MaxMinion);
+
 		public override void SetStaticDefaults() {
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 
@@ -62,8 +69,7 @@ namespace ArtificerMod.Content.Items.ArmorH
 
 		public override void UpdateArmorSet(Player player)
 		{
-			player.setBonus = "+2 Artificer Accessory Slots" +
-				"\nOver time, your armor will charge a temporarily energy shield that can absorb some damage"; 
+			player.setBonus = Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.Armorset.Xeno"); 
 			player.GetModPlayer<ArtificerPlayer>().xenoSetBonus = true;
 		}
 

@@ -7,12 +7,20 @@ using ArtificerMod.Common;
 using ArtificerMod.Content.Items.Others;
 using ArtificerMod.Content.Glowmasks;
 using Microsoft.Xna.Framework.Graphics;
+using Terraria.Localization;
 
 namespace ArtificerMod.Content.Items.ArmorH
 {
 	[AutoloadEquip(EquipType.Head)]
 	public class AstralHeadgear : ModItem
-	{
+	{		
+		public static int IncreasedDmg = 3;
+		public static int IncreasedCritChance = 6;
+		public static int ReducedManaCost = 5;
+		public static int ChanceSaveAmmo = 10;
+		public static int MaxMinion = 1;
+ 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(IncreasedDmg, IncreasedCritChance, ReducedManaCost, ChanceSaveAmmo, MaxMinion);
+
 		public override void SetStaticDefaults() {
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 
@@ -53,9 +61,7 @@ namespace ArtificerMod.Content.Items.ArmorH
 
 		public override void UpdateArmorSet(Player player)
 		{
-			player.setBonus = "+3 Artificer Accessory Slots" +
-                "\n25% reduced Ability Accessory cooldowns" +
-				"\nActivating accessory abilities unleashes a surge of energy, increasing your offensive and defensive capabilities while on cooldown"; 
+			player.setBonus = Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.Armorset.AstralNova"); 
 			player.GetModPlayer<ArtificerPlayer>().astralSetBonus = true;
 		}
 
