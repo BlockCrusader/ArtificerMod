@@ -2,6 +2,7 @@ Mods: {
 	ArtificerMod: {
 		CommonItemtooltip: {
 			HotkeySet: WARNING: No hotkey set for abilities! Assign one in the 'Controls' section of the settings menu!
+			BonusAccessory: Bonus Accessory
 
 			Cooldown: {
 				CooldowntimeNegative: Cooldown time: [c/78be78:{1} seconds] (Base: {0} sec)
@@ -44,7 +45,8 @@ Mods: {
 				ReducedAbilityCooldown: "{0}% reduced Ability Accessory cooldowns"
 				PercentIncreasedWhipSpeed: "{0}% increased whip speed"
 				PercentIncreasedWhipRange: "{0}% increased whip range"
-				Target: Enemies are slightly more likely to target you
+				MoreTarget: Enemies are more likely to target you
+				LessTarget: Enemies are less likely to target you
 				AccessorySlot: Artificer Accessory Slots
 			}
 
@@ -60,17 +62,12 @@ Mods: {
 					+2 {$CommonItemtooltip.ForItems.AccessorySlot}
 					Terraria itself grants you increased damage or increased survivability, based on your health
 					'''
-
-				Lihzahrd: {
-					Target: Enemies are slightly more likely to target you
-					SetBonus:
-						'''
-						+2 {$CommonItemtooltip.ForItems.AccessorySlot}
-						When attacked, you may unleash retailitory energy beams and gain a brief damage boost
-						Enemies are slightly more likely to target you
-						'''
-				}
-
+				Lihzahrd:
+					'''
+					+2 {$CommonItemtooltip.ForItems.AccessorySlot}
+					When attacked, you may unleash retailitory energy beams and gain a brief damage boost
+					{$CommonItemtooltip.ForItems.MoreTarget}
+					'''
 				Mechanical:
 					'''
 					+2 {$CommonItemtooltip.ForItems.AccessorySlot}
@@ -349,22 +346,22 @@ Mods: {
 
 			SwaggerCapeBuff: {
 				DisplayName: Swagger Taunt
-				Description: Enemies are much more likely to target you
+				Description: "{$CommonItemtooltip.ForItems.MoreTarget}"
 			}
 
 			ShadowShroudBuff: {
 				DisplayName: Shadow Sneak
-				Description: Enemies are much less likely to target you, and your next strike deals amplified damage
+				Description: "{$CommonItemtooltip.ForItems.LessTarget}, and your next strike deals amplified damage"
 			}
 
 			FlamboyantCapeBuff: {
 				DisplayName: Flamboyant!
-				Description: Enemies are much more likely to target you
+				Description: "{$CommonItemtooltip.ForItems.MoreTarget}"
 			}
 
 			StealthShroudBuff: {
 				DisplayName: Stealth
-				Description: Enemies are much less likely to target you
+				Description: "{$CommonItemtooltip.ForItems.LessTarget}"
 			}
 
 			OrnateSpark: {
@@ -911,7 +908,7 @@ Mods: {
 				DisplayName: Shadow Shroud
 				Tooltip:
 					'''
-					Enemies are less likely to target you
+					{$CommonItemtooltip.ForItems.LessTarget}
 					{$CommonItemtooltip.ForItems.ActivatedAbility}Enemies become even less likely to target you for 10 seconds
 					Inflicting damage during this period of time will cause the strike's damage to be multiplied by 5, ending the ability's effects in the process
 					[placeholder]
@@ -922,8 +919,8 @@ Mods: {
 				DisplayName: Swagger Cape
 				Tooltip:
 					'''
-					Enemies are more likely to target you
-					5% increased critical strike chance
+					{$CommonItemtooltip.ForItems.MoreTarget}
+					{$CommonItemTooltip.PercentIncreasedCritChance}
 					{$CommonItemtooltip.ForItems.ActivatedAbility}Enemies become even more likely to target you for 10 seconds
 					Also taunts nearby enemies, causing their contact damage to increase, but also increasing the damage they take
 					'Swag Messiah!'
@@ -934,7 +931,7 @@ Mods: {
 				DisplayName: Flamboyant Cape
 				Tooltip:
 					'''
-					Enemies are more likely to target you
+					{$CommonItemtooltip.ForItems.MoreTarget}
 					{$CommonItemtooltip.ForItems.ActivatedAbility}Enemies become even more likely to target you for 10 seconds
 					[placeholder]
 					'''
@@ -944,7 +941,7 @@ Mods: {
 				DisplayName: Stealth Shroud
 				Tooltip:
 					'''
-					Enemies are less likely to target you
+					{$CommonItemtooltip.ForItems.LessTarget}
 					{$CommonItemtooltip.ForItems.ActivatedAbility}Enemies become even less likely to target you for 10 seconds
 					[placeholder]
 					'''
@@ -1168,7 +1165,7 @@ Mods: {
 				DisplayName: Sanguine Stone
 				Tooltip:
 					'''
-					Enemies are more likely to target you
+					{$CommonItemtooltip.ForItems.MoreTarget}
 					Reduces the cooldown of healing potions by 25%
 					'Blood for the blood gods!'
 					'''
@@ -1290,7 +1287,7 @@ Mods: {
 					{$CommonItemTooltip.PercentIncreasedDamage}
 					{$CommonItemTooltip.PercentIncreasedCritChance@1}
 					{$CommonItemTooltip.PercentIncreasedMovementSpeed@2}
-					{$CommonItemtooltip.Armorset.Lihzahrd.Target}
+					{$CommonItemtooltip.ForItems.MoreTarget}
 					'''
 			}
 
@@ -1302,7 +1299,7 @@ Mods: {
 					{$CommonItemTooltip.PercentIncreasedCritChance@1}
 					{$CommonItemTooltip.PercentChanceToSaveAmmo@2}
 					{$CommonItemTooltip.IncreasesMaxMinionsBy@3}
-					{$CommonItemtooltip.Armorset.Lihzahrd.Target}
+					{$CommonItemtooltip.ForItems.MoreTarget}
 					'''
 			}
 
@@ -1314,7 +1311,7 @@ Mods: {
 					{$CommonItemTooltip.PercentIncreasedCritChance@1}
 					{$CommonItemTooltip.PercentReducedManaCost@2}
 					{$CommonItemTooltip.IncreasesMaxMinionsBy@3}
-					{$CommonItemtooltip.Armorset.Lihzahrd.Target}
+					{$CommonItemtooltip.ForItems.MoreTarget}
 					'''
 			}
 
@@ -1874,7 +1871,7 @@ Mods: {
 				Tooltip:
 					'''
 					Increases movement and attack speed after taking damage
-					Enemies are more likely to target you
+					{$CommonItemtooltip.ForItems.MoreTarget}
 					'There will be bloodshed!'
 					'''
 			}
@@ -1885,7 +1882,7 @@ Mods: {
 					'''
 					Increases damage by 15% when below 25% life
 					{$CommonItemtooltip.ForItems.NoKnockback}
-					Enemies are less likely to target you
+					{$CommonItemtooltip.ForItems.LessTarget}
 					'Not all follow the path of righteousness unwaveringly...'
 					'''
 			}
@@ -1971,7 +1968,7 @@ Mods: {
 				DisplayName: Motherboard of Illusion
 				Tooltip:
 					'''
-					Enemies are less likely to target you
+					{$CommonItemtooltip.ForItems.LessTarget}
 					Has a chance to create illusions and dodge an attack
 					A successful dodge temporarily makes enemies far less likely to target you and increases damage
 					May confuse nearby enemies after being struck

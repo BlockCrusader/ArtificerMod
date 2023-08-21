@@ -55,7 +55,7 @@ namespace ArtificerMod.Content.Items.ArmorH
 
 		public override void UpdateArmorSet(Player player)
 		{
-			player.setBonus = Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.Armorset.Lihzahrd.SetBonus"); 
+			player.setBonus = Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.Armorset.Lihzahrd"); 
 			player.GetModPlayer<ArtificerPlayer>().lihzahrdSetBonus = true;
 			player.aggro += 50;
 		}
