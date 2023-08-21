@@ -3,6 +3,7 @@ Mods: {
 		CommonItemtooltip: {
 			HotkeySet: WARNING: No hotkey set for abilities! Assign one in the 'Controls' section of the settings menu!
 			BonusAccessory: Bonus Accessory
+			GemsforRecipe: " Gems"
 
 			Cooldown: {
 				CooldowntimeNegative: Cooldown time: [c/78be78:{1} seconds] (Base: {0} sec)
