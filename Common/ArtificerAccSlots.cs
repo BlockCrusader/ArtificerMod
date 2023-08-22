@@ -1,5 +1,6 @@
 using Terraria;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace ArtificerMod.Common
 {
@@ -24,7 +25,7 @@ namespace ArtificerMod.Common
 			switch (context)
 			{
 				case AccessorySlotType.FunctionalSlot:
-					Main.hoverItemName = "Bonus Accessory";
+					Main.hoverItemName = Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.BonusAccessory");
 					break;
 			}
 		}
@@ -49,7 +50,7 @@ namespace ArtificerMod.Common
 			switch (context)
 			{
 				case AccessorySlotType.FunctionalSlot:
-					Main.hoverItemName = "Bonus Accessory";
+					Main.hoverItemName = Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.BonusAccessory");
 					break;
 			}
 		}
@@ -74,7 +75,7 @@ namespace ArtificerMod.Common
 			switch (context)
 			{
 				case AccessorySlotType.FunctionalSlot:
-					Main.hoverItemName = "Bonus Accessory";
+					Main.hoverItemName = Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.BonusAccessory");
 					break;
 			}
 		}
@@ -101,7 +102,7 @@ namespace ArtificerMod.Common
 			switch (context)
 			{
 				case AccessorySlotType.FunctionalSlot:
-					Main.hoverItemName = "Bonus Accessory";
+					Main.hoverItemName = Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.BonusAccessory");
 					break;
 			}
 		}

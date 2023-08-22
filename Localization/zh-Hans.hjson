@@ -1,0 +1,2112 @@
+Mods: {
+	ArtificerMod: {
+		CommonItemtooltip: {
+			HotkeySet: 警告: 请在设置菜单中<控件>选项为本模组的“饰品能力”绑定快捷键
+			BonusAccessory: 额外巧匠饰品栏
+			GemsforRecipe: 宝石
+			AbilitiesRefreshed: 能力已刷新！
+
+			Cooldown: {
+				CooldowntimeNegative: 当前冷却: [c/78be78:{1} 秒]（基础冷却: {0} 秒）
+				CooldowntimePositive: 当前冷却: [c/be7878:{1} 秒]（基础冷却: {0} 秒）
+				Cooldowntime: 当前冷却: {1} 秒（基础冷却: {0} 秒）
+				SlightlyExtended: 冷却时间在未穿戴整套盔甲时，小幅增加
+				GreatlyExtended: 冷却时间在未佩戴特殊能力饰品时，中幅增加
+				DrasticallyExtended: 冷却时间在未穿戴整套盔甲和佩戴特殊能力饰品时，大幅增加
+			}
+
+			ForBuffs: {
+				RegeneratingHealth: 生命正在快速回复
+				RegeneratingMana: 魔力正在快速回复
+				Lucky: 时来天地皆同力！
+				Unlucky: 运去英雄不自由...
+				IncreasedCriticalChance: 增加暴击率
+				DecreasedCriticalChance: 减少暴击率
+				IncreasedDefense: 增加防御
+				DncreasedDefense: 减少防御
+				IncreasedDamage: 增加伤害
+				DecreasedDamage: 减少伤害
+				DecreasedDamageTaken: 减少受到的伤害
+				IncreasedDamageTaken: 增加受到的伤害
+			}
+
+			ForItems: {
+				ActivatedAbility: "饰品能力: "
+				BrieflyLifeRegen: 若减益得到治愈，大幅增加生命再生速度
+				ManaSicknessInflicted: 回复期间受到魔力病减益
+				PotionSicknessInflicted: 回复期间受到抗药性减益
+				SlowlyRegeneratesLife: 缓慢回复生命
+				NoKnockback: 免疫击退
+				ArcanaStimulator: 5 秒内回复 {0} 魔力
+				VitalStimulator: 10 秒内回复 {0} 生命
+				LeechedLifeHeal:
+					'''
+					射出汲取敌人生命的刺钩，持续 10 秒
+					吸取的生命将用于治疗生命值最低的玩家
+					'''
+				ReducedAbilityCooldown: 减少 {0}% 饰品能力冷却时间
+				PercentIncreasedWhipSpeed: 增加 {0}% 鞭子攻击速度
+				PercentIncreasedWhipRange: 增加 {0}% 鞭子攻击范围
+				MoreTarget: 敌人倾向于将你视作攻击目标
+				LessTarget: 敌人不容易将你视作攻击目标
+				AccessorySlot: 巧匠饰品栏
+			}
+
+			Armorset: {
+				AstralNova:
+					'''
+					+3 {$CommonItemtooltip.ForItems.AccessorySlot}
+					减少 25% 饰品能力冷却时间
+					激活饰品能力会释放大量能量，在冷却时提高你的进攻和防御能力
+					'''
+				Champions:
+					'''
+					+2 {$CommonItemtooltip.ForItems.AccessorySlot}
+					泰拉之力会根据你的生命值提高伤害或生存能力
+					'''
+				Lihzahrd:
+					'''
+					+2 {$CommonItemtooltip.ForItems.AccessorySlot}
+					受到攻击时，释放能量束反击并获得短暂的伤害提升
+					{$CommonItemtooltip.ForItems.MoreTarget}
+					'''
+				Mechanical:
+					'''
+					+2 {$CommonItemtooltip.ForItems.AccessorySlot}
+					减少 20% 饰品能力冷却时间
+					暴击会对敌人施加惊愕减益
+					受到惊愕减益的敌人造成更低的接触伤害并受到更多的伤害
+					'''
+				Radiant:
+					'''
+					+1 {$CommonItemtooltip.ForItems.AccessorySlot}
+					召唤一个神秘水晶，在近战、远程、魔法和召唤中选择
+					你和附近的其他玩家获得所选择对应职业的增幅效果
+					拥有水晶的玩家（包括你）从该效果中获得的收益增加
+					双击 {0} 切换增幅效果对应的职业
+					'''
+				Tarnished:
+					'''
+					+1 {$CommonItemtooltip.ForItems.AccessorySlot}
+					饰品能力冷却时间不再增加
+					如果你受到致命伤害，庇护之魂会复活你并回复100点生命
+					复活效果触发后有5分钟的冷却时间
+					'''
+				Xeno:
+					'''
+					+2 {$CommonItemtooltip.ForItems.AccessorySlot}
+					随着时间推移，你的盔甲会充能产生一个能吸收部分伤害的临时护盾
+					'''
+				Ornate:
+					'''
+					+1 {$CommonItemtooltip.ForItems.AccessorySlot}
+					饰品能力冷却时间不再增加
+					增加 2 防御
+					'''
+				Starplate:
+					'''
+					+1 {$CommonItemtooltip.ForItems.AccessorySlot}
+					饰品能力冷却时间不再增加
+					根据昼夜获得不同效果的小幅提升：
+					白天增加伤害和移动速度
+					夜晚增加防御和生命再生
+					'''
+				Tech:
+					'''
+					+1 {$CommonItemtooltip.ForItems.AccessorySlot}
+					饰品能力冷却时间不再增加
+					减少 17% 饰品能力冷却时间
+					'''
+			}
+		}
+
+		Buffs: {
+			BewitchedBulwarkBuff: {
+				DisplayName: 迷魂之壁
+				Description: 迷魂之壁增强了你的防御能力！
+			}
+
+			CyborgCoreBuff: {
+				DisplayName: 赛博格核心
+				Description: 降低移动速度，增加防御和生命再生
+			}
+
+			HPStim3: {
+				DisplayName: 生命精华 Ⅲ
+				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingHealth}"
+			}
+
+			HPStim4: {
+				DisplayName: 生命精华 Ⅳ
+				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingHealth}"
+			}
+
+			ManaStim3: {
+				DisplayName: 阿卡纳精华 Ⅲ
+				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingMana}"
+			}
+
+			ManaStim4: {
+				DisplayName: 阿卡纳精华 Ⅳ
+				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingMana}"
+			}
+
+			PowerArmorBuff: {
+				DisplayName: 未来之甲
+				Description: 装备未来之甲，可以极大地减少伤害！
+			}
+
+			ArtificerArmorBuff: {
+				DisplayName: 巧匠之甲
+				Description: 装备巧匠之甲，可以极大地减少伤害！
+			}
+
+			HPStim1: {
+				DisplayName: 生命精华 Ⅰ
+				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingHealth}"
+			}
+
+			HPStim2: {
+				DisplayName: 生命精华 Ⅱ
+				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingHealth}"
+			}
+
+			LifeChargerBuff: {
+				DisplayName: 生命起搏器
+				Description: 为生命恢复充能中...不要被击中！
+			}
+
+			ManaChargerBuff: {
+				DisplayName: 魔力起搏器
+				Description: 为魔力恢复充能中...不要被击中！
+			}
+
+			ManaStim1: {
+				DisplayName: 阿卡纳精华 Ⅰ
+				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingMana}"
+			}
+
+			ManaStim2: {
+				DisplayName: 阿卡纳精华 Ⅱ
+				Description: "{$CommonItemtooltip.ForBuffs.RegeneratingMana}"
+			}
+
+			RadarPing: {
+				DisplayName: 雷达扫描
+				Description: 显示目标并高亮标记
+			}
+
+			RetributionBuff: {
+				DisplayName: 一雪前耻
+				Description: 那些杀不死你的，只会让你强大！
+			}
+
+			AbilityCooldown: {
+				DisplayName: 饰品能力冷却
+				Description: 冷却结束前不能使用饰品能力
+			}
+
+			ChampionDef: {
+				DisplayName: 泰拉坚定之力
+				Description: 泰拉之力增强你的防御和再生！
+			}
+
+			ChampionOff: {
+				DisplayName: 泰拉勇猛之力
+				Description: 泰拉之力增强你的攻击！
+			}
+
+			MechShock: {
+				DisplayName: 机械惊愕
+				Description: 敌人对穿戴机械盔甲的玩家来说弱爆了！
+			}
+
+			PrismMagic: {
+				DisplayName: 圣耀法师
+				Description: 一块神秘的水晶赋予你魔法攻击的力量
+			}
+
+			PrismMelee: {
+				DisplayName: 圣耀战士
+				Description: 一块神秘的水晶赋予你近战攻击的力量
+			}
+
+			PrismRanged: {
+				DisplayName: 圣耀射手
+				Description: 一块神秘的水晶赋予你远程攻击的力量
+			}
+
+			PrismSummon: {
+				DisplayName: 圣耀召唤师
+				Description: 一块神秘的水晶赋予你召唤攻击的力量
+			}
+
+			SolarOverdrive: {
+				DisplayName: 太阳赐福
+				Description: 伤害提升，报复你的敌人吧！
+			}
+
+			TarnishedRevive: {
+				DisplayName: 庇护之魂
+				Description: 褪色盔甲的庇护正在冷却中
+			}
+
+			XenoShieldDisplay: {
+				DisplayName: 能量护盾
+				Description: 你的盔甲已经充能，将会减少受到的伤害！
+			}
+
+			StarplateDay: {
+				DisplayName: 日之力
+				Description: 你的缀星盔甲稍微增强了攻击速度和移动速度
+			}
+
+			StarplateNight: {
+				DisplayName: 月之力
+				Description: 你的缀星盔甲稍微增强了防御和生命再生
+			}
+
+			LifesurgeBuff: {
+				DisplayName: 救命手环
+				Description: 提高生命再生
+			}
+
+			SoulHunt: {
+				DisplayName: 猎魂项链
+				Description: 敌人的防御被削减了
+			}
+
+			BloodDrive: {
+				DisplayName: 血腥项链
+				Description: 提高攻击速度和移动速度
+			}
+
+			PermafrostProtection: {
+				DisplayName: 永冻防护
+				Description: 增加防御和生命再生
+			}
+
+			ElectrifiedEnemy: {
+				DisplayName: 电击敌人
+				Description: 敌人持续受到伤害
+			}
+
+			ChampionProtec: {
+				DisplayName: 失落英雄之盾的防护
+				Description: 攻击者会受到伤害！
+			}
+
+			TerraCooldown: {
+				DisplayName: 泰拉衰竭
+				Description: 泰拉之盾的力量现在无法保护你
+			}
+
+			LastStand: {
+				DisplayName: 泰拉守护
+				Description: 附近的泰拉之盾正在保护你免受死亡！
+			}
+
+			TerraRevive: {
+				DisplayName: 绝地求生
+				Description: 你暂时免疫伤害，趁此良机扭转乾坤！
+			}
+
+			PrimeRage: {
+				DisplayName: 铁骷髅之怒
+				Description: 你的铁骷髅手套已经完美充能！
+			}
+
+			CounterstrikeProtocol: {
+				DisplayName: 幻梦之脑
+				Description: 敌人不容易攻击你，伤害增加
+			}
+
+			TurboBoost: {
+				DisplayName: 涡轮增强
+				Description: 大幅提高移动速度
+			}
+
+			OverdriveBoost: {
+				DisplayName: 过载增强
+				Description: 大幅提高移动和跳跃速度
+			}
+
+			Supercharged: {
+				DisplayName: 超级机械臂
+				Description: 大幅增强近战和鞭子攻击速度
+			}
+
+			ProstheticsBuff: {
+				DisplayName: 充能外骨骼
+				Description: 大幅提高移动、跳跃速度，大幅增强近战、鞭子攻击速度
+			}
+
+			SwaggerTaunt: {
+				DisplayName: 嘲讽
+				Description: 敌人造成更多接触伤害，敌人受到更多伤害
+			}
+
+			SwaggerCapeBuff: {
+				DisplayName: 招摇
+				Description: "{$CommonItemtooltip.ForItems.MoreTarget}"
+			}
+
+			ShadowShroudBuff: {
+				DisplayName: 暗影斗篷
+				Description: "{$CommonItemtooltip.ForItems.LessTarget}，你的下一次攻击造成额外伤害"
+			}
+
+			FlamboyantCapeBuff: {
+				DisplayName: 浮夸披风！
+				Description: "{$CommonItemtooltip.ForItems.MoreTarget}"
+			}
+
+			StealthShroudBuff: {
+				DisplayName: 潜行
+				Description: "{$CommonItemtooltip.ForItems.LessTarget}"
+			}
+
+			OrnateSpark: {
+				DisplayName: 华丽戒指
+				Description: 增加生命、魔力再生
+			}
+
+			SpikeShield: {
+				DisplayName: 软猬甲
+				Description: 增加防御和荆棘伤害
+			}
+
+			Leech: {
+				DisplayName: 吸血
+				Description: 敌人的生命正被汲取
+			}
+
+			EmulatorS: {
+				DisplayName: 视域增益
+				Description: 增加暴击率和移动速度
+			}
+
+			EmulatorM: {
+				DisplayName: 力量增益
+				Description: 增加伤害和生命再生
+			}
+
+			EmulatorF: {
+				DisplayName: 恐惧增益
+				Description: 增加击退和防御
+			}
+
+			CritBuff3: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedCriticalChance}"
+			}
+
+			CritBuff2: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedCriticalChance}"
+			}
+
+			CritBuff1: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedCriticalChance}"
+			}
+
+			CritNerf1: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.DecreasedCriticalChance}"
+			}
+
+			CritNerf2: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedCriticalChance}"
+			}
+
+			DefBuff1: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDefense}"
+			}
+
+			DefBuff2: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDefense}"
+			}
+
+			DefBuff3: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDefense}"
+			}
+
+			DefNerf1: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.DecreasedDefense}"
+			}
+
+			DefNerf2: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.DecreasedDefense}"
+			}
+
+			DmgBuff1: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDamage}"
+			}
+
+			DmgBuff2: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDamage}"
+			}
+
+			DmgBuff3: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDamage}"
+			}
+
+			DmgNerf1: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.DecreasedDamage}"
+			}
+
+			DmgNerf2: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.DecreasedDamage}"
+			}
+
+			DRBuff1: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.DecreasedDamageTaken}"
+			}
+
+			DRBuff2: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.DecreasedDamageTaken}"
+			}
+
+			DRBuff3: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Lucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.DecreasedDamageTaken}"
+			}
+
+			DRNerf1: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDamageTaken}"
+			}
+
+			DRNerf2: {
+				DisplayName: "{$CommonItemtooltip.ForBuffs.Unlucky}"
+				Description: "{$CommonItemtooltip.ForBuffs.IncreasedDamageTaken}"
+			}
+
+			BorealisBurn: {
+				DisplayName: 北极光耀
+				Description: 敌人受到额外伤害
+			}
+
+			BorealisBarrier: {
+				DisplayName: 北极光庇护
+				Description: 增加玩家生存能力Increased survivability
+			}
+
+			Refresh: {
+				DisplayName: 回生
+				Description: 回复生命，焕发新生
+			}
+		}
+
+		Items: {
+			AnkhRenewer: {
+				DisplayName: 回生十字章
+				Tooltip:
+					'''
+					免疫大部分减益
+					{$CommonItemtooltip.ForItems.ActivatedAbility}治愈大部分没有被免疫的减益
+					{$CommonItemtooltip.ForItems.BrieflyLifeRegen}
+					[placeholder]
+					'''
+			}
+
+			ArcanaStimulator3: {
+				DisplayName: 阿卡纳精华 Ⅲ
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.ArcanaStimulator}
+					{$CommonItemtooltip.ForItems.ManaSicknessInflicted}
+					[placeholder]
+					'''
+			}
+
+			ArcanaStimulator4: {
+				DisplayName: 阿卡纳精华 Ⅳ
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.ArcanaStimulator}
+					{$CommonItemtooltip.ForItems.ManaSicknessInflicted}
+					[placeholder]
+					'''
+			}
+
+			BewitchedBulwark: {
+				DisplayName: 迷魂之壁
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.NoKnockback}
+					{$CommonItemtooltip.ForItems.ActivatedAbility}在光标位置召唤辅助玩家的壁垒
+					壁垒制造一道光环，增加玩家的防御和伤害，并吸引敌人
+					壁垒持续 10 秒
+					[placeholder]
+					'''
+			}
+
+			ChaosGem: {
+				DisplayName: 协调水晶
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}将你传送至光标所在位置
+					“这是…索尼克的混沌宝石?”
+					'''
+			}
+
+			CyborgCore: {
+				DisplayName: 赛博格核心
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.SlowlyRegeneratesLife}
+					{$CommonItemtooltip.ForItems.ActivatedAbility}在5秒内，降低移动速度，但大幅增加防御和生命再生
+					“纳米机器,小子!”
+					'''
+			}
+
+			FirstPrism: {
+				DisplayName: 原初棱镜
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}召唤悬浮于玩家上方的水晶棱镜，向附近的敌人发射一系列光束
+					最多发射12束光束，每束光束将随机造成近战、远程、魔法或召唤伤害
+					“一个强力神话棱镜失落的祖先…”
+					'''
+			}
+
+			PowerArmor: {
+				DisplayName: 未来之甲
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}在你原有盔甲上附魔一套强力护甲
+					强力护甲持续 10 秒，大幅减少受到的伤害
+					“我们这个未来折叠护甲精心锻造，体积小方便携带，按下快捷键就能用，防护性很强”
+					'''
+			}
+
+			PrismaticArcanum: {
+				DisplayName: 棱镜奥秘
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}释放一簇光之能量打击敌人
+					[placeholder]
+					'''
+			}
+
+			SolarBlaster: {
+				DisplayName: 金乌启明
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}发射超强太阳光束
+					[placeholder]
+					'''
+			}
+
+			Starwriter: {
+				DisplayName: 星作妙笔
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}创建一个恒星标记，记录你的位置、生命值和魔力值
+					再次使用能力会将玩家恢复到恒星标记时的位置和状态
+					效果触发后将造成药水病和魔力病减益，并移除恒星标记
+					“银河将记住你的名字”
+					'''
+			}
+
+			VitalStimulator3: {
+				DisplayName: 生命精华 Ⅲ
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.VitalStimulator}
+					{$CommonItemtooltip.ForItems.PotionSicknessInflicted}
+					[placeholder]
+					'''
+			}
+
+			VitalStimulator4: {
+				DisplayName: 生命精华 Ⅳ
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.VitalStimulator}
+					{$CommonItemtooltip.ForItems.PotionSicknessInflicted}
+					[placeholder]
+					'''
+			}
+
+			ArcanaStimulator: {
+				DisplayName: 阿卡纳精华 Ⅰ
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.ArcanaStimulator}
+					{$CommonItemtooltip.ForItems.ManaSicknessInflicted}
+					[placeholder]
+					'''
+			}
+
+			ArcanaStimulator2: {
+				DisplayName: 阿卡纳精华 Ⅱ
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.ArcanaStimulator}
+					{$CommonItemtooltip.ForItems.ManaSicknessInflicted}
+					[placeholder]
+					'''
+			}
+
+			ArtificersArmor: {
+				DisplayName: 巧匠之甲
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}在你原有盔甲上附魔一套巧匠护甲
+					巧匠护甲持续 10 秒，大幅减少受到的伤害
+					“我们这个巧匠折叠护甲精心锻造，体积小方便携带，按下快捷键就能用，防护性很强”
+					'''
+			}
+
+			Cleanser: {
+				DisplayName: 洁净之符
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}治愈中毒、酸性毒液、着火了、霜冻、暗影焰、诅咒狱火减益
+					{$CommonItemtooltip.ForItems.BrieflyLifeRegen}
+					[placeholder]
+					'''
+			}
+
+			Curer: {
+				DisplayName: 解毒咒
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}治愈中毒、酸性毒液减益
+					{$CommonItemtooltip.ForItems.BrieflyLifeRegen}
+					[placeholder]
+					'''
+			}
+
+			Extinguisher: {
+				DisplayName: 避火诀
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}治愈着火了、霜冻、暗影焰、诅咒狱火减益
+					{$CommonItemtooltip.ForItems.BrieflyLifeRegen}
+					“有点像把灭火器绑在背上！”
+					'''
+			}
+
+			LifeCharger: {
+				DisplayName: 生命起搏器
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}按下快捷键后开始充能，10 秒后回复 100 生命值
+					受到伤害会打断充能，取消生命回复效果
+					[placeholder]
+					'''
+			}
+
+			ManaCharger: {
+				DisplayName: 魔力起搏器
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}按下快捷键后开始充能，10 秒后回复 100 魔力值
+					受到伤害会打断充能，取消魔力回复效果
+					[placeholder]
+					'''
+			}
+
+			OverchargedArcanum: {
+				DisplayName: 过载禁咒
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}释放一簇魔法导弹
+					[placeholder]
+					'''
+			}
+
+			RetributionStoker: {
+				DisplayName: 雪耻之证
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}15秒内增加伤害和暴击率
+					使用能力前受到伤害，将在下次使用时的获得更多属性提升
+					“用燃烧的复仇之火毁灭你的敌人！”
+					'''
+			}
+
+			StarplateBlaster: {
+				DisplayName: 碎星破黯
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}发射一道激光束
+					[placeholder]
+					'''
+			}
+
+			VitalStimulator: {
+				DisplayName: 生命精华 Ⅰ
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.VitalStimulator}
+					{$CommonItemtooltip.ForItems.PotionSicknessInflicted}
+					[placeholder]
+					'''
+			}
+
+			VitalStimulator2: {
+				DisplayName: 生命精华 Ⅱ
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.VitalStimulator}
+					{$CommonItemtooltip.ForItems.PotionSicknessInflicted}
+					[placeholder]
+					'''
+			}
+
+			XRadar: {
+				DisplayName: X-雷达
+				Tooltip:
+					'''
+					探测附近的敌人
+					{$CommonItemtooltip.ForItems.ActivatedAbility}使用一次脉冲扫描，探测附近的敌人和友好NPC
+					探测到的实体将被高亮标记30秒
+					“虽涓埃之微，亦无所遁形”
+					'''
+			}
+
+			LostHeroShield: {
+				DisplayName: 失落英雄之盾
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.NoKnockback}
+					{$CommonItemtooltip.ForItems.ActivatedAbility}使用后 1 秒内格挡敌人的攻击，格挡对敌人造成伤害并增强你的下一次近战攻击
+					“尽管历经岁月的玷污和腐朽，但它仍然保持着旧日的荣光”
+					'''
+			}
+
+			PrimeGauntlet: {
+				DisplayName: 铁骷髅手套
+				Tooltip:
+					'''
+					攻击时向敌人发射金属弩箭
+					{$CommonItemtooltip.ForItems.ActivatedAbility}使用后 5 秒内发射充能弩箭，大幅增加射速、飞行速度和伤害
+					[placeholder]
+					'''
+			}
+
+			AugmentedLeg: {
+				DisplayName: 增强型机械腿
+				Tooltip:
+					'''
+					增加跳跃速度并启用自动跳跃
+					增加受到摔落伤害的高度
+					{$CommonItemtooltip.ForItems.ActivatedAbility}进行一次非常有力的跳跃，迅速将自己抛向空中
+					在跳跃过程和结束后短暂时间，大幅提高受到摔落伤害的高度
+					[placeholder]
+					'''
+			}
+
+			OverdriveLeg: {
+				DisplayName: 过载机械腿
+				Tooltip:
+					'''
+					大幅提高移动速度
+					增加跳跃速度和受到摔落伤害的高度，并启用自动跳跃
+					{$CommonItemtooltip.ForItems.ActivatedAbility}显著提高跑动、跳跃速度和加速度，持续 5 秒
+					“最大过载！”
+					'''
+			}
+
+			TurboBoots: {
+				DisplayName: 涡轮靴
+				Tooltip:
+					'''
+					大幅提高移动速度
+					{$CommonItemtooltip.ForItems.ActivatedAbility}显著提高跑动、跳跃速度，持续 5 秒
+					“以音速奔驰！”
+					'''
+			}
+
+			ArtificerProsthetics: {
+				DisplayName: 巧匠的外骨骼
+				Tooltip:
+					'''
+					大幅提高移动速度
+					增加跳跃速度和受到摔落伤害的高度，并启用自动跳跃
+					给你的武器增加电力充能，攻击时偶尔电击敌人
+					为近战武器和鞭子启用自动挥舞，并增加 15% 攻击速度
+					{$CommonItemtooltip.ForItems.ActivatedAbility}显著提高跑动、跳跃速度和加速度，大幅增加近战武器和鞭子攻速，持续 10 秒
+					“更快、更高、更强！”
+					'''
+			}
+
+			SuperchargedArm: {
+				DisplayName: 超级机械臂
+				Tooltip:
+					'''
+					给你的武器增加电力充能，攻击时偶尔电击敌人
+					为近战武器和鞭子启用自动挥舞，并增加 15% 攻击速度
+					{$CommonItemtooltip.ForItems.ActivatedAbility}大幅增加近战武器和鞭子攻速，持续 10 秒
+					“涡轮增压已启动！”
+					'''
+			}
+
+			HiddenBlade: {
+				DisplayName: 初学者袖箭
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}射出一支快速飞箭
+					[placeholder]
+					'''
+			}
+
+			AssassinNeedles: {
+				DisplayName: 刺客大师袖箭
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}射出一连串快速飞箭
+					[placeholder]
+					'''
+			}
+
+			NeedleBarrage: {
+				DisplayName: 加特林袖箭
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}释放一轮无影飞箭
+					“万箭穿心过…”
+					'''
+			}
+
+			RepulseCharge: {
+				DisplayName: 充能排斥器
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}发射一颗具有较强击退力的排斥炸弹，在撞击时向两侧释放冲击波
+					“需要一点私人空间”
+					'''
+			}
+
+			RepulsionRocket: {
+				DisplayName: 排斥火箭
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}发射具有强大击退力的爆炸弹
+					具有令人难以置信的高后坐力，将用户弹射到与火力相反的方向
+					“尖叫的雄鹰！”
+					'''
+			}
+
+			ShadowShroud: {
+				DisplayName: 暗影斗篷
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.LessTarget}
+					{$CommonItemtooltip.ForItems.ActivatedAbility}敌人更不容易将你视作攻击目标，持续 10 秒
+					在这段时间内的攻击额外造成 4 倍伤害，触发增伤后将会结束能力效果
+					[placeholder]
+					'''
+			}
+
+			SwaggerCape: {
+				DisplayName: 招摇披风
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.MoreTarget}
+					{$CommonItemTooltip.PercentIncreasedCritChance}
+					{$CommonItemtooltip.ForItems.ActivatedAbility}敌人更倾向于将你视作攻击目标，持续 10 秒
+					同时嘲讽附近的敌人，增加他们对你的接触伤害，但也增加他们所受到的伤害
+					'Swag Messiah!'
+					'''
+			}
+
+			FlamboyantCape: {
+				DisplayName: 浮夸披风
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.MoreTarget}
+					{$CommonItemtooltip.ForItems.ActivatedAbility}敌人更倾向于将你视作攻击目标，持续 10 秒
+					[placeholder]
+					'''
+			}
+
+			StealthShroud: {
+				DisplayName: 潜行斗篷
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.LessTarget}
+					{$CommonItemtooltip.ForItems.ActivatedAbility}敌人更不容易将你视作攻击目标，持续 10 秒
+					[placeholder]
+					'''
+			}
+
+			OrnateRing: {
+				DisplayName: 华丽戒指
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}制造闪光，迷惑敌人，使用后 5 秒内增加生命和魔力再生速度 
+					[placeholder]
+					'''
+			}
+
+			NeedleSpikeManacle: {
+				DisplayName: 软猬甲
+				Tooltip:
+					'''
+					攻击者在接触时受到伤害
+					{$CommonItemtooltip.ForItems.ActivatedAbility}使用后 10 秒内，增加 4 防御并增强荆棘效果
+					“尽管锈迹斑斑，但它的尖刺很容易展开、缩回，最重要的是，还能刺穿敌人。”
+					'''
+			}
+
+			DarkLeech: {
+				DisplayName: 黑暗汲取
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.LeechedLifeHeal}
+					[placeholder]
+					'''
+			}
+
+			LeechingTether: {
+				DisplayName: 吸血刺钩
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.LeechedLifeHeal}
+					[placeholder]
+					'''
+			}
+
+			Lifeline: {
+				DisplayName: 生命传输
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}{$CommonItemtooltip.ForItems.LeechedLifeHeal}
+					“生命传输技术处于最佳状态：现在达到了5G速度！”
+					'''
+			}
+
+			Harvester: {
+				DisplayName: 朽坏收割者
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}释放出一个巨大、朽坏的爆炸，摧毁所有被爆炸困住的敌人
+					在释放爆炸之前对敌人造成伤害会积攒力量，增加下一次爆炸的伤害和击退
+					“一盏六角的灯笼，被改造以达到更危险的目的……”
+					'''
+			}
+
+			ProbePack: {
+				DisplayName: 探针包
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}召唤三个探测器环绕并保护玩家，持续 25 秒
+					[placeholder]
+					'''
+			}
+
+			SoulEmulator: {
+				DisplayName: 机械之魂模拟器
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}对附近所有玩家提供 5 秒增益
+					增益在三个状态之间循环，每次获得不同的增益效果：恐惧、视域和力量
+					任何拥有机械之魂模拟器的玩家（包括自己）都会获得 10 秒增益，而不是 5 秒
+					此外，模拟器自动循环所提供的增益
+					[placeholder]
+					'''
+			}
+
+			ObliterationCore: {
+				DisplayName: 灭迹核心
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}充能并向你所面对的方向发射毁灭性的死亡射线
+					发射时，移动速度变慢，同时不能使用其他物品
+					“呦！”
+					'''
+			}
+
+			MissileArray: {
+				DisplayName: 导弹阵列
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}发射一连串导弹，寻找并摧毁附近的敌人
+					[placeholder]
+					'''
+			}
+
+			FearReaper: {
+				DisplayName: 恐惧收割者
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}召唤一对能在你周围旋转 15 秒的镰刀
+					当镰刀激活时，你受到的伤害减少 10%
+					当镰刀造成伤害时，伤害减免会稍微增加，最多减少 25% 的伤害
+					[placeholder]
+					'''
+			}
+
+			ForebodingCharm: {
+				DisplayName: 一花五叶
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}随机触发一种攻击能力，产生不可预测的效果……
+					“虽然它的本质上看起来很邪恶，但据说它能给拥有者带来超乎想象的运气”
+					'''
+			}
+
+			LuckyPresent: {
+				DisplayName: 幸运礼物
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}对你施加随机的效果，可能有益也可能有害……
+					“我能得到什么？我想知道我将得到什么？”
+					'''
+			}
+
+			StellarResonator: {
+				DisplayName: 恒星谐振器
+				Tooltip:
+					'''
+					能力冷却时增加 4% 伤害和暴击率
+					{$CommonItemtooltip.ForItems.ActivatedAbility}使用后需要 10 秒为星光束充能
+					充能时减少10% 受到的伤害
+					充能完成后，星光束将寻找最强的敌人，并引发毁灭性的局部超新星爆炸
+					“向星星许愿，它们会回应”
+					'''
+			}
+
+			MoonbiteMark: {
+				DisplayName: 月华之噬
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}释放吸血鬼刀的洪流，在击中敌人时偷取生命值
+					如果你的生命值已满，吸血鬼刀会治疗生命值最低的玩家
+					“献给 Jason 'Lienfors' Parker”
+					"万骨枯；身后名"
+					'''
+			}
+
+			StarlightArmillary: {
+				DisplayName: 星光浑仪
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}原地召唤一束北极光，短暂地保护你免受所有攻击
+					极光附近的玩家（包括使用者）将暂时提高生存能力
+					极光附近的敌人变得困惑，并在短时间内受到额外伤害
+					“它充满生机的星象力量似是反面奥术的残余…”
+					'''
+			}
+
+			Moonfall: {
+				DisplayName: 月落星沉
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ActivatedAbility}召唤轨道打击，从上方发射巨大激光
+					激光将持续 15 秒，并缓慢跟随光标
+					“月亮来了，嘟嘟嘟…”
+					'''
+			}
+
+			ArtificerEmblem: {
+				DisplayName: 巧匠徽章
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemtooltip.ForItems.ReducedAbilityCooldown@1}
+					'''
+			}
+
+			CoolingCell: {
+				DisplayName: 低温冷却细胞
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ReducedAbilityCooldown}
+					免疫冷冻、霜冻、冰冻效果
+					'''
+			}
+
+			DarkmoonPact: {
+				DisplayName: 暗月契约
+				Tooltip:
+					'''
+					减少 20% 最大生命值，增加 10% 受到的伤害
+					同时获得以下效果：
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					增加 2 点生命再生
+					“天赐之力，命定之殇…”
+					'''
+			}
+
+			NovaEmblem: {
+				DisplayName: 新星徽章
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemtooltip.ForItems.ReducedAbilityCooldown@1}
+					'''
+			}
+
+			RejuvStone: {
+				DisplayName: 复苏之石
+				Tooltip: 增加 25% 大部分治疗物品的效果
+			}
+
+			SanguineStone: {
+				DisplayName: 信仰之石
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.MoreTarget}
+					减少 25% 药水病冷却时间
+					“以血祭神！”
+					'''
+			}
+
+			AceOfHearts: {
+				DisplayName: 红心王牌
+				Tooltip:
+					'''
+					增加生命之心的回复效果和拾取范围
+					击败的敌人有额外几率掉落生命之心
+					“洞中王牌”
+					'''
+			}
+
+			DireGlaze: {
+				DisplayName: 可怕凝视
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedCritChance}
+					“来自已死之物的凝视，洞穿了你的灵魂…”
+					'''
+			}
+
+			EnergyCell: {
+				DisplayName: 能量细胞
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ReducedAbilityCooldown}
+					“啊啊啊啊”
+					'''
+			}
+
+			GiftOfChanneling: {
+				DisplayName: 通灵手环
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentReducedManaCost}
+					需要时自动使用魔力药水
+					{$CommonItemTooltip.IncreasesMaxManaBy@1}
+					'''
+			}
+
+			SpaceCore: {
+				DisplayName: 空间核心
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedMagicCritChance}"
+			}
+
+			AstralCuirass: {
+				DisplayName: 新星胸甲
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@2}
+					稍微增加生命再生速度
+					'''
+			}
+
+			AstralGreaves: {
+				DisplayName: 新星护胫
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreasesMaxManaBy}
+					{$CommonItemTooltip.PercentIncreasedDamageCritChance@1}
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed@2}
+					'''
+			}
+
+			AstralHeadgear: {
+				DisplayName: 新星头饰
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentReducedManaCost@2}
+					{$CommonItemTooltip.PercentChanceToSaveAmmo@3}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@4}
+					'''
+			}
+
+			ChampionsBoots: {
+				DisplayName: 捍卫者战靴
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed@2}
+					“用古老的金属加固的珍贵靴子流传于世，它们一定会在旅途中帮助到你”
+					'''
+			}
+
+			ChampionsCuirass: {
+				DisplayName: 捍卫者胸甲
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreasesMaxManaBy}
+					{$CommonItemTooltip.PercentIncreasedDamageCritChance@1}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@2}
+					“一件珍贵的胸甲，赠予古老帝国的朋友”
+					'''
+			}
+
+			ChampionsHeadpiece: {
+				DisplayName: 捍卫者兜帽
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentChanceToSaveAmmo@2}
+					“虽然这顶珍贵的兜帽由简单的布料制成，但它被守护魔法所赐福”
+					'''
+			}
+
+			LihzahrdGreaves: {
+				DisplayName: 丛林蜥蜴护胫
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed@2}
+					{$CommonItemtooltip.ForItems.MoreTarget}
+					'''
+			}
+
+			LihzahrdPlate: {
+				DisplayName: 丛林蜥蜴板甲
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentChanceToSaveAmmo@2}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@3}
+					{$CommonItemtooltip.ForItems.MoreTarget}
+					'''
+			}
+
+			LihzahrdVisage: {
+				DisplayName: 丛林蜥蜴头盔
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentReducedManaCost@2}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@3}
+					{$CommonItemtooltip.ForItems.MoreTarget}
+					'''
+			}
+
+			MechanicalGreaves: {
+				DisplayName: 机械护胫
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamageCritChance}
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed@1}
+					'''
+			}
+
+			MechanicalMask: {
+				DisplayName: 机械头盔
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreasesMaxManaBy}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@2}
+					'''
+			}
+
+			MechanicalPlate: {
+				DisplayName: 机械板甲
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentChanceToSaveAmmo@1}
+					'''
+			}
+
+			RadiantBreastplate: {
+				DisplayName: 圣耀板甲
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentReducedManaCost@2}
+					'''
+			}
+
+			RadiantFacemask: {
+				DisplayName: 圣耀头盔
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamageCritChance}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@1}
+					'''
+			}
+
+			RadiantLeggings: {
+				DisplayName: 圣耀腿甲
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamageCritChance}
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed@1}
+					'''
+			}
+
+			PossessedBreastplate: {
+				DisplayName: 幻魔板甲
+				Tooltip: 这件盔甲里的黑暗之魂魂阻止了它发挥作用…
+			}
+
+			PossessedHelmet: {
+				DisplayName: 幻魔头盔
+				Tooltip: 这件盔甲里的黑暗之魂魂阻止了它发挥作用…
+			}
+
+			PossessedLeggings: {
+				DisplayName: 幻魔腿甲
+				Tooltip: 这件盔甲里的黑暗之魂魂阻止了它发挥作用…
+			}
+
+			TarnishedBreastplate: {
+				DisplayName: 褪色板甲
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedCritChance}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@1}
+					"这件盔甲里的黑暗之魂魂被用来保护你…"
+					'''
+			}
+
+			TarnishedHelmet: {
+				DisplayName: 褪色头盔
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamageCritChance}
+					{$CommonItemTooltip.PercentChanceToSaveAmmo@1}
+					"这件盔甲里的黑暗之魂魂被用来保护你…"
+					'''
+			}
+
+			TarnishedLeggings: {
+				DisplayName: 褪色腿甲
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed@2}
+					"这件盔甲里的黑暗之魂魂被用来保护你…"
+					'''
+			}
+
+			XenoLeggings: {
+				DisplayName: 外星腿甲
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed@2}
+					'''
+			}
+
+			XenoSuit: {
+				DisplayName: 外星防弹衣
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreasesMaxManaBy}
+					{$CommonItemTooltip.PercentIncreasedDamage@1}
+					{$CommonItemTooltip.PercentIncreasedCritChance@2}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@3}
+					'''
+			}
+
+			XenoVisor: {
+				DisplayName: 外星面甲
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					{$CommonItemTooltip.PercentChanceToSaveAmmo@2}
+					{$CommonItemTooltip.IncreasesMaxMinionsBy@3}
+					'''
+			}
+
+			OrnateBreastplate: {
+				DisplayName: 奢华板甲
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedDamage}"
+			}
+
+			OrnateHelmet: {
+				DisplayName: 奢华头盔
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedCritChance}"
+			}
+
+			OrnateLeggings: {
+				DisplayName: 奢华腿甲
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedDamage}"
+			}
+
+			StarplateBreastplate: {
+				DisplayName: 缀星板甲
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedDamage}"
+			}
+
+			StarplateGreaves: {
+				DisplayName: 缀星护胫
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedDamageCritChance}"
+			}
+
+			StarplateVisor: {
+				DisplayName: 缀星面甲
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedCritChance}"
+			}
+
+			TechBreastplate: {
+				DisplayName: 先进防弹衣
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedCritChance@1}
+					'''
+			}
+
+			TechHeadgear: {
+				DisplayName: 先进头饰
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreasesMaxManaBy}
+					{$CommonItemTooltip.PercentIncreasedDamage@1}
+					'''
+			}
+
+			TechLeggings: {
+				DisplayName: 先进腿甲
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedDamageCritChance}"
+			}
+
+			GazersGoggles: {
+				DisplayName: 双筒护目镜
+				Tooltip:
+					'''
+					增加视野
+					<right> 缩放画面大小
+					'''
+			}
+
+			MartianScrap: {
+				DisplayName: 火星废料
+				Tooltip: 外星飞碟的高科技残骸
+			}
+
+			NovaFragment: {
+				DisplayName: 新星碎片
+				Tooltip: 在这碎片中蕴含着一颗垂死恒星的毁灭力量
+			}
+
+			OmnisightHelmet: {
+				DisplayName: 全知头盔
+				Tooltip:
+					'''
+					发出光芒并增强夜能力
+					显示宝箱和矿石
+					显示敌人的位置
+					揭露附近的危险
+					{$Items.GazersGoggles.Tooltip}
+					“终极探险之物”
+					'''
+			}
+
+			UltrasightHelmet: {
+				DisplayName: 超视距头盔
+				Tooltip:
+					'''
+					发出光芒并增强夜能力
+					{$Items.GazersGoggles.Tooltip}
+					“黑夜对你没有秘密”
+					'''
+			}
+
+			LifesurgeBand: {
+				DisplayName: 救命手环
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedCritChance}
+					{$CommonItemtooltip.ForItems.SlowlyRegeneratesLife}
+					{$CommonItemTooltip.IncreasesMaxLifeBy@1}
+					暴击后短暂提高生命再生速度
+					'''
+			}
+
+			LifeforceBand: {
+				DisplayName: 求生手环
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.SlowlyRegeneratesLife}
+					{$CommonItemTooltip.IncreasesMaxLifeBy}
+					'''
+			}
+
+			HeartsurgeHeart: {
+				DisplayName: 迷你生命之心
+				Tooltip: 生命
+			}
+
+			HeartsurgeCharm: {
+				DisplayName: 红心手环
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedCritChance}
+					{$CommonItemtooltip.ForItems.SlowlyRegeneratesLife}
+					{$CommonItemTooltip.IncreasesMaxLifeBy@1}
+					增加生命之心拾取范围
+					击败敌人或造成暴击会随机生成迷你生命之心
+					'''
+			}
+
+			SoulHunterNecklace: {
+				DisplayName: 猎魂项链
+				Tooltip: 攻击时减少敌人 20 防御
+			}
+
+			DynamicBoots: {
+				DisplayName: 动感之靴
+				Tooltip:
+					'''
+					允许喷射飞行
+					{$Items.HeavyBoots.Tooltip}
+					'''
+			}
+
+			HeavyBoots: {
+				DisplayName: 重力之靴
+				Tooltip:
+					'''
+					增加下落速度和阻力
+					不受高空的低重力效果影响
+					'''
+			}
+
+			MorbidNecklace: {
+				DisplayName: 染疾项链
+				Tooltip: 增加 10 点护甲穿透
+			}
+
+			PowerBoots: {
+				DisplayName: 强力之靴
+				Tooltip:
+					'''
+					允许喷射飞行
+					免疫击退和火块
+					{$Items.HeavyBoots.Tooltip}
+					'''
+			}
+
+			HunterCharm: {
+				DisplayName: 猎人项链
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedRangedCritChance}"
+			}
+
+			SandstormCarpet: {
+				DisplayName: 沙暴飞毯
+				Tooltip:
+					'''
+					提供强力二段跳
+					允许使用者悬停一段时间
+					“也许……能带你周游世界”
+					'''
+			}
+
+			HadopelagicDivingGear: {
+				DisplayName: 深渊潜水装备
+				Tooltip:
+					'''
+					赋予游泳能力，显著增强水下呼吸时间
+					改善视力并在佩戴时提供光照
+					提供额外的冰上移动能力
+					“免责声明：在深渊压力下其实无效”
+					'''
+			}
+
+			UltrabrightDivingGear: {
+				DisplayName: 超亮潜水装备
+				Tooltip:
+					'''
+					赋予游泳能力，显著增强水下呼吸时间
+					改善视力并在佩戴时提供光照
+					“黑暗和深海都不再向你隐藏秘密”
+					'''
+			}
+
+			TerradepthGear: {
+				DisplayName: 泰拉潜水装备
+				Tooltip:
+					'''
+					赋予游泳能力，显著增强水下呼吸时间
+					改善视力并在佩戴时提供光照
+					循序使用者攀爬墙壁
+					增加跳跃速度并启用自动跳跃
+					增加受到摔落伤害的高度
+					提供额外的冰上移动能力
+					'''
+			}
+
+			BeastmasterGlove: {
+				DisplayName: 驯兽大师手套
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedSummonDamage}
+					{$CommonItemtooltip.ForItems.PercentIncreasedWhipSpeed@1}
+					{$CommonItemtooltip.ForItems.PercentIncreasedWhipRange@2}
+					为近战武器和鞭子启用自动挥舞
+					'''
+			}
+
+			DefenderEmblem: {
+				DisplayName: 捍卫者徽章
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedDamage}
+					{$CommonItemTooltip.PercentIncreasedSummonDamage@1}
+					{$CommonItemTooltip.IncreasesMaxSentriesBy@2}
+					'''
+			}
+
+			NebulaEmblem: {
+				DisplayName: 星云徽章
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedMagicDamage}
+					{$CommonItemTooltip.PercentReducedManaCost@1}
+					'''
+			}
+
+			SolarEmblem: {
+				DisplayName: 日耀徽章
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedMeleeDamage}
+					{$CommonItemTooltip.PercentIncreasedMeleeSpeed@1}
+					'''
+			}
+
+			SpiritGrasp: {
+				DisplayName: 魂灵手套
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedSummonDamage}
+					{$CommonItemtooltip.ForItems.PercentIncreasedWhipSpeed@1}
+					{$CommonItemtooltip.ForItems.PercentIncreasedWhipRange@2}
+					为近战武器和鞭子启用自动挥舞
+					'''
+			}
+
+			StardustEmblem: {
+				DisplayName: 星尘徽章
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedSummonDamage}"
+			}
+
+			SummonersMitt: {
+				DisplayName: 召唤师手套
+				Tooltip:
+					'''
+					增加 15% 鞭子伤害
+					{$CommonItemtooltip.ForItems.PercentIncreasedWhipSpeed}
+					为近战武器和鞭子启用自动挥舞
+					'''
+			}
+
+			VortexEmblem: {
+				DisplayName: 星璇徽章
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedRangedDamage}
+					{$CommonItemTooltip.PercentIncreasedRangedCritChance@1}
+					'''
+			}
+
+			DeftPouch: {
+				DisplayName: 飞镖袋
+				Tooltip:
+					'''
+					增加 5% 飞镖速度
+					10% 几率不消耗飞镖
+					'''
+			}
+
+			PygmyBracer: {
+				DisplayName: 矮人腰带
+				Tooltip: "{$CommonItemtooltip.ForItems.PercentIncreasedWhipRange}"
+			}
+
+			ShadowflameScroll: {
+				DisplayName: 暗影焰卷轴
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedMagicCritChance}
+					魔法暴击施加暗影焰减益
+					“我们喜欢施法！”
+					'''
+			}
+
+			PhilosopherNecklace: {
+				DisplayName: 哲学项链
+				Tooltip:
+					'''
+					减少 10% 药水病冷却时间
+					增加受到伤害后的无敌帧
+					受到伤害会慢慢减少药水病冷却时间
+					'''
+			}
+
+			TerraEmblem: {
+				DisplayName: 泰拉徽章
+				Tooltip: "{$CommonItemTooltip.PercentIncreasedDamage}"
+			}
+
+			ActionStar: {
+				DisplayName: 启明星项链
+				Tooltip:
+					'''
+					增加运气
+					根据运气值增加暴击出现的频率
+					暴击造成 40% 额外伤害
+					“它的光辉激励着你，指挥官！”
+					'''
+			}
+
+			LuckyStar: {
+				DisplayName: 幸运星项链
+				Tooltip:
+					'''
+					增加运气
+					根据运气值增加暴击出现的频率
+					“它散发出温暖的光芒，振奋了你的精神”
+					'''
+			}
+
+			SuperMagnet: {
+				DisplayName: 超级磁石
+				Tooltip:
+					'''
+					增加物品的拾取范围
+					增加魔力星、钱币、生命之心拾取范围
+					即使没有装备在饰品栏，也能产生减弱的效果
+					'''
+			}
+
+			ElementalBalloon: {
+				DisplayName: 元素气球
+				Tooltip:
+					'''
+					允许持有者六连跳
+					增加跳跃高度和受到摔落伤害的高度
+					受伤后产生蜜蜂并获得甜蜜增益
+					和翅膀不兼容
+					'''
+			}
+
+			ShadowSneakers: {
+				DisplayName: 暗影运动鞋
+				Tooltip:
+					'''
+					允许佩戴者高速奔跑
+					获得冲刺能力
+					双击方向键以冲刺
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed}
+					'''
+			}
+
+			PhasestrideBoots: {
+				DisplayName: 相位转移鞋
+				Tooltip:
+					'''
+					允许佩戴者高速奔跑
+					获得冲刺能力
+					双击方向键以冲刺
+					如果目的地有足够的空间，传送可以穿过墙壁
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed}
+					“也许你现在可以进入平行宇宙了”
+					'''
+			}
+
+			NovaHologlider: {
+				DisplayName: 新星之翼
+				Tooltip: 允许飞行和缓慢坠落
+			}
+
+			PredatorQuiver: {
+				DisplayName: 捕食者箭袋
+				Tooltip:
+					'''
+					增加 10% 箭矢伤害，同时增加箭矢速度
+					20% 的概率不消耗箭矢
+					增加远程武器的护甲穿透
+					'''
+			}
+
+			BloodNecklace: {
+				DisplayName: 血腥项链
+				Tooltip:
+					'''
+					受伤后增加移动速度和攻击速度
+					{$CommonItemtooltip.ForItems.MoreTarget}
+					“会有流血事件的！”
+					'''
+			}
+
+			CorruptedBulwark: {
+				DisplayName: 堕落之盾
+				Tooltip:
+					'''
+					生命值低于25%时增加 15% 伤害
+					{$CommonItemtooltip.ForItems.NoKnockback}
+					{$CommonItemtooltip.ForItems.LessTarget}
+					“并不是所有人都坚定不移地走正义之路…”
+					'''
+			}
+
+			PermafrostCloak: {
+				DisplayName: 永冻斗篷
+				Tooltip:
+					'''
+					受到伤害后增加防御和生命再生
+					受到伤害可随机释放报复冰块，攻击附近的敌人
+					免疫冷冻和冰冻
+					'''
+			}
+
+			PermafrostShell: {
+				DisplayName: 永冻壁垒
+				Tooltip:
+					'''
+					受到伤害后增加防御和生命再生
+					当生命值低于50%时，产生一颗旋转的尖刺冰球，伤害敌人并减少 25% 受到的伤害
+					当冰球受到伤害时，会撞向敌人并爆炸
+					随时间推移产生新的冰球
+					免疫冷冻和冰冻
+					“蓝冰球！？”
+					'''
+			}
+
+			ClockworkStopwatch: {
+				DisplayName: 发条秒表
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.ReducedAbilityCooldown}
+					战斗中自动激活饰品能力
+					“分毫不差”
+					'''
+			}
+
+			ArtificerArm: {
+				DisplayName: 巧匠的义手
+				Tooltip:
+					'''
+					给你的武器增加电力充能，攻击时偶尔电击敌人
+					并增加 15% 攻击速度
+					为近战武器和鞭子启用自动挥舞
+					“我渴望钢铁般的力量和坚定...”
+					'''
+			}
+
+			TerraShield: {
+				DisplayName: 泰拉之盾
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.NoKnockback}
+					免疫大部分减益
+					生命值高于 25% 时，附近的盟友受到保护免于死亡；生命值低于 25% 时，只有你受到保护
+					受保护玩家在受到致命伤害时保留 1 点生命值
+					当效果触发后，玩家会随着时间的推移短暂地对伤害免疫，他们的下一次近战攻击会得到加强
+					该效果有 60 秒冷却时间，佩戴该护盾时冷却时间减少 25%
+					'''
+			}
+
+			TwinShield: {
+				DisplayName: 双子护盾
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.NoKnockback}
+					偶尔向你面前的敌人发射激光
+					允许玩家对敌人进行冲撞
+					双击方向键以冲撞
+					'''
+			}
+
+			DestroyerScarf: {
+				DisplayName: 毁灭者围巾
+				Tooltip:
+					'''
+					减少 18% 受到的伤害
+					增加 8 点护甲穿透
+					'''
+			}
+
+			MotherboardOfIllusion: {
+				DisplayName: 幻梦之脑
+				Tooltip:
+					'''
+					{$CommonItemtooltip.ForItems.LessTarget}
+					有几率制造幻觉并闪避攻击
+					一次成功的躲闪会短暂让敌人不容易攻击你，并增加伤害
+					被击中后有概率对附近的敌人施加混乱减益
+					'''
+			}
+
+			LifeWell: {
+				DisplayName: 生命源泉
+				Tooltip:
+					'''
+					减少 25% 药水病冷却时间
+					需要时自动使用治疗药水
+					'''
+			}
+		}
+
+		Projectiles: {
+			BewitchedBulwarkProj.DisplayName: 迷魂之壁
+			BulwarkAura.DisplayName: 迷魂之壁光环
+			FirstPrismBeam.DisplayName: 原初棱镜光束
+			FirstPrismProj.DisplayName: 原初棱镜
+			SolarBlast.DisplayName: 金乌启明太阳束
+			StarwriterSavePos.DisplayName: 星作妙笔标记
+			StarplateBlast.DisplayName: 碎星破黯激光
+			LihzahrdArmorBeam.DisplayName: 蜥蜴盔甲太阳能量束
+			PermafrostCloakSpikes.DisplayName: 冰块
+			BlueShell.DisplayName: 尖刺冰球
+			MetalCrossbones.DisplayName: 铁骷髅手套金属弩箭
+			PlasmaCrossbones.DisplayName: 充能的铁骷髅手套金属弩箭
+			TwinLaser.DisplayName: 双子盾牌激光
+			BarrageNeedle.DisplayName: 加特林袖箭
+			AssassinNeedle.DisplayName: 刺客大师袖箭
+			HiddenBladeProj.DisplayName: 初学者袖箭
+			RepulseBomb.DisplayName: 排斥炸弹
+			RepulseMissile.DisplayName: 排斥火箭
+			RepulseShockwave.DisplayName: 排斥冲击波
+			OrnateRingFlash.DisplayName: 华丽戒指闪光
+			DarkLeechHeal.DisplayName: 黑暗汲取
+			DarkLeechHook.DisplayName: 黑暗汲取锁链
+			LeechingTetherHeal.DisplayName: 吸血刺钩
+			LeechingTetherHook.DisplayName: 吸血刺钩锁链
+			LifelineHeal.DisplayName: 生命传输
+			LifelineHook.DisplayName: 生命传输锁链
+			HarvesterNuke.DisplayName: 朽坏爆炸
+			ProbeLaser.DisplayName: 探针激光
+			MiniProbe.DisplayName: 迷你探针
+			ObliterationBeam.DisplayName: 灭迹核心死亡射线
+			Missile.DisplayName: 导弹阵列
+			FearReaperBlade.DisplayName: 恐惧收割者
+			StellarResonance.DisplayName: 恒星谐振器
+			Supernova.DisplayName: 超新星爆炸
+			StarBeam.DisplayName: 恒星谐振器恒星谐振器
+			NovaFrag.DisplayName: 新星碎片
+			LienLifesteal.DisplayName: 月华之噬生命吸取
+			LienKnife.DisplayName: 月华之噬吸血鬼刀
+			AuroraBorealis.DisplayName: 北极光
+			MoonfallFlare.DisplayName: 月落星沉闪光
+			MoonfallBeam.DisplayName: 月落星沉光束
+		}
+
+		Keybinds: {
+			"Activate Accessory Abilities.DisplayName": 饰品能力激活键
+			"Accessory Abilities (Extra hotkey).DisplayName": 饰品能力 (额外快捷键)
+		}
+
+		Configs: {
+			ConfigClient: {
+				DisplayName: 巧匠饰品本地端设置
+
+				xenoHaloShields: {
+					Label: "[i:ArtificerMod/XenoSuit] 外星盔甲护盾音效调整"
+					Tooltip:
+						'''
+						切换外星盔甲护盾的音效，使用模组音效或原版音效
+						音效用于护盾充能、减免伤害/护盾破损
+						关闭后，不会产生充能音效，减免伤害/护盾破损时使用原版音效
+						[声明: 模组使用的音效源自《光环》，所有权归音效制作者享有]
+						'''
+				}
+
+				cooldownAwareness: {
+					Label: "[i:ArtificerMod/ClockworkStopwatch] 增加能力冷却可见性"
+					Tooltip:
+						'''
+						切换饰品能力冷却结束时，出现的额外视觉效果
+						开启后，为能力冷却添加额外的粒子效果和文字提示，以提醒玩家
+						如果外星盔甲护盾音效调整(见上)设为开启，刷新音效同样会被替换
+						默认关闭
+						'''
+				}
+			}
+
+			ConfigServer: {
+				DisplayName: 巧匠饰品服务器设置
+
+				CultistExpertDrop: {
+					Label: "[i:ArtificerMod/DarkmoonPact] 拜月教邪教徒专家掉落物"
+					Tooltip:
+						'''
+						让你决定在专家模式下，拜月教邪教徒是否/如何掉落他的宝藏袋
+						本模组为邪教徒额外添加了专家模式战利品，会从他的宝藏袋中掉落，一般难度下无法取得
+						选择“Drop Bag”，将使邪教徒的宝藏袋中包含模组饰品
+						选择“No Drops”，将使邪教徒不掉落宝藏袋，模组饰品也不会从宝藏袋掉落
+						选择“No Bag”，将使邪教徒不掉落宝藏袋，但模组饰品可以从宝藏袋掉落
+						如果你添加的其他模组也让邪教者掉落宝藏袋，这个选项会很有用，以避免多个宝藏袋同时掉落引发的问题
+						'''
+				}
+
+				GodmodeCooldown: {
+					Label: "[i:ArtificerMod/NovaEmblem] 旅途上帝模式减免能力冷却"
+					Tooltip:
+						'''
+						开启后，使用旅途上帝模式会减少 75% 饰品能力冷却时间
+						同时取消未穿戴整套盔甲和佩戴特殊能力饰品时的冷却时间惩罚
+						使旅程模式下更容易测试各种能力效果
+						默认关闭
+						'''
+				}
+
+				PresentDeathText: {
+					Label: "[i:ArtificerMod/LuckyPresent] 幸运礼物击杀特殊提示"
+					Tooltip:
+						'''
+						开启后，如果玩家被幸运礼物的随机效果击杀，会出现特殊的死亡信息提示
+						请注意，正常情况下玩家不会被这样击杀，因为幸运礼物只会把玩家生命值削减为 1
+						默认开启
+						'''
+				}
+
+				BonusArtificerSlot: {
+					Label: "[i:ArtificerMod/AstralCuirass] 巧匠模组盔甲额外提供饰品栏"
+					Tooltip:
+						'''
+						开启后，巧匠模组的盔甲套装将额外提供 1 个巧匠饰品栏
+						例如，捍卫者盔甲套装默认 +2 巧匠饰品栏，开启本选项后将 +3 巧匠饰品栏
+						为了保持游戏平衡性，只建议在你有大量其它模组的饰品（如翅膀、鞋子等）要装备时，再开启本选项
+						默认关闭
+						'''
+				}
+			}
+		}
+	}
+}

@@ -10,6 +10,7 @@ using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.GameInput;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using ArtificerMod.Content.Buffs;
 using ArtificerMod.Content.Buffs.ArmorPH;
@@ -4640,7 +4641,7 @@ namespace ArtificerMod.Common
                         d.noGravity = true;
                     }
 
-                    CombatText.NewText(Player.Hitbox, Colors.RarityYellow, "Abilities refreshed!");
+                    CombatText.NewText(Player.Hitbox, Colors.RarityYellow, Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.AbilitiesRefreshed"));
 
                     if (ModContent.GetInstance<ConfigClient>().xenoHaloShields)
                     {

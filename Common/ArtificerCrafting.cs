@@ -203,52 +203,52 @@ public class ArtificerRecipesSystems : ModSystem
 
 	public override void AddRecipeGroups()
 	{
-		RecipeGroup groupBars1 = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Copper/Tin Bar", new int[]
+		RecipeGroup groupBars1 = new RecipeGroup(() => Language.GetTextValue("ItemName.CopperBar") + "/" + Language.GetTextValue("ItemName.TinBar"), new int[]
 		{
 		ItemID.CopperBar,
 		ItemID.TinBar
 		});
 		RecipeGroup.RegisterGroup("ArtificerMod:MetalBars1", groupBars1);
 		// TODO: Discontinue in favor of vanilla's iron/lead bar group
-		RecipeGroup groupBars2 = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Iron/Lead Bar", new int[]
+		RecipeGroup groupBars2 = new RecipeGroup(() => Language.GetTextValue("ItemName.IronBar") + "/" + Language.GetTextValue("ItemName.LeadBar"), new int[]
 		{
 		ItemID.IronBar,
 		ItemID.LeadBar
 		});
 		RecipeGroup.RegisterGroup("ArtificerMod:MetalBars2", groupBars2);
-		RecipeGroup groupBars3 = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Silver/Tungsten Bar", new int[]
+		RecipeGroup groupBars3 = new RecipeGroup(() => Language.GetTextValue("ItemName.SilverBar") + "/" + Language.GetTextValue("ItemName.TungstenBar"), new int[]
 		{
 		ItemID.SilverBar,
 		ItemID.TungstenBar
 		});
 		RecipeGroup.RegisterGroup("ArtificerMod:MetalBars3", groupBars3);
-		RecipeGroup groupBars4 = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Gold/Platinum Bar", new int[]
+		RecipeGroup groupBars4 = new RecipeGroup(() => Language.GetTextValue("ItemName.GoldBar") + "/" + Language.GetTextValue("ItemName.PlatinumBar"), new int[]
 		{
 		ItemID.GoldBar,
 		ItemID.PlatinumBar
 		});
 		RecipeGroup.RegisterGroup("ArtificerMod:MetalBars4", groupBars4);
-		RecipeGroup groupBarsEvil = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Demonite/Crimtane Bar", new int[]
+		RecipeGroup groupBarsEvil = new RecipeGroup(() => Language.GetTextValue("ItemName.DemoniteBar") + "/" + Language.GetTextValue("ItemName.CrimtaneBar"), new int[]
 		{
 		ItemID.DemoniteBar,
 		ItemID.CrimtaneBar
 		});
 		RecipeGroup.RegisterGroup("ArtificerMod:MetalBarsEvil", groupBarsEvil);
-		RecipeGroup groupBarsHM3 = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Adamantite/Titanium Bar", new int[]
+		RecipeGroup groupBarsHM3 = new RecipeGroup(() => Language.GetTextValue("ItemName.AdamantiteBar") + "/" + Language.GetTextValue("ItemName.TitaniumBar"), new int[]
 		{
 		ItemID.AdamantiteBar,
 		ItemID.TitaniumBar
 		});
 		RecipeGroup.RegisterGroup("ArtificerMod:MetalBarsHM3", groupBarsHM3);
 		
-		RecipeGroup groupRoses = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Jungle Rose/Nature's Gift", new int[]
+		RecipeGroup groupRoses = new RecipeGroup(() => Language.GetTextValue("ItemName.JungleRose") + "/" + Language.GetTextValue("ItemName.NaturesGift"), new int[]
 		{
 		ItemID.JungleRose,
 		ItemID.NaturesGift
 		});
 		RecipeGroup.RegisterGroup("ArtificerMod:Roses", groupRoses);
 		
-		RecipeGroup iceBlocks = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Ice Block", new int[]
+		RecipeGroup iceBlocks = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " " + Language.GetTextValue("ItemName.IceBlock"), new int[]
 			{
 		ItemID.IceBlock,
 		ItemID.PinkIceBlock,
@@ -257,7 +257,7 @@ public class ArtificerRecipesSystems : ModSystem
 			});
 		RecipeGroup.RegisterGroup("ArtificerMod:Ice", iceBlocks);
 		
-		RecipeGroup glowsticks = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Glowstick", new int[]
+		RecipeGroup glowsticks = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " " + Language.GetTextValue("ItemName.Glowstick"), new int[]
 			{
 		ItemID.Glowstick,
 		ItemID.StickyGlowstick,
@@ -267,14 +267,14 @@ public class ArtificerRecipesSystems : ModSystem
 			});
 		RecipeGroup.RegisterGroup("ArtificerMod:Glowsticks", glowsticks);
 		
-		RecipeGroup groupDmgPotions = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Wrath/Rage Potion", new int[]
+		RecipeGroup groupDmgPotions = new RecipeGroup(() => Language.GetTextValue("ItemName.WrathPotion") + "/" + Language.GetTextValue("ItemName.RagePotion"), new int[]
 			{
 		ItemID.WrathPotion,
 		ItemID.RagePotion
 			});
 		RecipeGroup.RegisterGroup("ArtificerMod:DmgPotions", groupDmgPotions);
 		
-		RecipeGroup gems = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Gem", new int[]
+		RecipeGroup gems = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + Language.GetTextValue("Mods.ArtificerMod.CommonItemtooltip.GemsforRecipe"), new int[]
 			{
 		ItemID.Ruby,
 		ItemID.Amber,
