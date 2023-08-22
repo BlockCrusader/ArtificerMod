@@ -66,7 +66,8 @@ public class ArtificerRecipesSystems : ModSystem
 		lavaCharm.AddIngredient(ItemID.LavaBucket);
 		lavaCharm.AddTile(TileID.Hellforge);
 		lavaCharm.AddCondition(Condition.NearLava);
-		lavaCharm.Register();
+		lavaCharm.AddDecraftCondition(Condition.DownedEowOrBoc);
+        lavaCharm.Register();
 
 		Recipe obsidianRose = Recipe.Create(ItemID.ObsidianRose);
 		obsidianRose.AddRecipeGroup("ArtificerMod:Roses");
@@ -74,7 +75,8 @@ public class ArtificerRecipesSystems : ModSystem
 		obsidianRose.AddIngredient(ItemID.HellstoneBar, 8);
 		obsidianRose.AddTile(TileID.Hellforge);
 		obsidianRose.AddCondition(Condition.NearLava);
-		obsidianRose.Register();
+		obsidianRose.AddDecraftCondition(Condition.DownedEowOrBoc);
+        obsidianRose.Register();
 
 		Recipe magamaStone = Recipe.Create(ItemID.MagmaStone);
 		magamaStone.AddIngredient(ItemID.StoneBlock, 40);
@@ -83,6 +85,7 @@ public class ArtificerRecipesSystems : ModSystem
 		magamaStone.AddIngredient(ItemID.LavaBucket);
 		magamaStone.AddTile(TileID.Hellforge);
 		magamaStone.AddCondition(Condition.NearLava);
+		magamaStone.AddDecraftCondition(Condition.DownedEowOrBoc);
 		magamaStone.Register();
 
 		Recipe depthMeter = Recipe.Create(ItemID.DepthMeter);
@@ -98,6 +101,7 @@ public class ArtificerRecipesSystems : ModSystem
 		compass.AddIngredient(ItemID.MeteoriteBar, 10);
 		compass.AddTile(TileID.Tables);
 		compass.AddTile(TileID.Chairs);
+		compass.AddDecraftCondition(Condition.DownedEowOrBoc);
 		compass.Register();
 		
 		Recipe chisel = Recipe.Create(ItemID.AncientChisel);
@@ -148,15 +152,17 @@ public class ArtificerRecipesSystems : ModSystem
 		Recipe knuckles = Recipe.Create(ItemID.FleshKnuckles);
 		knuckles.AddIngredient(ItemID.PutridScent);
 		knuckles.AddIngredient(ItemID.SoulofNight, 10);
-		knuckles.AddTile(TileID.WorkBenches);
+		knuckles.AddTile(TileID.TinkerersWorkbench);
 		knuckles.AddCondition(Condition.InGraveyard);
+		knuckles.DisableDecraft();
 		knuckles.Register();
 
 		Recipe scent = Recipe.Create(ItemID.PutridScent);
 		scent.AddIngredient(ItemID.FleshKnuckles);
 		scent.AddIngredient(ItemID.SoulofNight, 10);
-		scent.AddTile(TileID.WorkBenches);
+		scent.AddTile(TileID.TinkerersWorkbench);
 		scent.AddCondition(Condition.InGraveyard);
+		scent.DisableDecraft();
 		scent.Register();
 
 		Recipe naturesGift = Recipe.Create(ItemID.NaturesGift);
@@ -172,6 +178,7 @@ public class ArtificerRecipesSystems : ModSystem
 		turt.AddIngredient(ItemID.ChlorophyteBar, 10);
 		turt.AddRecipeGroup("ArtificerMod:Ice", 100);
 		turt.AddTile(TileID.MythrilAnvil);
+		turt.AddDecraftCondition(Condition.DownedMechBossAll);
 		turt.Register();
 
 		Recipe handWarmer = Recipe.Create(ItemID.HandWarmer);
