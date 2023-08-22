@@ -4,6 +4,7 @@ Mods: {
 			HotkeySet: WARNING: No hotkey set for abilities! Assign one in the 'Controls' section of the settings menu!
 			BonusAccessory: Bonus Accessory
 			GemsforRecipe: " Gems"
+			AbilitiesRefreshed: Abilities refreshed!
 
 			Cooldown: {
 				CooldowntimeNegative: Cooldown time: [c/78be78:{1} seconds] (Base: {0} sec)
@@ -271,27 +272,27 @@ Mods: {
 			}
 
 			SoulHunt: {
-				Description: The enemy's defense is reduced
 				DisplayName: Soul Hunt
+				Description: The enemy's defense is reduced
 			}
 
 			BloodDrive: {
-				Description: Movement and attack speed are increased
 				DisplayName: Blood Drive
+				Description: Movement and attack speed are increased
 			}
 
 			PermafrostProtection: {
-				Description: Increased defense and rapid life regeneration
 				DisplayName: Permafrost Protection
+				Description: Increased defense and rapid life regeneration
 			}
 
 			ElectrifiedEnemy: {
-				Description: The enemy is taking damage over time
 				DisplayName: Electrified Enemy
+				Description: The enemy is taking damage over time
 			}
 
 			ChampionProtec: {
-				DisplayName: Champion's Protection
+				DisplayName: Losthero's Protection
 				Description: Attackers will take damage instead of you!
 			}
 
@@ -1092,7 +1093,7 @@ Mods: {
 					{$CommonItemtooltip.ForItems.ActivatedAbility}Manifests a torrent of ascended vampire knives that will steal the life of enemies they hit
 					If you already have full HP, the knives may heal the player with lowest health
 					'Dedicated to Jason 'Lienfors' Parker'
-					'Motrality is temporary; impact is timeless'
+					'Mortality is temporary; impact is timeless'
 					'''
 			}
 
@@ -1530,8 +1531,7 @@ Mods: {
 					Shows the location of treasure and ore
 					Shows the location of enemies
 					Allows you to see nearby danger sources
-					Increases view range
-					<right> to zoom out
+					{$Items.GazersGoggles.Tooltip}
 					'The ultimate in spelunking'
 					'''
 			}
@@ -1541,8 +1541,7 @@ Mods: {
 				Tooltip:
 					'''
 					Improves vision and provides light when worn
-					Increases view range
-					<right> to zoom out
+					{$Items.GazersGoggles.Tooltip}
 					'The darkness holds no secrets for you'
 					'''
 			}
@@ -1568,8 +1567,8 @@ Mods: {
 			}
 
 			HeartsurgeHeart: {
-				Tooltip: "'helth'"
 				DisplayName: Mini-Heart
+				Tooltip: "'helth'"
 			}
 
 			HeartsurgeCharm: {
@@ -1594,8 +1593,7 @@ Mods: {
 				Tooltip:
 					'''
 					Allows flight
-					Increases fall speed and resistance
-					Reduces lowered gravity at high altitudes
+					{$Items.HeavyBoots.Tooltip}
 					'''
 			}
 
@@ -1619,8 +1617,7 @@ Mods: {
 					'''
 					Allows flight
 					Grants immunity to knockback and fire blocks
-					Increases fall speed and resistance
-					Reduces lowered gravity at high altitudes
+					{$Items.HeavyBoots.Tooltip}
 					'''
 			}
 
