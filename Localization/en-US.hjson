@@ -292,7 +292,7 @@ Mods: {
 			}
 
 			ChampionProtec: {
-				DisplayName: Losthero's Protection
+				DisplayName: Champion's Protection
 				Description: Attackers will take damage instead of you!
 			}
 
