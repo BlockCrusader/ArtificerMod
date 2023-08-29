@@ -61,7 +61,7 @@ namespace ArtificerMod.Content.Projectiles.AbilityAccH
 
 		public override bool? Colliding(Rectangle projHitbox, Rectangle targetHitbox)
 		{
-			projHitbox.Inflate(36, 36);
+			projHitbox.Inflate(12, 12);
 			// Makes a damaging trail
 			for (int i = 0; i < Projectile.oldPos.Length; i++)
 			{
