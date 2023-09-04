@@ -782,7 +782,6 @@ namespace ArtificerMod.Common
             xenoFinishFX = true;
         }
 
-        // TODO: Netcode
         public override bool FreeDodge(Player.HurtInfo info)
         {
             if (info.Dodgeable)
@@ -973,6 +972,10 @@ namespace ArtificerMod.Common
 
         public override void ModifyHitNPC(NPC target, ref NPC.HitModifiers modifiers)
         {
+ 	    if (target.HasBuff<SoulHunt>())
+            {
+                modifiers.Defense -= 20;
+            }
             if (papermarioreference && Player.luck > 0f
                 && modifiers.DamageType != DamageClass.Summon && modifiers.DamageType != DamageClass.SummonMeleeSpeed)
             {
