@@ -102,7 +102,11 @@ namespace ArtificerMod.Content.Items.AccessoriesH
 		}
 
 		public void PhasestrideDash(bool left)
-        {
+       	 	{
+			if(Player != Main.LocalPlayer)
+			{
+				return;
+			}
 			Vector2 playerPos = Player.position;
 			Vector2 teleportDest = playerPos;
 			Vector2 oldVelocity = Player.velocity;
@@ -110,12 +114,12 @@ namespace ArtificerMod.Content.Items.AccessoriesH
 			for (int i = 350; i > 0; i--)
 			{
 				bool validTeleport = true; 
-
 				int displace = i;
-                if (left)
-                {
+    
+                		if (left)
+                		{
 					displace *= -1;
-                }
+                		}
 				Vector2 targetPosition = new Vector2(playerPos.X + displace, playerPos.Y); // The target destination for this attempt
 				targetPosition.X -= Player.width / 2;
 
@@ -133,8 +137,8 @@ namespace ArtificerMod.Content.Items.AccessoriesH
 					validTeleport = false;
 				}
 
-                if (validTeleport) // RoD teleport conditions passed; the teleport can be gone through with
-                {
+                		if (validTeleport) // RoD teleport conditions passed; the teleport can be gone through with
+                		{
 					teleportDest = targetPosition;
 					break;
 				}
@@ -146,7 +150,7 @@ namespace ArtificerMod.Content.Items.AccessoriesH
 			Player.velocity.X = oldVelocity.X;
 			// Reverses player velocity if they dash in the opposite direction, better perserving their speed upon turning
 			if ((Player.velocity.X > 0 && left) || (Player.velocity.X < 0 && !left))
-            {
+            		{
 				Player.velocity.X *= -1f;
 			}
 		}
