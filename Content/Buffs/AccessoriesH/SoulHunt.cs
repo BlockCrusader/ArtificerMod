@@ -10,10 +10,5 @@ namespace ArtificerMod.Content.Buffs.AccessoriesH
 			Main.buffNoTimeDisplay[Type] = false;
 			Main.debuff[Type] = true;
 		}
-
-        public override void Update(NPC npc, ref int buffIndex)
-        {
-			npc.defense -= 20;
-        }
-    }
+    	}
 }
